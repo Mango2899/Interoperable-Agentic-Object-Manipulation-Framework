@@ -1,0 +1,65 @@
+{
+  "mode": "exclusive",
+  "repetition": 4,
+  "robots": {
+    "Robot1": {
+      "beginAt": 1789931853585.5693,
+      "homeRequestedAt": 1789931879785.411,
+      "endAt": 1789931880336.3328,
+      "stableSince": 1789931879808.8982,
+      "finalJointsDeg": [
+        0,
+        -0.0027633613599253,
+        -0.000050981954955725,
+        0,
+        0.000016510668574365,
+        -0.0000075353916773174
+      ]
+    },
+    "Robot2": {
+      "beginAt": 1789931866485.3774,
+      "homeRequestedAt": 1789931902085.4062,
+      "endAt": 1789931902734.6003,
+      "stableSince": 1789931902203.2114,
+      "finalJointsDeg": [
+        -0.000022701803955338,
+        -0.000015409686442718,
+        0,
+        -0.000066379602668196,
+        -0.000017986995953524,
+        -1.4536128817626e-14
+      ]
+    },
+    "Robot4": {
+      "beginAt": 1789931887585.3274,
+      "homeRequestedAt": 1789931920085.5017,
+      "endAt": 1789931963634.47,
+      "stableSince": 1789931920134.5115,
+      "finalJointsDeg": [
+        3.4778194997681e-8,
+        -0.000009799973225401,
+        -5.4818004934709e-7,
+        7.2297188464347e-8,
+        -0.0000011932836605017,
+        -5.3602323146585e-7
+      ]
+    },
+    "Robot5": {
+      "beginAt": 1789931906685.3867,
+      "homeRequestedAt": null,
+      "endAt": null
+    }
+  },
+  "success": false,
+  "startedAt": 1789931853560.1968,
+  "placedAt": null,
+  "selectedRoute": [
+    "Robot1",
+    "Robot2",
+    "Robot4",
+    "Robot5"
+  ],
+  "startedSimTime": 31.150000464171,
+  "error": "Evaluation interrupted",
+  "observationEndedAt": 1789932075980.297
+}

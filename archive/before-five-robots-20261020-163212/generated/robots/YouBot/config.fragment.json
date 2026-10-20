@@ -1,0 +1,7 @@
+{
+  "YouBot": {
+    "websocketPort": 8195,
+    "TDPort": 8095,
+    "staticAddress": "localhost"
+  }
+}

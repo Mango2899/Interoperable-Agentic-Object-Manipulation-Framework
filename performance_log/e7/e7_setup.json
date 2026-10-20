@@ -1,0 +1,112 @@
+{
+  "cells": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "seedPartners": {
+    "1": 2,
+    "2": 1,
+    "3": 4,
+    "4": 3,
+    "5": 6,
+    "6": 5,
+    "7": 8,
+    "8": 7,
+    "9": 10,
+    "10": 9
+  },
+  "samplesDir": "generated/experiments/e1/samples",
+  "cloudsFrom": "five-robot scene (E1 sampling), reused in every cell",
+  "targetVoxelCount": 1000,
+  "minimumSharedVoxels": 20,
+  "fixedBaselineSize": 0.05,
+  "sweep": {
+    "from": 0.01,
+    "to": 0.2,
+    "step": 0.005,
+    "sizes": [
+      0.01,
+      0.015,
+      0.02,
+      0.025,
+      0.03,
+      0.035,
+      0.04,
+      0.045,
+      0.05,
+      0.055,
+      0.06,
+      0.065,
+      0.07,
+      0.075,
+      0.08,
+      0.085,
+      0.09,
+      0.095,
+      0.1,
+      0.105,
+      0.11,
+      0.115,
+      0.12,
+      0.125,
+      0.13,
+      0.135,
+      0.14,
+      0.145,
+      0.15,
+      0.155,
+      0.16,
+      0.165,
+      0.17,
+      0.175,
+      0.18,
+      0.185,
+      0.19,
+      0.195,
+      0.2
+    ]
+  },
+  "reproThreshold": 0.75,
+  "reference": "the same pair computed from an independent run of the sampler, on the pair's fixed grid (J_repro), and from the other runs pooled (coverage). No ground-truth region, no free parameter; see e7_reference_calibration.csv for why a fine-grid reference region was rejected.",
+  "estimatorOptions": {
+    "ownership": "canonical_pair_first_robot",
+    "targetVoxelCount": 1000,
+    "proximityFactor": 1.25,
+    "sampleSize": 20000,
+    "spacingPercentile": 0.75,
+    "minVoxelSize": 0,
+    "maxVoxelSize": 0.2,
+    "minimumSharedVoxels": 20,
+    "bidirectional": true,
+    "seed": 42,
+    "centralCore": {
+      "lowerQuantile": 0.2,
+      "upperQuantile": 0.8,
+      "minimumCandidates": 10,
+      "maximumCandidates": 60
+    },
+    "visual": {
+      "object": "workspace_shared_reachable_points",
+      "color": [
+        0,
+        255,
+        0
+      ]
+    }
+  },
+  "finishedAt": "2026-09-20T15:35:50.822Z"
+}

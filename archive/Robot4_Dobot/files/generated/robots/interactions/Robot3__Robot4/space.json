@@ -1,0 +1,67 @@
+{
+  "id": "Robot3__Robot4_f6d7887ffd42",
+  "pairKey": "Robot3__Robot4",
+  "version": "f6d7887ffd42d032b45456675869b3296291fd7cc65c18c87d802f5eb8e1359f",
+  "ownerRobot": "Robot3",
+  "computedBy": "Robot3",
+  "robots": [
+    "Robot3",
+    "Robot4"
+  ],
+  "interactionRobot": "Robot4",
+  "coordinateFrame": "world",
+  "voxelSize": 0.03207422693041356,
+  "origin": {
+    "x": 1.0098753492983064,
+    "y": -2.3180972800052,
+    "z": -1.265935258611631
+  },
+  "sharedVoxelCount": 27,
+  "csv": "generated/robots/interactions/Robot3__Robot4/space.csv",
+  "placementSource": "scene",
+  "placements": {
+    "Robot3": {
+      "offset": [
+        2.1,
+        -1,
+        0
+      ],
+      "orientationDeg": [
+        0,
+        -89.99999999994863,
+        180.0000000000004
+      ]
+    },
+    "Robot4": {
+      "offset": [
+        1.5,
+        -2,
+        0
+      ],
+      "orientationDeg": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "diagnostics": {
+    "orderIndependent": true,
+    "spacingRobot1": 0.03207422693041356,
+    "spacingRobot2": 0.008093404058187374,
+    "effectiveSpacing": 0.03207422693041356,
+    "proximityRadius": 0.040092783663016954,
+    "estimatedClosePoints": 36.0012,
+    "estimatedVoxelSize": 0.03207422693041356,
+    "targetVoxelCount": 1000,
+    "estimatorMode": "kd_tree_proximity",
+    "reachablePointCounts": [
+      37896,
+      38738
+    ],
+    "occupiedVoxelCounts": [
+      30549,
+      2728
+    ]
+  }
+}

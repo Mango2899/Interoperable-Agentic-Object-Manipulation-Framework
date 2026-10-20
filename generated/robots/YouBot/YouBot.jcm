@@ -1,0 +1,14 @@
+/*
+    Generated JaCaMo application for YouBot.
+    Run with: ./gradlew -Pjcm=generated/robots/YouBot/YouBot.jcm
+*/
+
+mas youBot_mas {
+    agent youBot_agent: generated/youBot_agent.asl {
+        focus: youBot_workspace.wotComm
+    }
+
+    workspace youBot_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("YouBot")
+    }
+}

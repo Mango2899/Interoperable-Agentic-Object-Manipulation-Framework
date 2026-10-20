@@ -1,0 +1,381 @@
+{
+  "name": "Robot2",
+  "phase": 2,
+  "urdfPath": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT/Assets/URDFs/ur_description/urdf/ur3_robot.urdf",
+  "configKey": "Robot2",
+  "mobility": {
+    "type": "fixed",
+    "baseLink": "base",
+    "wheelJoints": [
+      "joint_6"
+    ],
+    "armJoints": [
+      "joint_1",
+      "joint_2",
+      "joint_3",
+      "joint_4",
+      "joint_5"
+    ],
+    "armRootLink": "base",
+    "tipLink": "link_5",
+    "gripperJoints": [],
+    "armJointLimits": {
+      "joint_1": {
+        "lower": -6.2831854820251,
+        "upper": 6.2831854820251,
+        "effort": 50,
+        "velocity": 3.1415927410126
+      },
+      "joint_2": {
+        "lower": -6.2831854820251,
+        "upper": 6.2831854820251,
+        "effort": 50,
+        "velocity": 3.1415927410126
+      },
+      "joint_3": {
+        "lower": -6.2831854820251,
+        "upper": 6.2831854820251,
+        "effort": 50,
+        "velocity": 3.1415927410126
+      },
+      "joint_4": {
+        "lower": -6.2831854820251,
+        "upper": 6.2831854820251,
+        "effort": 50,
+        "velocity": 6.2831854820251
+      },
+      "joint_5": {
+        "lower": -6.2831854820251,
+        "upper": 6.2831854820251,
+        "effort": 50,
+        "velocity": 6.2831854820251
+      }
+    },
+    "warnings": [
+      "Joint joint_6 classified as wheel by structure (continuous leaf joint)."
+    ]
+  },
+  "lowerLayerUrl": "http://localhost:8120/coppeliasim_virtualrobot_robot2",
+  "ports": {
+    "lowerThing": 8120,
+    "agentThing": 8121,
+    "websocket": 8221
+  },
+  "generatedFiles": {
+    "agentTd": "generated/experiments/e11/cell4/Robot2/Robot2.agent.td.json",
+    "agentSpeak": "generated/experiments/e11/cell4/Robot2/robot2_agent.asl",
+    "agentThing": "generated/experiments/e11/cell4/Robot2/Robot2_agent_thing.ts",
+    "lowerThing": "generated/experiments/e11/cell4/Robot2/Robot2_lower_thing.ts",
+    "jcm": "generated/experiments/e11/cell4/Robot2/Robot2.jcm",
+    "configFragment": "generated/experiments/e11/cell4/Robot2/config.fragment.json",
+    "lowerTd": "generated/experiments/e11/cell4/Robot2/td/Robot2.lower.td.json",
+    "model": "generated/experiments/e11/cell4/Robot2/model/Robot2.ttm",
+    "workspaceScene": "generated/experiments/e11/cell4/Robot2/scene/Robot2_workspace.ttt",
+    "robotInfo": "generated/experiments/e11/cell4/Robot2/info/Robot2_info.json",
+    "robotShape": "generated/experiments/e11/cell4/Robot2/info/Robot2_shape.stl",
+    "robotDataPoints": "generated/experiments/e11/cell4/Robot2/info/Robot2_data_point.csv"
+  },
+  "pipeline": {
+    "robwotRoot": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT",
+    "urdfLoadScene": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT/Coppeliasim scene/robot_urdf_load_scene.ttt",
+    "workspaceSceneTemplate": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT/Coppeliasim scene/robot_virtual_workspace.ttt",
+    "workspaceDriver": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT/Library/GenerateRobotDescription/robot_driver_workspace.lua",
+    "robotTemplate": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT/Library/GenerateRobotDescription/robot_template.json",
+    "workspaceDivisions": 8,
+    "gripperCollisionClearance": 0.005,
+    "collisionObstacles": [
+      "80cmHighWall50cm",
+      "Robot2_grip_support"
+    ],
+    "workspaceRandomSteps": 40000,
+    "lastRunAt": "2026-08-24T20:50:58.151Z"
+  },
+  "runtime": {
+    "handoverZone": {
+      "enabled": true,
+      "radius": 0.12
+    },
+    "jointSteps": 60,
+    "cartesianSteps": 60,
+    "stepDelayMs": 25,
+    "cartesianMaxVelocity": 0.45,
+    "cartesianFinalTolerance": 0.025,
+    "enableHandoverGripperCalibration": false,
+    "jointMaxVelocityDeg": 30,
+    "workspaceTolerance": 0.08,
+    "enableCollisionCheck": true,
+    "enableJointCollisionPreflight": true,
+    "collisionClearance": 0.01,
+    "gripperCollisionClearance": 0.005,
+    "pickupGripperClearance": 0.001,
+    "collisionCheckStepDeg": 2.25,
+    "enablePathPlanning": true,
+    "planningMaxTimeSeconds": 4,
+    "planningStateCount": 120,
+    "plannedJointMaxVelocityDeg": 45,
+    "pathSmoothingPasses": 2,
+    "pathTrackingToleranceDeg": 1,
+    "pathSettleMaxSteps": 100,
+    "workspaceVisuals": true,
+    "simpleSmoothMotion": true,
+    "returnHomeBetweenHandovers": true,
+    "simpleJointVelocityDeg": 30,
+    "simpleJointAccelerationDeg": 60,
+    "simpleJointJerkDeg": 120,
+    "simpleCartesianVelocity": 0.25,
+    "simpleCartesianAcceleration": 0.4,
+    "simpleCartesianJerk": 1.2,
+    "tcpMarkerSize": 0.02,
+    "enableHandoverPoseLock": false,
+    "handoverPresentMode": "horizontalY",
+    "workspaceToleranceSpacingFactor": 3,
+    "enableWorkspaceAdmission": true,
+    "enableInMotionCollisionCheck": true,
+    "inMotionCollisionStride": 1,
+    "inMotionClearanceStride": 0,
+    "preflightStepSize": 0.04,
+    "preflightMaxSamples": 16,
+    "preflightClearanceStride": 0,
+    "preferJointTrajectoryForCartesian": true,
+    "collisionObstacles": [
+      "80cmHighWall50cm",
+      "Robot2_grip_support"
+    ],
+    "gripper": {
+      "modelName": "Robot2_tcp_gripper",
+      "modelPath": "/home/maxchrs/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/models/components/grippers/RG2.ttm",
+      "modelPosition": [
+        0,
+        0,
+        0
+      ],
+      "modelOrientation": [
+        0,
+        0,
+        0
+      ],
+      "openJointPositions": [
+        0.06
+      ],
+      "closedJointPositions": [
+        0
+      ],
+      "toolAxis": [
+        0,
+        0.999614,
+        -0.027767
+      ],
+      "objectName": "Robot2_grip_cube",
+      "supportName": "Robot2_grip_support",
+      "objectSize": [
+        0.045,
+        0.045,
+        0.045
+      ],
+      "objectPosition": [
+        0.3,
+        0.13,
+        0.185
+      ],
+      "supportSize": [
+        0.14,
+        0.14,
+        0.16
+      ],
+      "supportPosition": [
+        0.3,
+        0.13,
+        0.08
+      ],
+      "gripThreshold": 0.04,
+      "pickupApproachHeight": 0.2,
+      "graspHeightOffset": 0.005,
+      "graspPadAlias": "touch",
+      "enableTopDownPick": true,
+      "handoverStandoffDistance": 0.05,
+      "pickDescentSteps": 8,
+      "pickPlanningMaxTime": 4,
+      "pickIkDamping": 0.05,
+      "toolLengthEstimate": 0.19,
+      "applyBaseOrientationCorrection": false,
+      "squareToWristJoint": true,
+      "modelLocalRotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "enableHandoverPoseLockAsReceiver": true,
+    "handoverApproachMode": "horizontalX",
+    "preflightBudgetMs": 100
+  },
+  "agentDefaults": {
+    "homePosition": [
+      0,
+      0,
+      0.25
+    ],
+    "horizontalPosition": [
+      0.25,
+      0,
+      0.25
+    ],
+    "gripPosition": [
+      -0.264166,
+      0.874881,
+      0.185
+    ],
+    "carryPosition": [
+      -0.28,
+      -0.18,
+      0.33
+    ],
+    "pickLiftHeight": 0.1,
+    "homeJoints": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "config": {
+    "rootConfigUpdated": true,
+    "rootConfigKeyExists": true
+  },
+  "nextPhase": "Generate a lower-level WoT runtime server from the TD with configurable ports and then connect the AgentThing end to end.",
+  "sharedEnvironment": {
+    "descriptor": "generated/robots/Robot1_Robot2_Robot3_Robot4.shared.json",
+    "scene": "generated/robots/Robot1_Robot2_Robot3_Robot4_shared.ttt",
+    "environmentScene": "generated/robots/Robot1_Robot2_Robot3_Robot4_environment.ttt",
+    "offset": [
+      1.39,
+      0.19,
+      0
+    ],
+    "rotationDeg": 50,
+    "orientationDeg": [
+      0,
+      0,
+      50
+    ],
+    "wallAliases": [
+      "Robot1_wall",
+      "Robot2_wall",
+      "Robot3_wall",
+      "Robot4_wall"
+    ],
+    "wall": "Robot2_wall",
+    "wallOffset": [
+      0,
+      0,
+      0
+    ],
+    "collisionObstacles": [
+      "Robot1_wall",
+      "Robot2_wall",
+      "Robot3_wall",
+      "Robot4_wall",
+      "Robot1_grip_support",
+      "Robot4_grip_support_b"
+    ],
+    "taskSites": [
+      {
+        "alias": "Robot1_grip_support",
+        "size": [
+          0.14,
+          0.14,
+          0.16
+        ],
+        "position": [
+          0.55,
+          0.55,
+          0.08
+        ],
+        "yawDeg": 0,
+        "payload": {
+          "alias": "Robot1_grip_cube",
+          "size": [
+            0.045,
+            0.045,
+            0.045
+          ],
+          "position": [
+            0.55,
+            0.55,
+            0.185
+          ]
+        }
+      },
+      {
+        "alias": "Robot4_grip_support_b",
+        "size": [
+          0.14,
+          0.14,
+          0.16
+        ],
+        "position": [
+          2.42,
+          -0.14,
+          0.08
+        ],
+        "yawDeg": 0,
+        "payload": null
+      }
+    ],
+    "supportName": "Robot1_grip_support",
+    "objectName": "Robot1_grip_cube",
+    "interactionPairs": [
+      {
+        "key": "Robot1__Robot2",
+        "robots": [
+          "Robot1",
+          "Robot2"
+        ],
+        "ownerRobot": "Robot1"
+      },
+      {
+        "key": "Robot1__Robot3",
+        "robots": [
+          "Robot1",
+          "Robot3"
+        ],
+        "ownerRobot": "Robot1"
+      },
+      {
+        "key": "Robot1__Robot4",
+        "robots": [
+          "Robot1",
+          "Robot4"
+        ],
+        "ownerRobot": "Robot1"
+      },
+      {
+        "key": "Robot2__Robot3",
+        "robots": [
+          "Robot2",
+          "Robot3"
+        ],
+        "ownerRobot": "Robot2"
+      },
+      {
+        "key": "Robot2__Robot4",
+        "robots": [
+          "Robot2",
+          "Robot4"
+        ],
+        "ownerRobot": "Robot2",
+        "approachMode": "opposed"
+      },
+      {
+        "key": "Robot3__Robot4",
+        "robots": [
+          "Robot3",
+          "Robot4"
+        ],
+        "ownerRobot": "Robot3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+pair,class,n,durationMs_median,durationMs_q25,durationMs_q75,durationMs_min,durationMs_max,voxels_median
+Robot1__Robot2,cold,14,1021.5000,951.25000,1090,896,1225,343
+Robot1__Robot2,cached,387,56,46,189,20,66316,366
+Robot1__Robot3,cold,10,1401,1226.7500,1504.7500,1190,1596,1
+Robot1__Robot3,cached,191,166,48,469.50000,25,772,1
+Robot1__Robot3,failed_empty,21,3333,1395,3480,866,4319,0
+Robot1__Robot4,failed_empty,86,3429,2987,3823.2500,2294,4910,0
+Robot1__Robot4,failed_bbox,9,155,152,158,145,503,0
+Robot2__Robot3,cold,14,1581,1390.5000,1652.7500,1302,1806,128
+Robot2__Robot3,cached,296,65,46,366,13,823,132
+Robot2__Robot4,cold,2,1255.5000,1177.7500,1333.2500,1100,1411,1048.5000
+Robot2__Robot4,cached,199,60,55,81.500000,39,993,1043
+Robot2__Robot5,cold,1,1765,1765,1765,1765,1765,2
+Robot2__Robot5,cached,85,66,58,551,34,876,2
+Robot2__Robot5,failed_empty,9,3147,3130,3187,2976,3444,0
+Robot3__Robot4,cold,15,1617,1412.5000,1738.5000,1215,1925,31
+Robot3__Robot4,cached,308,65,45,381,33,919,55
+Robot3__Robot5,cold,2,1781.5000,1724.2500,1838.7500,1667,1896,1440
+Robot3__Robot5,cached,94,66.500000,58,580,28,923,1430
+Robot4__Robot5,cold,2,1653,1531.5000,1774.5000,1410,1896,489
+Robot4__Robot5,cached,183,66,55,282.50000,28,2950,598
+all pairs,cold,60,1417.5000,1202,1618.7500,896,1925,128
+all pairs,cached,1743,62,49,284,13,66316,345
+all pairs,failed_empty,116,3340.5000,2954.7500,3660.5000,866,4910,0
+all pairs,failed_bbox,9,155,152,158,145,503,0

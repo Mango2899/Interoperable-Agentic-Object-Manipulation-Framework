@@ -1,0 +1,6 @@
+[submodule "jacamo"]
+	path = jacamo
+	url = https://github.com/jacamo-lang/jacamo.git
+[submodule "external/RobWoT"]
+	path = external/RobWoT
+	url = https://github.com/tum-esi/RobWoT.git

@@ -1,0 +1,10 @@
+{
+  "mode": "exclusive",
+  "repetition": 1,
+  "robots": {},
+  "success": false,
+  "startedAt": null,
+  "placedAt": null,
+  "error": "Runtime exited: 1",
+  "observationEndedAt": 1789930552920.7922
+}

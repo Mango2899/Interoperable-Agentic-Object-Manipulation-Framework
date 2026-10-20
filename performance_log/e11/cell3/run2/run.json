@@ -1,0 +1,14 @@
+{
+  "cell": 3,
+  "run": 2,
+  "t": 1789942626122,
+  "compute_file": "/home/maxchrs/Desktop/MA/WoMAT/performance_log/interaction-compute.jsonl",
+  "compute_offset": 366999,
+  "command": [
+    "./gradlew",
+    "--console=plain",
+    "-Pheadless",
+    "run",
+    "--args=performance_log/e11/plans/cell3/e11.jcm --log-conf performance_log/e11/plans/cell3/logging.properties"
+  ]
+}

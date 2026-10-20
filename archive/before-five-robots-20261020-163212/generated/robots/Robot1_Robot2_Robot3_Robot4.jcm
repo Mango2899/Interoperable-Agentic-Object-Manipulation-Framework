@@ -1,0 +1,38 @@
+/*
+    Generated multi-robot JaCaMo application for Robot1_Robot2_Robot3_Robot4.
+    Start the shared lower runtime and every AgentThing before this application.
+*/
+
+mas robot1_robot2_robot3_robot4_mas {
+    agent robot1_agent: generated/robot1_agent.asl {
+        focus: robot1_workspace.wotComm
+    }
+
+    agent robot2_agent: generated/robot2_agent.asl {
+        focus: robot2_workspace.wotComm
+    }
+
+    agent robot3_agent: generated/robot3_agent.asl {
+        focus: robot3_workspace.wotComm
+    }
+
+    agent robot4_agent: generated/robot4_agent.asl {
+        focus: robot4_workspace.wotComm
+    }
+
+    workspace robot1_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot1")
+    }
+
+    workspace robot2_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot2")
+    }
+
+    workspace robot3_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot3")
+    }
+
+    workspace robot4_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot4")
+    }
+}

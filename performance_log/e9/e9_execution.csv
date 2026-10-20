@@ -1,0 +1,7 @@
+strategy,label,handovers,attempts,setupFailures,rounds,directions,firstAttemptSuccess,firstAttemptWon,firstAttemptTrials,firstAttemptLow,firstAttemptHigh,transferRate,successRate,successWon,successTrials,successLow,successHigh,liveRefused_mean,commonFailure,commonFailureCount,duration_median,graspDistance_median
+weighted,weighted score,25,26,3,5,5,0.96000000,24,25,0.80455528,0.99290395,0.96000000,1,25,25,0.86680351,1,0.040000000,receiver_approach,1,15927.500,0.0079309220
+centrality,centrality only,25,29,3,5,5,0.84000000,21,25,0.65345986,0.93596652,0.88000000,0.96000000,24,25,0.80455528,0.99290395,0.16000000,receiver_approach,3,15682,0.0096104558
+density,density only,25,29,3,5,5,0.84000000,21,25,0.65345986,0.93596652,0.84000000,1,25,25,0.86680351,1,0.16000000,giver_approach,4,15767,0.0057678897
+random,random voxel,25,41,3,5,5,0.56000000,14,25,0.37067017,0.73334625,0.56000000,0.84000000,21,25,0.65345986,0.93596652,0.80000000,receiver_approach,11,16974,0.0084057891
+bbox,bounding-box centre,25,31,3,5,5,0.84000000,21,25,0.65345986,0.93596652,0.84000000,1,25,25,0.86680351,1,0.24000000,receiver_approach,4,15488,0.0090542511
+deployed,deployed (screened),25,26,3,5,5,0.96000000,24,25,0.80455528,0.99290395,0.96000000,1,25,25,0.86680351,1,0.040000000,receiver_approach,1,15960.500,0.0098960135

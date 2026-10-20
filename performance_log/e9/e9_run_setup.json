@@ -1,0 +1,33 @@
+{
+  "cell": 5,
+  "descriptor": "generated/robots/Robot1_Robot2_Robot3_Robot4_Robot5.shared.json",
+  "cube": "Robot1_grip_cube",
+  "parkedAt": {
+    "x": 0.55,
+    "y": 0.55,
+    "z": 0.185
+  },
+  "directions": "owner directions only -- beginHandoverSession refuses a non-owner giver",
+  "heightBand": [
+    0.15,
+    0.45
+  ],
+  "strategies": [
+    "weighted",
+    "centrality",
+    "density",
+    "random",
+    "bbox",
+    "deployed"
+  ],
+  "retries": 2,
+  "repeats": 5,
+  "interval": "95 % Wilson over directions x rounds. It treats those trials as independent, which they are not: rounds of one direction share a geometry, so the interval is optimistic where a direction succeeds or fails consistently. e9_directions.csv carries the per-direction counts, which is where that clustering is visible.",
+  "seed": 42,
+  "settleMs": 500,
+  "timeoutMs": 180000,
+  "seeding": "the cube is placed at the giver's tool control point and grasped with the driver's own closeGripper",
+  "successCriterion": "transferCube accepted by the receiver's own jaw gate (acceptTransferredGripObject), and both arms clear of the rendezvous afterwards",
+  "attempts": 200,
+  "finishedAt": "2026-09-20T21:41:22.602Z"
+}

@@ -1,0 +1,31 @@
+{
+  "robot": "Robot2",
+  "pair": "Robot2__Robot4",
+  "repeats": 3,
+  "dt": 0.050000000745058,
+  "target": {
+    "x": 0.11439517890831,
+    "y": -0.3955985251876,
+    "z": 0.16441181803454
+  },
+  "limits": {
+    "joint": {
+      "velocity": 0.5235987755982988,
+      "acceleration": 1.0471975511965976,
+      "jerk": 2.0943951023931953
+    },
+    "cartesian": {
+      "velocity": 0.25,
+      "acceleration": 0.4,
+      "jerk": 1.2
+    }
+  },
+  "settleToleranceDeg": 1,
+  "variants": [
+    "double_s",
+    "linear",
+    "ruckig"
+  ],
+  "leadJoint": 5,
+  "finishedAt": "2026-09-19T21:38:02.182Z"
+}

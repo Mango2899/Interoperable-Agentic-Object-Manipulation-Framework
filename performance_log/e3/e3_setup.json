@@ -1,0 +1,21 @@
+{
+  "outDir": "performance_log/e3",
+  "targets": 60,
+  "margin": 0.2,
+  "jitter": 0.05,
+  "nearObstacle": 0.15,
+  "seed": 1,
+  "settleMs": 300,
+  "robots": [
+    "Robot2",
+    "Robot4"
+  ],
+  "configs": [
+    "full",
+    "no_admission",
+    "no_preflight",
+    "no_fallback",
+    "no_watchdog"
+  ],
+  "finishedAt": "2026-09-20T00:27:53.065Z"
+}

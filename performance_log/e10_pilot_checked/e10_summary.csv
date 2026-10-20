@@ -1,0 +1,15 @@
+mode,metric,attempted,succeeded,failed,setupFailures,n,mean,sd
+exclusive,delivery,1,1,0,0,1,74.1866,nan
+exclusive,task,1,1,0,0,1,77.6637,nan
+exclusive,Robot1,1,1,0,0,1,26.2718,nan
+exclusive,Robot2,1,1,0,0,1,35.8148,nan
+exclusive,Robot3,1,1,0,0,0,nan,nan
+exclusive,Robot4,1,1,0,0,1,34.8183,nan
+exclusive,Robot5,1,1,0,0,1,23.2772,nan
+region,delivery,1,1,0,0,1,66.6506,nan
+region,task,1,1,0,0,1,71.0274,nan
+region,Robot1,1,1,0,0,1,27.6254,nan
+region,Robot2,1,1,0,0,1,33.4880,nan
+region,Robot3,1,1,0,0,0,nan,nan
+region,Robot4,1,1,0,0,1,34.0417,nan
+region,Robot5,1,1,0,0,1,21.4770,nan

@@ -1,0 +1,127 @@
+{
+  "run": 7,
+  "status": "incomplete",
+  "reason": "Gradle exited before the cube was placed",
+  "issues": [
+    "The cube was never reported placed on the target support"
+  ],
+  "started_at": "2026-09-21T00:09:46.501Z",
+  "elapsed_ms": 97802,
+  "durations_ms": {
+    "neighbour_discovery": 294.9903240054846,
+    "interaction_space": 3578.699397005141,
+    "task_sites": 3607.6296569928527,
+    "initial_edge_pricing": 6886.5077690035105,
+    "route_discovery": 3094.5341560021043
+  },
+  "route": {
+    "outcome": "success",
+    "origin": "robot1_agent",
+    "cost_m": 4.049873754856792,
+    "path": [
+      "robot1",
+      "robot2",
+      "robot4",
+      "robot5"
+    ],
+    "options_reported": 2,
+    "options": "[total(4.049873754856792,robot2_agent,robot2,[robot2,robot4,robot5]),total(4.236558260676995,robot2_agent,robot2,[robot2,robot3,robot5])]"
+  },
+  "legs": [
+    {
+      "agent": "robot1_agent",
+      "neighbour": "robot2",
+      "mode": "pickup",
+      "distance_m": 0.6767385133318435,
+      "candidate": "candidate_26"
+    },
+    {
+      "agent": "robot2_agent",
+      "neighbour": "robot1",
+      "mode": "pose",
+      "distance_m": 0.5179844344010257,
+      "candidate": "candidate_26"
+    },
+    {
+      "agent": "robot3_agent",
+      "neighbour": "robot2",
+      "mode": "pose",
+      "distance_m": 1.1297948882186213,
+      "candidate": "candidate_24"
+    },
+    {
+      "agent": "robot5_agent",
+      "neighbour": "robot3",
+      "mode": "pose",
+      "distance_m": 1.9120404247255052,
+      "candidate": "candidate_55"
+    },
+    {
+      "agent": "robot4_agent",
+      "neighbour": "robot2",
+      "mode": "pose",
+      "distance_m": 0.9036805628245925,
+      "candidate": "candidate_59"
+    },
+    {
+      "agent": "robot5_agent",
+      "neighbour": "robot4",
+      "mode": "pose",
+      "distance_m": 1.9514702442993304,
+      "candidate": "candidate_31"
+    }
+  ],
+  "refused_edges": [
+    {
+      "agent": "robot1_agent",
+      "neighbour": "robot4",
+      "mode": "pickup",
+      "reason": "voxel_intersection_empty"
+    },
+    {
+      "agent": "robot1_agent",
+      "neighbour": "robot3",
+      "mode": "pickup",
+      "reason": "interaction_space_below_minimum"
+    },
+    {
+      "agent": "robot3_agent",
+      "neighbour": "robot1",
+      "mode": "pose",
+      "reason": "interaction_space_below_minimum"
+    },
+    {
+      "agent": "robot5_agent",
+      "neighbour": "robot2",
+      "mode": "pose",
+      "reason": "interaction_space_below_minimum"
+    },
+    {
+      "agent": "robot4_agent",
+      "neighbour": "robot1",
+      "mode": "pose",
+      "reason": "voxel_intersection_empty"
+    }
+  ],
+  "refused_candidates": [],
+  "selected_candidates": [],
+  "handovers": [],
+  "transport": {
+    "delivery_requested_ms": 39615,
+    "delivery_ms": null,
+    "source_pickup_ms": null,
+    "placement_ms": null,
+    "handover_total_ms": null,
+    "unpriced_ms": null,
+    "sink": null,
+    "goal": null,
+    "start_mono": 42868495.435632,
+    "placed_mono": null,
+    "pickup_window": [
+      42868507.959954,
+      null
+    ],
+    "placement_window": null
+  },
+  "messages_total": 42
+}

@@ -1,0 +1,9 @@
+{
+  "cell": 5,
+  "run": 1,
+  "runs": 10,
+  "arm": "cold",
+  "failed_robot": "Robot4",
+  "t": 1790007558066,
+  "jcm": "/home/maxchrs/Desktop/MA/WoMAT/performance_log/e13/plans/e13_cold.jcm"
+}

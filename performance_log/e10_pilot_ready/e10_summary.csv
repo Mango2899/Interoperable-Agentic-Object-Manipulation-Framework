@@ -1,0 +1,15 @@
+mode,metric,attempted,succeeded,n,mean,sd
+exclusive,delivery,0,0,0,nan,nan
+exclusive,task,0,0,0,nan,nan
+exclusive,Robot1,0,0,0,nan,nan
+exclusive,Robot2,0,0,0,nan,nan
+exclusive,Robot3,0,0,0,nan,nan
+exclusive,Robot4,0,0,0,nan,nan
+exclusive,Robot5,0,0,0,nan,nan
+region,delivery,0,0,0,nan,nan
+region,task,0,0,0,nan,nan
+region,Robot1,0,0,0,nan,nan
+region,Robot2,0,0,0,nan,nan
+region,Robot3,0,0,0,nan,nan
+region,Robot4,0,0,0,nan,nan
+region,Robot5,0,0,0,nan,nan

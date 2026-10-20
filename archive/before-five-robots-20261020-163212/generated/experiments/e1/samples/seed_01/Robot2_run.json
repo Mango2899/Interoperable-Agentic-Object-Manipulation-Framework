@@ -1,0 +1,32 @@
+{
+  "seed": 1,
+  "samples": 100000,
+  "robot": "Robot2",
+  "offset": [
+    1.39,
+    0.19,
+    0
+  ],
+  "orientationDeg": [
+    0,
+    0,
+    50
+  ],
+  "wallSeconds": 144.605,
+  "obstacles": {
+    "kept": [
+      "Robot2_wall__17__",
+      "Robot4_wall__21__",
+      "Robot1_grip_support__25__"
+    ],
+    "culled": [
+      "Robot1_wall__15__",
+      "Robot3_wall__19__",
+      "Robot5_wall__23__",
+      "Robot5_grip_support_b__27__"
+    ],
+    "radius": 1.2530455309717,
+    "reach": 1.0030455309717
+  },
+  "finishedAt": "2026-09-19T15:59:35.543Z"
+}

@@ -1,0 +1,28 @@
+{
+  "jointLimitLows": [
+    -3.14,
+    -3.14,
+    -2.86,
+    -3.14,
+    -3.14,
+    -6.28
+  ],
+  "jointTypes": [
+    "Revolute_joint",
+    "Revolute_joint",
+    "Revolute_joint",
+    "Revolute_joint",
+    "Revolute_joint",
+    "Revolute_joint"
+  ],
+  "robotName": "Robot4",
+  "jointAmount": 6,
+  "jointLimitHighs": [
+    3.14,
+    3.14,
+    2.86,
+    3.14,
+    3.14,
+    6.28
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "cells": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "pairSource": "performance_log/e5/e5_pairs.csv",
+  "liveLog": "performance_log/interaction-compute.jsonl",
+  "liveEntries": 1928,
+  "lineSizes": [
+    5,
+    10,
+    20
+  ],
+  "linePitch": 1.241974234837422,
+  "linePitchSource": "median nearest-neighbour base distance of the largest cell",
+  "reachRadii": [
+    {
+      "robot": "Robot1",
+      "safeReachRadius": 1.6407837
+    },
+    {
+      "robot": "Robot2",
+      "safeReachRadius": 0.883473855
+    },
+    {
+      "robot": "Robot3",
+      "safeReachRadius": 1.3058883
+    },
+    {
+      "robot": "Robot4",
+      "safeReachRadius": 0.9074334749999999
+    },
+    {
+      "robot": "Robot5",
+      "safeReachRadius": 1.74460825
+    }
+  ],
+  "finishedAt": "2026-09-20T13:11:00.646Z"
+}

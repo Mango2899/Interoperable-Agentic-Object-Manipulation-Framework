@@ -1,0 +1,13 @@
+population,scope,threshold,n,tp,fp,fn,tn,precision,recall,specificity,wastedComputations
+cells,2-robot,shares,10,10,0,0,0,1,1,nan,0
+cells,3-robot,shares,30,30,0,0,0,1,1,nan,0
+cells,4-robot,shares,60,40,10,0,10,0.80000000,1,0.50000000,0.20000000
+cells,5-robot,shares,100,80,10,0,10,0.88888889,1,0.50000000,0.11111111
+cells,all,shares,200,160,20,0,20,0.88888889,1,0.50000000,0.11111111
+cells,2-robot,usable,10,10,0,0,0,1,1,nan,0
+cells,3-robot,usable,30,20,10,0,0,0.66666667,1,0,0.33333333
+cells,4-robot,usable,60,30,20,0,10,0.60000000,1,0.33333333,0.40000000
+cells,5-robot,usable,100,62,28,0,10,0.68888889,1,0.26315789,0.31111111
+cells,all,usable,200,122,58,0,20,0.67777778,1,0.25641026,0.32222222
+layouts,random,shares,150,59,34,0,57,0.63440860,1,0.62637363,0.36559140
+layouts,random,usable,150,43,50,0,57,0.46236559,1,0.53271028,0.53763441

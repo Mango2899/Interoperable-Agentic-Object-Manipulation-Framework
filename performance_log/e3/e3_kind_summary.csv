@@ -1,0 +1,16 @@
+kind,config,commands,reached_direct,reached_fallback,rejected_admission,rejected_preflight,rejected_other,aborted_watchdog,not_reached,collision,moved,contactSteps,decisionMsMedianMoved,decisionMsMedianRejected,decisionMsP95,totalSecondsMean
+near,full,60,39,13,0,5,0,1,2,0,55,0,248.000,45589,33732.1,7.93813
+near,no_admission,60,39,13,0,5,0,1,1,1,55,16,194.000,40487,32058.6,6.15047
+near,no_preflight,60,47,0,0,0,0,13,0,0,60,0,167.500,nan,179.050,2.00252
+near,no_fallback,60,39,0,0,20,0,1,0,0,40,0,241.500,245.500,258.100,1.46203
+near,no_watchdog,60,39,14,0,3,0,0,3,1,57,11,245.000,39540,38929.2,6.24757
+obstacle,full,30,22,2,0,4,0,1,1,0,26,0,245.000,33028.5,33594.6,7.65697
+obstacle,no_admission,30,22,2,0,3,0,1,2,0,27,0,193.000,32604,25283.8,5.61037
+obstacle,no_preflight,30,23,0,0,0,0,7,0,0,30,0,168.000,nan,175.550,2.04583
+obstacle,no_fallback,30,22,0,0,7,0,1,0,0,23,0,246.000,248,266.550,1.70303
+obstacle,no_watchdog,30,22,3,0,1,0,0,3,1,29,26,244.000,41949,6178.60,4.26760
+box,full,30,4,0,23,2,0,0,1,0,5,0,250,4215,50553.1,9.68330
+box,no_admission,30,4,0,0,18,0,3,2,3,12,32,203.000,4253,30632.8,6.58920
+box,no_preflight,30,4,0,22,0,0,4,0,0,8,0,165.000,4218.50,4236.20,5.71003
+box,no_fallback,30,4,0,23,3,0,0,0,0,4,0,253.500,190,253.950,0.505600
+box,no_watchdog,30,4,1,23,1,0,0,0,1,6,8,254.500,4217.50,41155.5,8.45830

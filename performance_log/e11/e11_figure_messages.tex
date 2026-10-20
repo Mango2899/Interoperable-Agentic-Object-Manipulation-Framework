@@ -1,0 +1,15 @@
+% Generated from the 15 E11 result.json files by src/eval/e11Scaling.js.
+\begin{tikzpicture}
+\begin{axis}[ybar stacked,bar width=24pt,width=0.78\linewidth,height=6.2cm,symbolic x coords={3,4,5},xtick=data,ymin=0,ymax=45,ylabel={Inter-agent messages},xlabel={Robots},legend style={at={(0.5,1.03)},anchor=south,legend columns=3},ymajorgrids=true]
+\addplot+[draw=blue!35,fill=blue!35] coordinates {(3,3) (4,6) (5,9)};
+\addlegendentry{Workspace cloud}
+\addplot+[draw=cyan!55,fill=cyan!55] coordinates {(3,3) (4,5) (5,8)};
+\addlegendentry{Space ready}
+\addplot+[draw=orange!55,fill=orange!55] coordinates {(3,3) (4,7) (5,12)};
+\addlegendentry{findRoute}
+\addplot+[draw=green!45,fill=green!45] coordinates {(3,2) (4,4) (5,5)};
+\addlegendentry{routeCost}
+\addplot+[draw=red!40,fill=red!40] coordinates {(3,1) (4,3) (5,7)};
+\addlegendentry{noRoute}
+\end{axis}
+\end{tikzpicture}

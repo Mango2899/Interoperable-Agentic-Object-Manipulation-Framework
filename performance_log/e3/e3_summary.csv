@@ -1,0 +1,16 @@
+robot,config,commands,reached_direct,reached_fallback,rejected_admission,rejected_preflight,rejected_other,aborted_watchdog,not_reached,collision,moved,contactSteps,decisionMsMedianMoved,decisionMsMedianRejected,decisionMsP95,totalSecondsMean
+Robot2,full,60,37,0,10,8,0,1,4,0,42,0,247.000,13300,54986.9,9.54975
+Robot2,no_admission,60,37,0,0,14,0,3,4,2,46,28,196.500,32109.5,41433.7,8.65978
+Robot2,no_preflight,60,40,0,9,0,0,11,0,0,51,0,165.000,4219,4220.70,3.35043
+Robot2,no_fallback,60,37,0,10,12,0,1,0,0,38,0,245.500,197,267.100,1.43122
+Robot2,no_watchdog,60,37,2,10,4,0,0,5,2,46,34,246.000,4224,39660.4,7.34327
+Robot4,full,60,28,15,13,3,0,1,0,0,44,0,247.500,4216,29519.9,7.05852
+Robot4,no_admission,60,28,15,0,12,0,2,1,2,48,20,193.000,4254,4262.05,3.59047
+Robot4,no_preflight,60,34,0,13,0,0,13,0,0,47,0,169.000,4218,4220.15,2.53002
+Robot4,no_fallback,60,28,0,13,18,0,1,0,0,29,0,235.000,234,257,1.13513
+Robot4,no_watchdog,60,28,16,13,1,0,0,1,1,46,11,244.500,4217.50,14558.7,5.26725
+all,full,120,65,15,23,11,0,2,4,0,86,0,247.000,4219,40966.3,8.30413
+all,no_admission,120,65,15,0,26,0,5,5,4,94,48,195.000,4262.50,32757.3,6.12512
+all,no_preflight,120,74,0,22,0,0,24,0,0,98,0,168.000,4218.50,4220.15,2.94022
+all,no_fallback,120,65,0,23,30,0,2,0,0,67,0,243.000,232,261.050,1.28317
+all,no_watchdog,120,65,18,23,5,0,0,6,3,92,45,245.000,4219.50,38929.2,6.30526

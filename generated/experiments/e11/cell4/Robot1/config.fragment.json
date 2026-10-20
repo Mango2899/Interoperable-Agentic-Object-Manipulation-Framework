@@ -1,0 +1,7 @@
+{
+  "Robot1": {
+    "websocketPort": 8211,
+    "TDPort": 8111,
+    "staticAddress": "localhost"
+  }
+}

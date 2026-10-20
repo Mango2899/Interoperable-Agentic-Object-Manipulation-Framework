@@ -1,0 +1,3 @@
+mode,repetition,started,success,route,deliveryS,taskS
+exclusive,1,1,1,Robot1>Robot2>Robot4>Robot5,74.1866,77.6637
+region,1,1,1,Robot1>Robot2>Robot4>Robot5,66.6506,71.0274

@@ -1,0 +1,14 @@
+/*
+    Generated JaCaMo application for Robot4.
+    Run with: ./gradlew -Pjcm=generated/robots/Robot4/Robot4.jcm
+*/
+
+mas robot4_mas {
+    agent robot4_agent: generated/robot4_agent.asl {
+        focus: robot4_workspace.wotComm
+    }
+
+    workspace robot4_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot4")
+    }
+}

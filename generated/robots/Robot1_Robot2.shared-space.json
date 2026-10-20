@@ -1,0 +1,31 @@
+{
+  "ownerRobot": "Robot1",
+  "interactionRobot": "Robot2",
+  "coordinateFrame": "world",
+  "voxelSize": 0.03950949755064699,
+  "origin": {
+    "x": -1.299583037709,
+    "y": -1.3036552761204,
+    "z": -1.1727232202919
+  },
+  "sharedVoxelCount": 967,
+  "csv": "generated/robots/Robot1_Robot2.shared-space.csv",
+  "diagnostics": {
+    "spacingRobot1": 0.03567163783362386,
+    "spacingRobot2": 0.013847327691522594,
+    "effectiveSpacing": 0.03567163783362386,
+    "proximityRadius": 0.044589547292029824,
+    "estimatedClosePoints": 1358.7369,
+    "estimatedVoxelSize": 0.03950949755064699,
+    "targetVoxelCount": 1000,
+    "estimatorMode": "kd_tree_proximity",
+    "reachablePointCounts": [
+      51663,
+      62924
+    ],
+    "occupiedVoxelCounts": [
+      35953,
+      10008
+    ]
+  }
+}

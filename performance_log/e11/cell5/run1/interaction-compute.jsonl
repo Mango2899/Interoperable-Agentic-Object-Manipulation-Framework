@@ -1,0 +1,9 @@
+{"t":1789943527966,"agent":"Robot2","pairKey":"Robot2__Robot5","targetRobot":"Robot5","cached":true,"voxelCount":2,"version":"43c9a5e75e29","durationMs":660}
+{"t":1789943528008,"agent":"Robot4","pairKey":"Robot4__Robot5","targetRobot":"Robot5","cached":true,"voxelCount":598,"version":"9714c8c51005","durationMs":702}
+{"t":1789943528103,"agent":"Robot3","pairKey":"Robot3__Robot5","targetRobot":"Robot5","cached":true,"voxelCount":1430,"version":"a4feadfea926","durationMs":757}
+{"t":1789943528577,"agent":"Robot2","pairKey":"Robot2__Robot4","targetRobot":"Robot4","cached":true,"voxelCount":1043,"version":"932371f23353","durationMs":384}
+{"t":1789943528663,"agent":"Robot3","pairKey":"Robot3__Robot4","targetRobot":"Robot4","cached":true,"voxelCount":143,"version":"330856b471f2","durationMs":375}
+{"t":1789943529082,"agent":"Robot2","pairKey":"Robot2__Robot3","targetRobot":"Robot3","cached":true,"voxelCount":357,"version":"c42625183f9c","durationMs":341}
+{"t":1789943531372,"agent":"Robot1","pairKey":"Robot1__Robot4","targetRobot":"Robot4","durationMs":4066,"reason":"voxel_intersection_empty","diagnostics":{"nearestApproach":0.1168,"voxelSize":0.0485,"estimatedClosePoints":0,"estimatorMode":"bounding_box_fallback"}}
+{"t":1789943531700,"agent":"Robot1","pairKey":"Robot1__Robot3","targetRobot":"Robot3","cached":true,"voxelCount":1,"version":"61e90f3c49c4","durationMs":323}
+{"t":1789943532078,"agent":"Robot1","pairKey":"Robot1__Robot2","targetRobot":"Robot2","cached":true,"voxelCount":565,"version":"fc9c92a007a5","durationMs":274}

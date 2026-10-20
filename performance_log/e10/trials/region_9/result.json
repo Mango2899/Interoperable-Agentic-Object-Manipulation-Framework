@@ -1,0 +1,56 @@
+{
+  "mode": "region",
+  "repetition": 9,
+  "robots": {
+    "Robot1": {
+      "beginAt": 1789933137170.8052,
+      "homeRequestedAt": 1789933150770.783,
+      "endAt": 1789933151348.4138,
+      "stableSince": 1789933150813.1187,
+      "finalJointsDeg": [
+        0,
+        -0.0027633610656858,
+        -0.000050981949536059,
+        0,
+        0.000016510660712033,
+        -0.000007535390837651
+      ]
+    },
+    "Robot2": {
+      "beginAt": 1789933143670.6218,
+      "homeRequestedAt": 1789933161170.8447,
+      "endAt": 1789933161737.0698,
+      "stableSince": 1789933161214.3538,
+      "finalJointsDeg": [
+        -0.000022701803955338,
+        -0.000015409686442718,
+        0,
+        -0.000066379602668196,
+        -0.000017986995953524,
+        -9.8522650875022e-14
+      ]
+    },
+    "Robot4": {
+      "beginAt": 1789933153170.7236,
+      "homeRequestedAt": null,
+      "endAt": null
+    },
+    "Robot5": {
+      "beginAt": 1789933161770.8733,
+      "homeRequestedAt": null,
+      "endAt": null
+    }
+  },
+  "success": false,
+  "startedAt": 1789933137087.3652,
+  "placedAt": null,
+  "selectedRoute": [
+    "Robot1",
+    "Robot2",
+    "Robot4",
+    "Robot5"
+  ],
+  "startedSimTime": 56.800000846386,
+  "error": "[robot4_agent] Giver home motion failed: motion_execution_failed",
+  "observationEndedAt": 1789933167172.4287
+}

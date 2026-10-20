@@ -1,0 +1,46 @@
+/*
+    Generated multi-robot JaCaMo application for Robot1_Robot2_Robot3_Robot4_Robot5.
+    Start the shared lower runtime and every AgentThing before this application.
+*/
+
+mas robot1_robot2_robot3_robot4_robot5_mas {
+    agent robot1_agent: "/home/maxchrs/Desktop/MA/WoMAT/performance_log/e10_pilot/agents/robot1_agent.asl" {
+        focus: robot1_workspace.wotComm
+    }
+
+    agent robot2_agent: "/home/maxchrs/Desktop/MA/WoMAT/performance_log/e10_pilot/agents/robot2_agent.asl" {
+        focus: robot2_workspace.wotComm
+    }
+
+    agent robot3_agent: "/home/maxchrs/Desktop/MA/WoMAT/performance_log/e10_pilot/agents/robot3_agent.asl" {
+        focus: robot3_workspace.wotComm
+    }
+
+    agent robot4_agent: "/home/maxchrs/Desktop/MA/WoMAT/performance_log/e10_pilot/agents/robot4_agent.asl" {
+        focus: robot4_workspace.wotComm
+    }
+
+    agent robot5_agent: "/home/maxchrs/Desktop/MA/WoMAT/performance_log/e10_pilot/agents/robot5_agent.asl" {
+        focus: robot5_workspace.wotComm
+    }
+
+    workspace robot1_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot1")
+    }
+
+    workspace robot2_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot2")
+    }
+
+    workspace robot3_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot3")
+    }
+
+    workspace robot4_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot4")
+    }
+
+    workspace robot5_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot5")
+    }
+}

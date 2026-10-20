@@ -1,0 +1,206 @@
+{
+  "name": "YouBot",
+  "phase": 1,
+  "urdfPath": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT/Assets/URDFs/youbot_description/urdf/youbot.urdf",
+  "configKey": "YouBot",
+  "mobility": {
+    "type": "omnidirectional",
+    "baseLink": "base_footprint",
+    "wheelJoints": [
+      "caster_joint_fl",
+      "wheel_joint_fl",
+      "caster_joint_fr",
+      "wheel_joint_fr",
+      "caster_joint_bl",
+      "wheel_joint_bl",
+      "caster_joint_br",
+      "wheel_joint_br"
+    ],
+    "armJoints": [
+      "arm_joint_1",
+      "arm_joint_2",
+      "arm_joint_3",
+      "arm_joint_4",
+      "arm_joint_5"
+    ],
+    "armRootLink": "arm_link_0",
+    "tipLink": "arm_link_5",
+    "gripperJoints": [
+      "gripper_finger_joint_l",
+      "gripper_finger_joint_r"
+    ],
+    "armJointLimits": {
+      "arm_joint_1": {
+        "lower": 0,
+        "upper": 5.899212871740834,
+        "effort": 9.5,
+        "velocity": 1.5707963267948966
+      },
+      "arm_joint_2": {
+        "lower": 0,
+        "upper": 2.705260340591211,
+        "effort": 9.5,
+        "velocity": 1.5707963267948966
+      },
+      "arm_joint_3": {
+        "lower": -5.183627878423159,
+        "upper": 0,
+        "effort": 6,
+        "velocity": 1.5707963267948966
+      },
+      "arm_joint_4": {
+        "lower": 0,
+        "upper": 3.5779249665883754,
+        "effort": 2,
+        "velocity": 1.5707963267948966
+      },
+      "arm_joint_5": {
+        "lower": 0,
+        "upper": 5.8468529941810035,
+        "effort": 1,
+        "velocity": 1.5707963267948966
+      }
+    },
+    "warnings": []
+  },
+  "lowerLayerUrl": "http://localhost:8094/coppeliasim_virtualrobot_youbot",
+  "ports": {
+    "lowerThing": 8094,
+    "agentThing": 8095,
+    "websocket": 8195
+  },
+  "generatedFiles": {
+    "agentTd": "src/td/generated/YouBot.agent.td.json",
+    "agentSpeak": "src/agt/generated/youBot_agent.asl",
+    "agentThing": "src/WoT/generated/YouBot_agent_thing.ts",
+    "lowerThing": "src/WoT/generated/YouBot_lower_thing.ts",
+    "jcm": "generated/robots/YouBot/YouBot.jcm",
+    "configFragment": "generated/robots/YouBot/config.fragment.json"
+  },
+  "pipeline": {
+    "robwotRoot": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT",
+    "urdfLoadScene": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT/Coppeliasim scene/robot_urdf_load_scene.ttt",
+    "workspaceSceneTemplate": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT/Coppeliasim scene/robot_virtual_workspace.ttt",
+    "workspaceDriver": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT/Library/GenerateRobotDescription/robot_driver_workspace.lua",
+    "robotTemplate": "/home/maxchrs/Desktop/MA/WoMAT/external/RobWoT/Library/GenerateRobotDescription/robot_template.json",
+    "workspaceDivisions": 8,
+    "collisionObstacles": [
+      "80cmHighWall50cm",
+      "YouBot_grip_support"
+    ],
+    "workspaceRandomSteps": 8000
+  },
+  "runtime": {
+    "jointSteps": 60,
+    "cartesianSteps": 60,
+    "stepDelayMs": 25,
+    "cartesianMaxVelocity": 0.45,
+    "jointMaxVelocityDeg": 180,
+    "workspaceTolerance": 0.08,
+    "enableCollisionCheck": true,
+    "enableJointCollisionPreflight": true,
+    "workspaceVisuals": true,
+    "collisionObstacles": [
+      "80cmHighWall50cm",
+      "YouBot_grip_support"
+    ],
+    "gripper": {
+      "modelName": "YouBot_tcp_gripper",
+      "modelPath": "/home/maxchrs/CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/models/components/grippers/RG2.ttm",
+      "modelPosition": [
+        0,
+        0,
+        0
+      ],
+      "modelOrientation": [
+        -1.57079632679,
+        0,
+        0
+      ],
+      "openJointPositions": [
+        0.06
+      ],
+      "closedJointPositions": [
+        0
+      ],
+      "jawCenterOffset": [
+        0,
+        0.18,
+        -0.005
+      ],
+      "objectName": "YouBot_grip_cube",
+      "supportName": "YouBot_grip_support",
+      "objectSize": [
+        0.045,
+        0.045,
+        0.045
+      ],
+      "objectPosition": [
+        0.45,
+        0.2,
+        0.325
+      ],
+      "supportSize": [
+        0.18,
+        0.18,
+        0.24
+      ],
+      "supportPosition": [
+        0.45,
+        0.2,
+        0.18
+      ],
+      "gripThreshold": 0.09
+    },
+    "base": {
+      "maxLinearVelocity": 0.4,
+      "maxAngularVelocityDeg": 90,
+      "stepDelayMs": 25,
+      "positionTolerance": 0.03,
+      "thetaToleranceDeg": 2
+    }
+  },
+  "agentDefaults": {
+    "homePosition": [
+      0,
+      0,
+      0.3
+    ],
+    "horizontalPosition": [
+      0.2,
+      0,
+      0.3
+    ],
+    "gripPosition": [
+      0.45,
+      0.02,
+      0.33
+    ],
+    "carryPosition": [
+      0.4,
+      0.02,
+      0.53
+    ],
+    "homeJoints": null,
+    "baseHomePose": [
+      0,
+      0,
+      0
+    ],
+    "basePickPose": [
+      0.9,
+      0,
+      0
+    ],
+    "baseDropPose": [
+      0,
+      0.9,
+      90
+    ]
+  },
+  "config": {
+    "rootConfigUpdated": true,
+    "rootConfigKeyExists": true
+  },
+  "nextPhase": "Extend the RobWoT bridge for mobile platforms: kinematic base import, arm-only workspace sampling, and a lower TD with moveTo/moveArmTo/pick/drop."
+}

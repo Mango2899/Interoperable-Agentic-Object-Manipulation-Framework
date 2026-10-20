@@ -1,0 +1,28 @@
+{
+  "jointTypes": [
+    "Revolute_joint",
+    "Revolute_joint",
+    "Revolute_joint",
+    "Revolute_joint",
+    "Revolute_joint",
+    "Revolute_joint"
+  ],
+  "jointLimitHighs": [
+    3.14,
+    3.14,
+    2.861,
+    3.14,
+    3.14,
+    6.28
+  ],
+  "jointAmount": 6,
+  "jointLimitLows": [
+    -3.14,
+    -3.14,
+    -2.861,
+    -3.14,
+    -3.14,
+    -6.28
+  ],
+  "robotName": "Robot5"
+}

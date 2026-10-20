@@ -1,0 +1,208 @@
+{
+  "title": "Robot3_agent",
+  "description": "Generated WoMAT AgentThing for Robot3.",
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "saref": "https://w3id.org/saref#"
+    }
+  ],
+  "securityDefinitions": {
+    "no_sec": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "no_sec",
+  "properties": {
+    "state": {
+      "type": "string",
+      "@type": "testOntology:State",
+      "description": "The status of the generated robot agent.",
+      "enum": [
+        "idle",
+        "moving",
+        "holdingObject",
+        "broken"
+      ],
+      "forms": [
+        {
+          "href": "/properties/state",
+          "htv:methodName": "GET"
+        }
+      ]
+    }
+  },
+  "actions": {
+    "goHome": {
+      "description": "Moves the robot to its configured home position.",
+      "@type": "testOntology:GoHome",
+      "forms": [
+        {
+          "href": "/actions/goHome",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "moveTo": {
+      "description": "Moves the robot to a cartesian position.",
+      "@type": "testOntology:MoveToPosition",
+      "input": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number",
+            "@type": "testOntology:PositionX"
+          },
+          "y": {
+            "type": "number",
+            "@type": "testOntology:PositionY"
+          },
+          "z": {
+            "type": "number",
+            "@type": "testOntology:PositionZ"
+          }
+        },
+        "required": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "forms": [
+        {
+          "href": "/actions/moveTo",
+          "contentType": "application/json",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "horizontalDemo": {
+      "description": "Moves the robot to its generated horizontal demo target and then back home.",
+      "@type": "testOntology:HorizontalDemo",
+      "forms": [
+        {
+          "href": "/actions/horizontalDemo",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "pickCube": {
+      "description": "Picks the generated cube: hovers above it with the tool pointing down, descends, grips, and lifts to the configured carry pose still holding it.",
+      "@type": "testOntology:PickCube",
+      "forms": [
+        {
+          "href": "/actions/pickCube",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "closeGripper": {
+      "description": "Close the generated virtual gripper.",
+      "@type": "testOntology:CloseGripper",
+      "forms": [
+        {
+          "href": "/actions/closeGripper",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "openGripper": {
+      "description": "Open the generated virtual gripper.",
+      "@type": "testOntology:OpenGripper",
+      "forms": [
+        {
+          "href": "/actions/openGripper",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "askHow": {
+      "description": "Ask the agent for exchangeable plans.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "planLabel": {
+            "type": "string"
+          },
+          "targetTDAdress": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "planLabel",
+          "targetTDAdress"
+        ]
+      },
+      "output": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "forms": [
+        {
+          "href": "/actions/askPlan",
+          "contentType": "application/json"
+        }
+      ]
+    },
+    "tell": {
+      "description": "Tell the agent a belief.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "belief": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "belief"
+        ],
+        "additionalProperties": true
+      },
+      "forms": [
+        {
+          "href": "/actions/tell",
+          "contentType": "application/json"
+        }
+      ]
+    },
+    "send": {
+      "description": "Send a message to the agent.",
+      "input": {
+        "type": "object"
+      },
+      "forms": [
+        {
+          "href": "/actions/send",
+          "contentType": "application/json"
+        }
+      ]
+    },
+    "deliverCube": {
+      "description": "Send the cube to the goal support along the route this cell discovered for itself. Each arm follows its own next hop, so one call to whichever arm holds the cube moves it the whole way.",
+      "forms": [
+        {
+          "href": "/actions/deliverCube",
+          "htv:methodName": "POST"
+        }
+      ]
+    }
+  }
+}

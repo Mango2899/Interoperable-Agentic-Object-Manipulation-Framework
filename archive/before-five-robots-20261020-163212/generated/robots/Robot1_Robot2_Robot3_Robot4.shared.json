@@ -1,0 +1,246 @@
+{
+  "name": "Robot1_Robot2_Robot3_Robot4",
+  "scene": "generated/robots/Robot1_Robot2_Robot3_Robot4_shared.ttt",
+  "environmentScene": "generated/robots/Robot1_Robot2_Robot3_Robot4_environment.ttt",
+  "collisionObstacles": [
+    "Robot1_wall",
+    "Robot2_wall",
+    "Robot3_wall",
+    "Robot4_wall",
+    "Robot1_grip_support",
+    "Robot4_grip_support_b"
+  ],
+  "support": "Robot1_grip_support",
+  "cube": "Robot1_grip_cube",
+  "interactionSpace": {
+    "ownership": "canonical_pair_first_robot",
+    "pairs": [
+      {
+        "key": "Robot1__Robot2",
+        "robots": [
+          "Robot1",
+          "Robot2"
+        ],
+        "ownerRobot": "Robot1",
+        "discovery": "workspace_aabb_overlap",
+        "output": {
+          "csv": "generated/robots/interactions/Robot1__Robot2/space.csv",
+          "metadata": "generated/robots/interactions/Robot1__Robot2/space.json"
+        }
+      },
+      {
+        "key": "Robot1__Robot3",
+        "robots": [
+          "Robot1",
+          "Robot3"
+        ],
+        "ownerRobot": "Robot1",
+        "discovery": "workspace_aabb_overlap",
+        "output": {
+          "csv": "generated/robots/interactions/Robot1__Robot3/space.csv",
+          "metadata": "generated/robots/interactions/Robot1__Robot3/space.json"
+        }
+      },
+      {
+        "key": "Robot1__Robot4",
+        "robots": [
+          "Robot1",
+          "Robot4"
+        ],
+        "ownerRobot": "Robot1",
+        "discovery": "workspace_aabb_overlap",
+        "output": {
+          "csv": "generated/robots/interactions/Robot1__Robot4/space.csv",
+          "metadata": "generated/robots/interactions/Robot1__Robot4/space.json"
+        }
+      },
+      {
+        "key": "Robot2__Robot3",
+        "robots": [
+          "Robot2",
+          "Robot3"
+        ],
+        "ownerRobot": "Robot2",
+        "discovery": "workspace_aabb_overlap",
+        "output": {
+          "csv": "generated/robots/interactions/Robot2__Robot3/space.csv",
+          "metadata": "generated/robots/interactions/Robot2__Robot3/space.json"
+        }
+      },
+      {
+        "key": "Robot3__Robot4",
+        "robots": [
+          "Robot3",
+          "Robot4"
+        ],
+        "ownerRobot": "Robot3",
+        "discovery": "workspace_aabb_overlap",
+        "output": {
+          "csv": "generated/robots/interactions/Robot3__Robot4/space.csv",
+          "metadata": "generated/robots/interactions/Robot3__Robot4/space.json"
+        }
+      }
+    ],
+    "targetVoxelCount": 1000,
+    "proximityFactor": 1.25,
+    "sampleSize": 20000,
+    "spacingPercentile": 0.75,
+    "minVoxelSize": 0,
+    "maxVoxelSize": 0.2,
+    "minimumSharedVoxels": 10,
+    "bidirectional": true,
+    "seed": 42,
+    "centralCore": {
+      "lowerQuantile": 0.2,
+      "upperQuantile": 0.8,
+      "minimumCandidates": 10,
+      "maximumCandidates": 60
+    },
+    "visual": {
+      "object": "workspace_shared_reachable_points",
+      "color": [
+        0,
+        255,
+        0
+      ]
+    }
+  },
+  "taskSites": [
+    {
+      "alias": "Robot1_grip_support",
+      "size": [
+        0.14,
+        0.14,
+        0.16
+      ],
+      "position": [
+        0.75,
+        0.4,
+        0.08
+      ],
+      "yawDeg": 0,
+      "payload": {
+        "alias": "Robot1_grip_cube",
+        "size": [
+          0.045,
+          0.045,
+          0.045
+        ],
+        "position": [
+          0.75,
+          0.4,
+          0.185
+        ]
+      }
+    },
+    {
+      "alias": "Robot4_grip_support_b",
+      "size": [
+        0.14,
+        0.14,
+        0.16
+      ],
+      "position": [
+        1.5,
+        -2.2,
+        0.08
+      ],
+      "yawDeg": 0,
+      "payload": null
+    }
+  ],
+  "robots": [
+    {
+      "name": "Robot1",
+      "manifest": "generated/robots/Robot1/manifest.json",
+      "workspaceCsv": "generated/robots/Robot1/info/Robot1_data_point.csv",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotationDeg": -14.999999999999998,
+      "orientationDeg": [
+        0,
+        0,
+        -14.999999999999998
+      ],
+      "wall": "Robot1_wall",
+      "wallOffset": [
+        0,
+        0,
+        0
+      ],
+      "wallYawDeg": null
+    },
+    {
+      "name": "Robot2",
+      "manifest": "generated/robots/Robot2/manifest.json",
+      "workspaceCsv": "generated/robots/Robot2/info/Robot2_data_point.csv",
+      "offset": [
+        1.5,
+        0.2,
+        0
+      ],
+      "rotationDeg": 180,
+      "orientationDeg": [
+        0,
+        0,
+        180
+      ],
+      "wall": "Robot2_wall",
+      "wallOffset": [
+        0,
+        0,
+        0
+      ],
+      "wallYawDeg": null
+    },
+    {
+      "name": "Robot3",
+      "manifest": "generated/robots/Robot3/manifest.json",
+      "workspaceCsv": "generated/robots/Robot3/info/Robot3_data_point.csv",
+      "offset": [
+        2.1,
+        -1,
+        0
+      ],
+      "rotationDeg": 180,
+      "orientationDeg": [
+        0,
+        -90,
+        180
+      ],
+      "wall": "Robot3_wall",
+      "wallOffset": [
+        -0.42876,
+        -0.25726,
+        0
+      ],
+      "wallYawDeg": null
+    },
+    {
+      "name": "Robot4",
+      "manifest": "generated/robots/Robot4/manifest.json",
+      "workspaceCsv": "generated/robots/Robot4/info/Robot4_data_point.csv",
+      "offset": [
+        1.5,
+        -2,
+        0
+      ],
+      "rotationDeg": 0,
+      "orientationDeg": [
+        0,
+        0,
+        0
+      ],
+      "wall": "Robot4_wall",
+      "wallOffset": [
+        0.9,
+        0.5,
+        0
+      ],
+      "wallYawDeg": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "robotOrigin": "task",
+  "durationUnit": "wall-clock seconds",
+  "successfulTrialsOnly": true,
+  "standardDeviation": "sample",
+  "representativeTimeline": "lower median makespan",
+  "simulationOutputs": {
+    "durationUnit": "simulation seconds",
+    "homeEndpoints": "exact recorded joint sample",
+    "agentEvents": "following sample; lower and upper bounds retained",
+    "start": "last scene sample before delivery request"
+  }
+}

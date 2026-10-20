@@ -1,0 +1,26 @@
+/*
+    Combined JaCaMo application for the multi-robot setup Robot1 (UR10) + Robot2 (UR3).
+    Start the shared CoppeliaSim runtime and both AgentThing bridges first:
+      npm run robot:serve -- --manifests generated/robots/Robot1/manifest.json,generated/robots/Robot2/manifest.json
+      npm run robot:agent -- --manifest generated/robots/Robot1/manifest.json
+      npm run robot:agent -- --manifest generated/robots/Robot2/manifest.json
+    Then run with: ./gradlew -Pjcm=generated/robots/Robot1_Robot2.jcm
+*/
+
+mas robot1_robot2_mas {
+    agent robot1_agent: generated/robot1_agent.asl {
+        focus: robot1_workspace.wotComm
+    }
+
+    agent robot2_agent: generated/robot2_agent.asl {
+        focus: robot2_workspace.wotComm
+    }
+
+    workspace robot1_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot1")
+    }
+
+    workspace robot2_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot2")
+    }
+}

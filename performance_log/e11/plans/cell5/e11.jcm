@@ -1,0 +1,37 @@
+mas e11_cell5 {
+    agent robot1_agent: performance_log/e11/plans/cell5/robot1_agent.asl {
+        ag-arch: e11.MessageTrace
+        focus: robot1_workspace.wotComm
+    }
+    agent robot2_agent: performance_log/e11/plans/cell5/robot2_agent.asl {
+        ag-arch: e11.MessageTrace
+        focus: robot2_workspace.wotComm
+    }
+    agent robot3_agent: performance_log/e11/plans/cell5/robot3_agent.asl {
+        ag-arch: e11.MessageTrace
+        focus: robot3_workspace.wotComm
+    }
+    agent robot4_agent: performance_log/e11/plans/cell5/robot4_agent.asl {
+        ag-arch: e11.MessageTrace
+        focus: robot4_workspace.wotComm
+    }
+    agent robot5_agent: performance_log/e11/plans/cell5/robot5_agent.asl {
+        ag-arch: e11.MessageTrace
+        focus: robot5_workspace.wotComm
+    }
+    workspace robot1_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot1")
+    }
+    workspace robot2_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot2")
+    }
+    workspace robot3_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot3")
+    }
+    workspace robot4_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot4")
+    }
+    workspace robot5_workspace {
+        artifact wotComm: wotCommunication.wotCommunicator("Robot5")
+    }
+}

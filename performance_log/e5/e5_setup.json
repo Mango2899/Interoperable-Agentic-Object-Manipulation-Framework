@@ -1,0 +1,58 @@
+{
+  "cells": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "samplesDir": "generated/experiments/e1/samples",
+  "cloudsFrom": "five-robot scene (E1 sampling), reused in every cell",
+  "minimumSharedVoxels": 20,
+  "estimatorOptions": {
+    "ownership": "canonical_pair_first_robot",
+    "targetVoxelCount": 1000,
+    "proximityFactor": 1.25,
+    "sampleSize": 20000,
+    "spacingPercentile": 0.75,
+    "minVoxelSize": 0,
+    "maxVoxelSize": 0.2,
+    "minimumSharedVoxels": 20,
+    "bidirectional": true,
+    "seed": 42,
+    "centralCore": {
+      "lowerQuantile": 0.2,
+      "upperQuantile": 0.8,
+      "minimumCandidates": 10,
+      "maximumCandidates": 60
+    },
+    "visual": {
+      "object": "workspace_shared_reachable_points",
+      "color": [
+        0,
+        255,
+        0
+      ]
+    }
+  },
+  "layouts": 150,
+  "layoutSeed": 1,
+  "layoutCloudSeed": 1,
+  "layoutSpan": [
+    0.55,
+    1.25
+  ],
+  "layoutZSpread": 0,
+  "finishedAt": "2026-09-20T12:21:24.071Z"
+}

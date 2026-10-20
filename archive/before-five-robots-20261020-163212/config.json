@@ -1,0 +1,72 @@
+{
+  "objectSensor": {
+    "websocketPort": 8094,
+    "TDPort": 8084,
+    "staticAddress": "localhost"
+  },
+  "robotArm0": {
+    "websocketPort": 8095,
+    "TDPort": 8085,
+    "staticAddress": "localhost"
+  },
+  "robotArm1": {
+    "websocketPort": 8096,
+    "TDPort": 8086,
+    "staticAddress": "localhost"
+  },
+  "agent2Thing": {
+    "websocketPort": 8097,
+    "TDPort": 8087,
+    "staticAddress": "localhost"
+  },
+  "conveyor1": {
+    "websocketPort": 8098,
+    "TDPort": 8088,
+    "staticAddress": "localhost"
+  },
+  "conveyor2": {
+    "websocketPort": 8099,
+    "TDPort": 8089,
+    "staticAddress": "localhost"
+  },
+  "uarm": {
+    "websocketPort": 8100,
+    "TDPort": 8090,
+    "staticAddress": "localhost"
+  },
+  "ur10": {
+    "websocketPort": 8101,
+    "TDPort": 8091,
+    "staticAddress": "localhost"
+  },
+  "YouBot": {
+    "websocketPort": 8195,
+    "TDPort": 8095,
+    "staticAddress": "localhost"
+  },
+  "Robot1": {
+    "websocketPort": 8211,
+    "TDPort": 8111,
+    "staticAddress": "localhost"
+  },
+  "Robot2": {
+    "websocketPort": 8221,
+    "TDPort": 8121,
+    "staticAddress": "localhost"
+  },
+  "Robot3": {
+    "websocketPort": 8231,
+    "TDPort": 8131,
+    "staticAddress": "localhost"
+  },
+  "Robot4": {
+    "websocketPort": 8241,
+    "TDPort": 8141,
+    "staticAddress": "localhost"
+  },
+  "Robot5": {
+    "websocketPort": 8251,
+    "TDPort": 8151,
+    "staticAddress": "localhost"
+  }
+}

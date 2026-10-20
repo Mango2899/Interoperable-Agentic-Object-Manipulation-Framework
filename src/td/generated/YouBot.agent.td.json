@@ -1,0 +1,257 @@
+{
+  "title": "YouBot_agent",
+  "description": "Generated WoMAT AgentThing for the mobile platform YouBot.",
+  "@context": [
+    "https://www.w3.org/2022/wot/td/v1.1",
+    {
+      "saref": "https://w3id.org/saref#"
+    }
+  ],
+  "securityDefinitions": {
+    "no_sec": {
+      "scheme": "nosec"
+    }
+  },
+  "security": "no_sec",
+  "properties": {
+    "state": {
+      "type": "string",
+      "@type": "testOntology:State",
+      "description": "The status of the generated robot agent.",
+      "enum": [
+        "idle",
+        "navigating",
+        "moving",
+        "holdingObject",
+        "broken"
+      ],
+      "forms": [
+        {
+          "href": "/properties/state",
+          "htv:methodName": "GET"
+        }
+      ]
+    }
+  },
+  "actions": {
+    "goHome": {
+      "description": "Moves the robot to its configured home position.",
+      "@type": "testOntology:GoHome",
+      "forms": [
+        {
+          "href": "/actions/goHome",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "closeGripper": {
+      "description": "Close the generated virtual gripper.",
+      "@type": "testOntology:CloseGripper",
+      "forms": [
+        {
+          "href": "/actions/closeGripper",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "openGripper": {
+      "description": "Open the generated virtual gripper.",
+      "@type": "testOntology:OpenGripper",
+      "forms": [
+        {
+          "href": "/actions/openGripper",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "askHow": {
+      "description": "Ask the agent for exchangeable plans.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "planLabel": {
+            "type": "string"
+          },
+          "targetTDAdress": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "planLabel",
+          "targetTDAdress"
+        ]
+      },
+      "output": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        }
+      },
+      "forms": [
+        {
+          "href": "/actions/askPlan",
+          "contentType": "application/json"
+        }
+      ]
+    },
+    "tell": {
+      "description": "Tell the agent a belief.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "belief": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "belief"
+        ],
+        "additionalProperties": true
+      },
+      "forms": [
+        {
+          "href": "/actions/tell",
+          "contentType": "application/json"
+        }
+      ]
+    },
+    "send": {
+      "description": "Send a message to the agent.",
+      "input": {
+        "type": "object"
+      },
+      "forms": [
+        {
+          "href": "/actions/send",
+          "contentType": "application/json"
+        }
+      ]
+    },
+    "goTo": {
+      "description": "Drives the platform to a pose in the plane. theta is the heading in degrees.",
+      "@type": "testOntology:GoToPose",
+      "input": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number",
+            "unit": "meter",
+            "@type": "testOntology:PositionX"
+          },
+          "y": {
+            "type": "number",
+            "unit": "meter",
+            "@type": "testOntology:PositionY"
+          },
+          "theta": {
+            "type": "number",
+            "unit": "deg",
+            "@type": "testOntology:Heading"
+          }
+        },
+        "required": [
+          "x",
+          "y"
+        ]
+      },
+      "forms": [
+        {
+          "href": "/actions/goTo",
+          "contentType": "application/json",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "moveArmTo": {
+      "description": "Moves the arm end-effector to a cartesian position relative to the platform base.",
+      "@type": "testOntology:MoveArmToPosition",
+      "input": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number",
+            "unit": "meter",
+            "@type": "testOntology:PositionX"
+          },
+          "y": {
+            "type": "number",
+            "unit": "meter",
+            "@type": "testOntology:PositionY"
+          },
+          "z": {
+            "type": "number",
+            "unit": "meter",
+            "@type": "testOntology:PositionZ"
+          }
+        },
+        "required": [
+          "x",
+          "y",
+          "z"
+        ]
+      },
+      "forms": [
+        {
+          "href": "/actions/moveArmTo",
+          "contentType": "application/json",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "pick": {
+      "description": "Drives to the configured pick pose, moves the arm to the grip position, closes the gripper, and lifts to the carry position.",
+      "@type": "testOntology:Pick",
+      "forms": [
+        {
+          "href": "/actions/pick",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "drop": {
+      "description": "Drives to the configured drop pose, lowers the arm, opens the gripper, and retracts to the carry position.",
+      "@type": "testOntology:Drop",
+      "forms": [
+        {
+          "href": "/actions/drop",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "transportDemo": {
+      "description": "Full mobile manipulation demo: pick at the pick pose, drop at the drop pose, return to the home pose.",
+      "@type": "testOntology:TransportDemo",
+      "forms": [
+        {
+          "href": "/actions/transportDemo",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "deliverCube": {
+      "description": "Send the cube to the goal support along the route this cell discovered for itself. Each arm follows its own next hop, so one call to whichever arm holds the cube moves it the whole way.",
+      "forms": [
+        {
+          "href": "/actions/deliverCube",
+          "htv:methodName": "POST"
+        }
+      ]
+    }
+  }
+}

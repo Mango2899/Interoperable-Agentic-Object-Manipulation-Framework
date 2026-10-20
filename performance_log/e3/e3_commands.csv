@@ -1,0 +1,793 @@
+robot,target,kind,config,x,y,z,outcome,success,reason,plannerMessage,planner,startKind,decisionMs,totalMs,contactSteps,pressSteps,stepsObserved,contactKind,contactObstacle,contactOwner,admissionOk,admissionReason,linePreflightOk,linePreflightReason,linePreflightObstacle,goalSearched,goalFound,jointPreflightOk,jointPreflightReason,jointPreflightSkipped,plannerOk,plannerReason,finalError,observerErrors
+Robot2,1,near,full,-0.100589,0.415509,0.290810,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,402.000,2454,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00274030,0
+Robot2,1,near,no_admission,-0.100589,0.415509,0.290810,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,196.000,2189,0,0,57,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00274030,0
+Robot2,1,near,no_preflight,-0.100589,0.415509,0.290810,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,174.000,2161,0,0,57,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00274030,0
+Robot2,1,near,no_fallback,-0.100589,0.415509,0.290810,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,237.000,2228,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00274030,0
+Robot2,1,near,no_watchdog,-0.100589,0.415509,0.290810,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,243.000,2120,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00274030,0
+Robot2,2,box,no_admission,-0.449393,-0.609976,0.160791,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4253,4253,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,2,box,no_preflight,-0.449393,-0.609976,0.160791,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4238,4238,0,0,0,nan,nan,nan,0,target_inside_obstacle,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,2,box,no_fallback,-0.449393,-0.609976,0.160791,rejected_admission,0,target_inside_obstacle,nan,nan,nan,199,199,0,0,0,nan,nan,nan,0,target_inside_obstacle,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,2,box,no_watchdog,-0.449393,-0.609976,0.160791,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4227,4227,0,0,0,nan,nan,nan,0,target_inside_obstacle,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,2,box,full,-0.449393,-0.609976,0.160791,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4215,4215,0,0,0,nan,nan,nan,0,target_inside_obstacle,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,3,obstacle,no_preflight,0.210995,-0.493677,0.213447,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,172.000,3154,0,0,89,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00534938,0
+Robot2,3,obstacle,no_fallback,0.210995,-0.493677,0.213447,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,256.000,3344,0,0,89,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00534938,0
+Robot2,3,obstacle,no_watchdog,0.210995,-0.493677,0.213447,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,253.000,3010,0,0,89,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00534938,0
+Robot2,3,obstacle,full,0.210995,-0.493677,0.213447,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,256.000,3299,0,0,89,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00534938,0
+Robot2,3,obstacle,no_admission,0.210995,-0.493677,0.213447,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,203.000,3259,0,0,89,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00534938,0
+Robot2,4,obstacle,no_fallback,-0.147742,-0.0189358,0.192355,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,267.000,2587,0,0,65,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000629177,0
+Robot2,4,obstacle,no_watchdog,-0.147742,-0.0189358,0.192355,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,265.000,2350,0,0,65,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000629177,0
+Robot2,4,obstacle,full,-0.147742,-0.0189358,0.192355,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,277.000,2625,0,0,65,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000629177,0
+Robot2,4,obstacle,no_admission,-0.147742,-0.0189358,0.192355,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,223.000,2502,0,0,65,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000629177,0
+Robot2,4,obstacle,no_preflight,-0.147742,-0.0189358,0.192355,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,169.000,2363,0,0,65,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000629177,0
+Robot2,5,obstacle,no_watchdog,-0.0583058,-0.0577400,0.379034,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,254.000,1822,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000313872,0
+Robot2,5,obstacle,full,-0.0583058,-0.0577400,0.379034,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,251.000,2007,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000313872,0
+Robot2,5,obstacle,no_admission,-0.0583058,-0.0577400,0.379034,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,202.000,1994,0,0,51,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000313872,0
+Robot2,5,obstacle,no_preflight,-0.0583058,-0.0577400,0.379034,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,1921,0,0,51,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000313872,0
+Robot2,5,obstacle,no_fallback,-0.0583058,-0.0577400,0.379034,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,252.000,2021,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000313872,0
+Robot2,6,near,full,-0.0119792,0.442697,0.255578,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2286,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00289253,0
+Robot2,6,near,no_admission,-0.0119792,0.442697,0.255578,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,190.000,2272,0,0,59,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00289253,0
+Robot2,6,near,no_preflight,-0.0119792,0.442697,0.255578,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,180.000,2293,0,0,59,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00289253,0
+Robot2,6,near,no_fallback,-0.0119792,0.442697,0.255578,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,247.000,2352,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00289253,0
+Robot2,6,near,no_watchdog,-0.0119792,0.442697,0.255578,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,264.000,2174,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00289253,0
+Robot2,7,near,no_admission,-0.0926918,0.000703556,0.337421,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,204.000,2136,0,0,53,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000165141,0
+Robot2,7,near,no_preflight,-0.0926918,0.000703556,0.337421,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,185.000,2056,0,0,53,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000165141,0
+Robot2,7,near,no_fallback,-0.0926918,0.000703556,0.337421,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,258.000,2090,0,0,53,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000165141,0
+Robot2,7,near,no_watchdog,-0.0926918,0.000703556,0.337421,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,244.000,1889,0,0,53,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000165141,0
+Robot2,7,near,full,-0.0926918,0.000703556,0.337421,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,251.000,2136,0,0,53,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000165141,0
+Robot2,8,box,no_preflight,-0.549688,-0.461034,0.868455,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4234,4234,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,8,box,no_fallback,-0.549688,-0.461034,0.868455,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,194,194,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,8,box,no_watchdog,-0.549688,-0.461034,0.868455,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4221,4221,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,8,box,full,-0.549688,-0.461034,0.868455,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4236,4236,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,8,box,no_admission,-0.549688,-0.461034,0.868455,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4245,4245,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,9,box,no_fallback,0.665568,-0.428771,0.190082,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,198,198,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,9,box,no_watchdog,0.665568,-0.428771,0.190082,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4228,4228,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,9,box,full,0.665568,-0.428771,0.190082,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4228,4228,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,9,box,no_admission,0.665568,-0.428771,0.190082,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,212.000,3467,0,0,92,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,9,box,no_preflight,0.665568,-0.428771,0.190082,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4219,4219,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,10,near,no_watchdog,-0.0962268,-0.0735914,0.153284,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,6633.00,10738,0,0,134,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.504340,0
+Robot2,10,near,full,-0.0962268,-0.0735914,0.153284,rejected_preflight,0,no_safe_path_found,nan,nan,nan,45589,45589,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,10,near,no_admission,-0.0962268,-0.0735914,0.153284,rejected_preflight,0,no_safe_path_found,nan,nan,nan,41404,41404,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,10,near,no_preflight,-0.0962268,-0.0735914,0.153284,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,157.000,2338,0,0,67,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000472498,0
+Robot2,10,near,no_fallback,-0.0962268,-0.0735914,0.153284,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,251,251,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,11,near,full,0.0382683,0.0263907,0.635252,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,222.000,1794,0,0,47,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00270864,0
+Robot2,11,near,no_admission,0.0382683,0.0263907,0.635252,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,1761,0,0,47,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00270864,0
+Robot2,11,near,no_preflight,0.0382683,0.0263907,0.635252,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,1697,0,0,47,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00270864,0
+Robot2,11,near,no_fallback,0.0382683,0.0263907,0.635252,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,219.000,1794,0,0,47,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00270864,0
+Robot2,11,near,no_watchdog,0.0382683,0.0263907,0.635252,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,227.000,1636,0,0,47,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00270864,0
+Robot2,12,near,no_admission,-0.00978561,0.246318,0.242783,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,180.000,2176,0,0,61,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000343749,0
+Robot2,12,near,no_preflight,-0.00978561,0.246318,0.242783,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,161.000,2160,0,0,61,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000343749,0
+Robot2,12,near,no_fallback,-0.00978561,0.246318,0.242783,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,232.000,2263,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000343749,0
+Robot2,12,near,no_watchdog,-0.00978561,0.246318,0.242783,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,234.000,2060,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000343749,0
+Robot2,12,near,full,-0.00978561,0.246318,0.242783,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,235.000,2255,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000343749,0
+Robot2,13,obstacle,no_preflight,-0.160437,-0.0458696,0.271447,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,167.000,2132,0,0,57,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000506149,0
+Robot2,13,obstacle,no_fallback,-0.160437,-0.0458696,0.271447,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,258.000,2210,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000506149,0
+Robot2,13,obstacle,no_watchdog,-0.160437,-0.0458696,0.271447,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,1958,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000506149,0
+Robot2,13,obstacle,full,-0.160437,-0.0458696,0.271447,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2138,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000506149,0
+Robot2,13,obstacle,no_admission,-0.160437,-0.0458696,0.271447,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,198.000,2087,0,0,57,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000506149,0
+Robot2,14,box,no_fallback,0.554058,0.0641401,0.290929,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,249.000,2665,0,0,73,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00439363,0
+Robot2,14,box,no_watchdog,0.554058,0.0641401,0.290929,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,251.000,2427,0,0,73,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00439363,0
+Robot2,14,box,full,0.554058,0.0641401,0.290929,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,247.000,2701,0,0,73,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00439363,0
+Robot2,14,box,no_admission,0.554058,0.0641401,0.290929,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,197.000,2631,0,0,73,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00439363,0
+Robot2,14,box,no_preflight,0.554058,0.0641401,0.290929,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,166.000,2593,0,0,73,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00439363,0
+Robot2,15,box,no_watchdog,0.433399,-0.139467,0.359142,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,251.000,2660,0,0,79,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00451375,0
+Robot2,15,box,full,0.433399,-0.139467,0.359142,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,250,2863,0,0,79,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00451375,0
+Robot2,15,box,no_admission,0.433399,-0.139467,0.359142,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,204.000,2957,0,0,79,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00451375,0
+Robot2,15,box,no_preflight,0.433399,-0.139467,0.359142,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,2940,0,0,79,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00451375,0
+Robot2,15,box,no_fallback,0.433399,-0.139467,0.359142,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,269.000,3038,0,0,79,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00451375,0
+Robot2,16,obstacle,full,-0.0185206,-0.0950095,0.303628,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,264.000,2224,0,0,55,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0000445432,0
+Robot2,16,obstacle,no_admission,-0.0185206,-0.0950095,0.303628,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,206.000,2126,0,0,55,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0000445432,0
+Robot2,16,obstacle,no_preflight,-0.0185206,-0.0950095,0.303628,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,172.000,2105,0,0,55,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.0000445432,0
+Robot2,16,obstacle,no_fallback,-0.0185206,-0.0950095,0.303628,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,246.000,2072,0,0,55,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0000445432,0
+Robot2,16,obstacle,no_watchdog,-0.0185206,-0.0950095,0.303628,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,244.000,1934,0,0,55,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0000445432,0
+Robot2,17,near,no_admission,0.0538406,0.0779554,0.175019,rejected_preflight,0,no_safe_path_found,nan,nan,nan,70704,70704,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,17,near,no_preflight,0.0538406,0.0779554,0.175019,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,160.000,1616,0,0,44,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,17,near,no_fallback,0.0538406,0.0779554,0.175019,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,251,251,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,17,near,no_watchdog,0.0538406,0.0779554,0.175019,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,6812.00,9982,0,0,107,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.278534,0
+Robot2,17,near,full,0.0538406,0.0779554,0.175019,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,5412.00,6960,0,0,47,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.599388,0
+Robot2,18,box,no_preflight,0.110675,-0.694030,0.900037,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4210,4210,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,18,box,no_fallback,0.110675,-0.694030,0.900037,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,185,185,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,18,box,no_watchdog,0.110675,-0.694030,0.900037,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4211,4211,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,18,box,full,0.110675,-0.694030,0.900037,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4214,4214,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,18,box,no_admission,0.110675,-0.694030,0.900037,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4232,4232,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,19,near,no_fallback,0.164807,0.184328,0.291422,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,257.000,2119,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000953047,0
+Robot2,19,near,no_watchdog,0.164807,0.184328,0.291422,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,235.000,1934,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000953047,0
+Robot2,19,near,full,0.164807,0.184328,0.291422,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,228.000,2096,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000953047,0
+Robot2,19,near,no_admission,0.164807,0.184328,0.291422,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,188.000,2072,0,0,57,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000953047,0
+Robot2,19,near,no_preflight,0.164807,0.184328,0.291422,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,165.000,2023,0,0,57,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000953047,0
+Robot2,20,obstacle,no_watchdog,-0.0954908,-0.160256,0.362678,rejected_preflight,0,no_safe_path_found,nan,nan,nan,41949,41949,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,20,obstacle,full,-0.0954908,-0.160256,0.362678,rejected_preflight,0,no_safe_path_found,nan,nan,nan,38690,38690,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,20,obstacle,no_admission,-0.0954908,-0.160256,0.362678,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,5934.00,9288,0,0,101,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,1,nan,0.454351,0
+Robot2,20,obstacle,no_preflight,-0.0954908,-0.160256,0.362678,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,163.000,1808,0,0,48,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,20,obstacle,no_fallback,-0.0954908,-0.160256,0.362678,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,266,266,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,21,near,full,0.269247,0.285203,0.161338,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,242.000,2435,0,0,67,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00239789,0
+Robot2,21,near,no_admission,0.269247,0.285203,0.161338,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,205.000,2420,0,0,67,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00239789,0
+Robot2,21,near,no_preflight,0.269247,0.285203,0.161338,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,160.000,2337,0,0,67,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00239789,0
+Robot2,21,near,no_fallback,0.269247,0.285203,0.161338,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2467,0,0,67,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00239789,0
+Robot2,21,near,no_watchdog,0.269247,0.285203,0.161338,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,243.000,2267,0,0,67,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00239789,0
+Robot2,22,box,no_admission,0.763051,0.0138735,0.271057,not_reached,0,cartesian_target_not_reached,nan,coppeliasim_smooth_pose_ik,cartesian,209.000,3095,0,0,85,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0573951,0
+Robot2,22,box,no_preflight,0.763051,0.0138735,0.271057,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4216,4216,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,22,box,no_fallback,0.763051,0.0138735,0.271057,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,188,188,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,22,box,no_watchdog,0.763051,0.0138735,0.271057,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4210,4210,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,22,box,full,0.763051,0.0138735,0.271057,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4211,4211,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,23,obstacle,no_preflight,-0.195090,0.0172803,0.254155,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,161.000,2147,0,0,59,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000550030,0
+Robot2,23,obstacle,no_fallback,-0.195090,0.0172803,0.254155,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2199,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000550030,0
+Robot2,23,obstacle,no_watchdog,-0.195090,0.0172803,0.254155,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,244.000,2057,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000550030,0
+Robot2,23,obstacle,full,-0.195090,0.0172803,0.254155,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,249.000,2219,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000550030,0
+Robot2,23,obstacle,no_admission,-0.195090,0.0172803,0.254155,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,190.000,2162,0,0,59,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000550030,0
+Robot2,24,near,no_fallback,0.201000,-0.108886,0.0470043,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,245,245,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,24,near,no_watchdog,0.201000,-0.108886,0.0470043,rejected_preflight,0,no_safe_path_found,nan,nan,nan,39540,39540,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,24,near,full,0.201000,-0.108886,0.0470043,rejected_preflight,0,no_safe_path_found,nan,nan,nan,22364,22364,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,24,near,no_admission,0.201000,-0.108886,0.0470043,rejected_preflight,0,no_safe_path_found,nan,nan,nan,40487,40487,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,24,near,no_preflight,0.201000,-0.108886,0.0470043,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,158.000,1639,0,0,44,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,25,near,no_watchdog,0.198656,0.140120,0.353548,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,231.000,1772,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00147248,0
+Robot2,25,near,full,0.198656,0.140120,0.353548,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,234.000,1944,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00147248,0
+Robot2,25,near,no_admission,0.198656,0.140120,0.353548,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,185.000,1939,0,0,51,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00147248,0
+Robot2,25,near,no_preflight,0.198656,0.140120,0.353548,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,165.000,1911,0,0,51,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00147248,0
+Robot2,25,near,no_fallback,0.198656,0.140120,0.353548,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,242.000,2019,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00147248,0
+Robot2,26,box,full,0.869463,0.565491,0.794200,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4228,4228,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,26,box,no_admission,0.869463,0.565491,0.794200,collision,0,cartesian_target_not_reached,nan,coppeliasim_smooth_pose_ik,cartesian,275.000,3543,17,0,89,obstacle,Floor,Floor,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.922429,0
+Robot2,26,box,no_preflight,0.869463,0.565491,0.794200,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4220,4220,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,26,box,no_fallback,0.869463,0.565491,0.794200,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,186,186,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,26,box,no_watchdog,0.869463,0.565491,0.794200,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4219,4219,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,27,near,no_admission,0.466446,0.0157253,0.335434,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,204.000,2598,0,0,71,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00370855,0
+Robot2,27,near,no_preflight,0.466446,0.0157253,0.335434,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,166.000,2563,0,0,71,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00370855,0
+Robot2,27,near,no_fallback,0.466446,0.0157253,0.335434,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,253.000,2632,0,0,71,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00370855,0
+Robot2,27,near,no_watchdog,0.466446,0.0157253,0.335434,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,263.000,2412,0,0,71,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00370855,0
+Robot2,27,near,full,0.466446,0.0157253,0.335434,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,253.000,2643,0,0,71,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00370855,0
+Robot2,28,near,no_preflight,0.301407,-0.0298360,0.288762,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,2333,0,0,65,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00231129,0
+Robot2,28,near,no_fallback,0.301407,-0.0298360,0.288762,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,249.000,2434,0,0,65,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00231129,0
+Robot2,28,near,no_watchdog,0.301407,-0.0298360,0.288762,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,253.000,2245,0,0,65,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00231129,0
+Robot2,28,near,full,0.301407,-0.0298360,0.288762,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,250,2466,0,0,65,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00231129,0
+Robot2,28,near,no_admission,0.301407,-0.0298360,0.288762,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,209.000,2452,0,0,65,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00231129,0
+Robot2,29,near,no_fallback,-0.242065,0.183513,0.268288,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2282,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000776556,0
+Robot2,29,near,no_watchdog,-0.242065,0.183513,0.268288,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2063,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000776556,0
+Robot2,29,near,full,-0.242065,0.183513,0.268288,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,249.000,2299,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000776556,0
+Robot2,29,near,no_admission,-0.242065,0.183513,0.268288,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,194.000,2228,0,0,59,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000776556,0
+Robot2,29,near,no_preflight,-0.242065,0.183513,0.268288,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,2202,0,0,59,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000776556,0
+Robot2,30,near,no_watchdog,-0.159854,0.0266570,0.0957696,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,260.000,2552,0,0,73,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000868261,0
+Robot2,30,near,full,-0.159854,0.0266570,0.0957696,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,260.000,2758,0,0,73,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000868261,0
+Robot2,30,near,no_admission,-0.159854,0.0266570,0.0957696,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,208.000,2729,0,0,73,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000868261,0
+Robot2,30,near,no_preflight,-0.159854,0.0266570,0.0957696,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,169.000,2671,0,0,73,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000868261,0
+Robot2,30,near,no_fallback,-0.159854,0.0266570,0.0957696,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,253.000,2743,0,0,73,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000868261,0
+Robot2,31,obstacle,full,-0.142244,-0.0255417,0.208238,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,251.000,2456,0,0,63,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000591454,0
+Robot2,31,obstacle,no_admission,-0.142244,-0.0255417,0.208238,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,213.000,2407,0,0,63,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000591454,0
+Robot2,31,obstacle,no_preflight,-0.142244,-0.0255417,0.208238,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,177.000,2400,0,0,63,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000591454,0
+Robot2,31,obstacle,no_fallback,-0.142244,-0.0255417,0.208238,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,262.000,2447,0,0,63,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000591454,0
+Robot2,31,obstacle,no_watchdog,-0.142244,-0.0255417,0.208238,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,260.000,2238,0,0,63,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000591454,0
+Robot2,32,near,no_admission,0.0575616,-0.379254,0.491276,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,205.000,2673,0,0,73,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00406109,0
+Robot2,32,near,no_preflight,0.0575616,-0.379254,0.491276,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,170.000,2661,0,0,73,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00406109,0
+Robot2,32,near,no_fallback,0.0575616,-0.379254,0.491276,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,272.000,2782,0,0,73,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00406109,0
+Robot2,32,near,no_watchdog,0.0575616,-0.379254,0.491276,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,270.000,2527,0,0,73,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00406109,0
+Robot2,32,near,full,0.0575616,-0.379254,0.491276,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,269.000,2793,0,0,73,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00406109,0
+Robot2,33,box,no_preflight,-0.668367,-0.105789,0.0228636,aborted_watchdog,0,motion_execution_failed,home_path_collision_detected,nan,path,446.000,1287,0,0,24,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,1,nan,nan,1,nan,nan,nan,0
+Robot2,33,box,no_fallback,-0.668367,-0.105789,0.0228636,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,196,196,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,33,box,no_watchdog,-0.668367,-0.105789,0.0228636,rejected_admission,0,no_safe_path_found,nan,nan,nan,38394,38394,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,33,box,full,-0.668367,-0.105789,0.0228636,rejected_admission,0,no_safe_path_found,nan,nan,nan,79839,79839,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,33,box,no_admission,-0.668367,-0.105789,0.0228636,rejected_preflight,0,no_safe_path_found,nan,nan,nan,35671,35671,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,34,obstacle,no_fallback,-0.0252944,-0.150976,0.0825798,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,248,248,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,34,obstacle,no_watchdog,-0.0252944,-0.150976,0.0825798,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,5963.00,8583,0,0,89,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.439469,0
+Robot2,34,obstacle,full,-0.0252944,-0.150976,0.0825798,rejected_preflight,0,no_safe_path_found,nan,nan,nan,27367,27367,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,34,obstacle,no_admission,-0.0252944,-0.150976,0.0825798,rejected_preflight,0,no_safe_path_found,nan,nan,nan,16337,16337,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,34,obstacle,no_preflight,-0.0252944,-0.150976,0.0825798,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,160.000,1628,0,0,44,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,35,near,no_watchdog,0.0448044,0.381258,0.398914,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,217.000,1634,0,0,47,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00253073,0
+Robot2,35,near,full,0.0448044,0.381258,0.398914,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,220.000,1779,0,0,47,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00253073,0
+Robot2,35,near,no_admission,0.0448044,0.381258,0.398914,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,1716,0,0,47,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00253073,0
+Robot2,35,near,no_preflight,0.0448044,0.381258,0.398914,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,167.000,1712,0,0,47,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00253073,0
+Robot2,35,near,no_fallback,0.0448044,0.381258,0.398914,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,219.000,1796,0,0,47,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00253073,0
+Robot2,36,obstacle,full,-0.0307275,-0.204533,0.154992,rejected_preflight,0,no_safe_path_found,nan,nan,nan,70821,70821,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,36,obstacle,no_admission,-0.0307275,-0.204533,0.154992,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,5761.00,8065,0,0,71,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,1,nan,0.654210,0
+Robot2,36,obstacle,no_preflight,-0.0307275,-0.204533,0.154992,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,163.000,2405,0,0,67,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000351993,0
+Robot2,36,obstacle,no_fallback,-0.0307275,-0.204533,0.154992,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,271,271,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,36,obstacle,no_watchdog,-0.0307275,-0.204533,0.154992,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,5668.00,7935,0,0,74,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,1,nan,0.452343,0
+Robot2,37,box,no_admission,0.657283,-0.0337585,0.487348,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,206.000,3010,0,0,83,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0139724,0
+Robot2,37,box,no_preflight,0.657283,-0.0337585,0.487348,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,162.000,2978,0,0,83,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.0139724,0
+Robot2,37,box,no_fallback,0.657283,-0.0337585,0.487348,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,258.000,3051,0,0,83,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0139724,0
+Robot2,37,box,no_watchdog,0.657283,-0.0337585,0.487348,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,258.000,2802,0,0,83,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0139724,0
+Robot2,37,box,full,0.657283,-0.0337585,0.487348,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,254.000,3090,0,0,83,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0139724,0
+Robot2,38,near,no_preflight,0.130834,-0.105165,0.235087,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,166.000,1711,0,0,46,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,38,near,no_fallback,0.130834,-0.105165,0.235087,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,261,261,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,38,near,no_watchdog,0.130834,-0.105165,0.235087,rejected_preflight,0,no_safe_path_found,nan,nan,nan,38897,38897,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,38,near,full,0.130834,-0.105165,0.235087,rejected_preflight,0,no_safe_path_found,nan,nan,nan,54797,54797,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,38,near,no_admission,0.130834,-0.105165,0.235087,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,7513.00,11442,0,0,121,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.306955,0
+Robot2,39,obstacle,no_fallback,-0.407304,-0.0134995,0.0372068,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,261,261,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,39,obstacle,no_watchdog,-0.407304,-0.0134995,0.0372068,reached_fallback,1,nan,nan,collision_checked_joint_route,path,848.000,5952,0,0,172,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,1,nan,0,nan,nan,0.00322187,0
+Robot2,39,obstacle,full,-0.407304,-0.0134995,0.0372068,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,5335.00,7241,0,0,56,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,1,nan,0.817259,0
+Robot2,39,obstacle,no_admission,-0.407304,-0.0134995,0.0372068,rejected_preflight,0,no_safe_path_found,nan,nan,nan,45842,45842,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,39,obstacle,no_preflight,-0.407304,-0.0134995,0.0372068,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,162.000,2030,0,0,56,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,40,near,no_watchdog,-0.306131,0.100278,0.166522,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,247.000,2267,0,0,67,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00150663,0
+Robot2,40,near,full,-0.306131,0.100278,0.166522,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,246.000,2446,0,0,67,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00150663,0
+Robot2,40,near,no_admission,-0.306131,0.100278,0.166522,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,195.000,2439,0,0,67,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00150663,0
+Robot2,40,near,no_preflight,-0.306131,0.100278,0.166522,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,163.000,2396,0,0,67,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00150663,0
+Robot2,40,near,no_fallback,-0.306131,0.100278,0.166522,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2456,0,0,67,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00150663,0
+Robot2,41,box,full,-0.179649,-0.132650,0.313686,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,6017.00,8586,0,0,107,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,1,nan,0.563389,0
+Robot2,41,box,no_admission,-0.179649,-0.132650,0.313686,rejected_preflight,0,no_safe_path_found,nan,nan,nan,24475,24475,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,41,box,no_preflight,-0.179649,-0.132650,0.313686,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,92.0000,1185,0,0,50,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,41,box,no_fallback,-0.179649,-0.132650,0.313686,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,177,177,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,41,box,no_watchdog,-0.179649,-0.132650,0.313686,reached_fallback,1,nan,nan,collision_checked_joint_route,path,514.000,2088,0,0,85,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,1,nan,0,nan,nan,0.000398350,0
+Robot2,42,obstacle,no_admission,-0.0472503,-0.165176,0.119544,rejected_preflight,0,no_safe_path_found,nan,nan,nan,32604,32604,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,42,obstacle,no_preflight,-0.0472503,-0.165176,0.119544,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,94.0000,1444,0,0,62,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,42,obstacle,no_fallback,-0.0472503,-0.165176,0.119544,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,175,175,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,42,obstacle,no_watchdog,-0.0472503,-0.165176,0.119544,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,6355.00,8526,0,0,120,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,1,nan,0.352766,0
+Robot2,42,obstacle,full,-0.0472503,-0.165176,0.119544,rejected_preflight,0,no_safe_path_found,nan,nan,nan,23989,23989,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,43,obstacle,no_preflight,-0.196875,-0.0477978,0.301439,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,94.0000,1390,0,0,60,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000508691,0
+Robot2,43,obstacle,no_fallback,-0.196875,-0.0477978,0.301439,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,163.000,1444,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000508731,0
+Robot2,43,obstacle,no_watchdog,-0.196875,-0.0477978,0.301439,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,155.000,1210,0,0,58,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000508251,0
+Robot2,43,obstacle,full,-0.196875,-0.0477978,0.301439,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,154.000,1386,0,0,60,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000508691,0
+Robot2,43,obstacle,no_admission,-0.196875,-0.0477978,0.301439,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,124.000,1399,0,0,59,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000508577,0
+Robot2,44,near,no_fallback,-0.415605,0.216249,0.311456,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,163.000,1412,0,0,60,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00223415,0
+Robot2,44,near,no_watchdog,-0.415605,0.216249,0.311456,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,161.000,1276,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00223416,0
+Robot2,44,near,full,-0.415605,0.216249,0.311456,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,160.000,1399,0,0,60,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00223415,0
+Robot2,44,near,no_admission,-0.415605,0.216249,0.311456,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,122.000,1368,0,0,60,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00223415,0
+Robot2,44,near,no_preflight,-0.415605,0.216249,0.311456,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,89.0000,1356,0,0,60,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00223415,0
+Robot2,45,near,no_watchdog,0.00373338,0.395918,0.542710,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,123.000,829,0,0,39,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00291495,0
+Robot2,45,near,full,0.00373338,0.395918,0.542710,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,123.000,922,0,0,39,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00291495,0
+Robot2,45,near,no_admission,0.00373338,0.395918,0.542710,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,86.0000,889,0,0,39,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00291495,0
+Robot2,45,near,no_preflight,0.00373338,0.395918,0.542710,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,93.0000,917,0,0,39,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00291495,0
+Robot2,45,near,no_fallback,0.00373338,0.395918,0.542710,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,117.000,899,0,0,40,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00291495,0
+Robot2,46,near,full,0.386919,0.197143,0.421958,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,155.000,1338,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00323350,0
+Robot2,46,near,no_admission,0.386919,0.197143,0.421958,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,118.000,1294,0,0,57,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00323350,0
+Robot2,46,near,no_preflight,0.386919,0.197143,0.421958,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,94.0000,1281,0,0,57,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00323350,0
+Robot2,46,near,no_fallback,0.386919,0.197143,0.421958,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,154.000,1342,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00323350,0
+Robot2,46,near,no_watchdog,0.386919,0.197143,0.421958,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,155.000,1184,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00323350,0
+Robot2,47,box,no_admission,0.670155,0.786522,0.221659,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,179.000,1456,0,0,56,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,47,box,no_preflight,0.670155,0.786522,0.221659,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4126,4126,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,47,box,no_fallback,0.670155,0.786522,0.221659,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,109,109,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,47,box,no_watchdog,0.670155,0.786522,0.221659,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4118,4118,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,47,box,full,0.670155,0.786522,0.221659,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4123,4123,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,48,near,no_preflight,-0.0401029,-0.128577,0.156818,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,97.0000,1567,0,0,69,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000213288,0
+Robot2,48,near,no_fallback,-0.0401029,-0.128577,0.156818,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,149,149,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,48,near,no_watchdog,-0.0401029,-0.128577,0.156818,rejected_preflight,0,no_safe_path_found,nan,nan,nan,47880,47880,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,48,near,full,-0.0401029,-0.128577,0.156818,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,6227.00,9056,0,0,138,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.425159,0
+Robot2,48,near,no_admission,-0.0401029,-0.128577,0.156818,rejected_preflight,0,no_safe_path_found,nan,nan,nan,31615,31615,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,49,near,no_fallback,0.0266540,-0.156604,0.465879,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,156.000,1414,0,0,60,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00183886,0
+Robot2,49,near,no_watchdog,0.0266540,-0.156604,0.465879,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,160.000,1207,0,0,58,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00183821,0
+Robot2,49,near,full,0.0266540,-0.156604,0.465879,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,158.000,1396,0,0,60,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00183886,0
+Robot2,49,near,no_admission,0.0266540,-0.156604,0.465879,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,120.000,1366,0,0,60,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00183886,0
+Robot2,49,near,no_preflight,0.0266540,-0.156604,0.465879,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,92.0000,1339,0,0,60,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00183886,0
+Robot2,50,near,no_watchdog,0.310348,0.0839340,0.210115,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,162.000,1294,0,0,63,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00191925,0
+Robot2,50,near,full,0.310348,0.0839340,0.210115,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,163.000,1490,0,0,63,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00191925,0
+Robot2,50,near,no_admission,0.310348,0.0839340,0.210115,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,124.000,1436,0,0,63,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00191925,0
+Robot2,50,near,no_preflight,0.310348,0.0839340,0.210115,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,96.0000,1405,0,0,63,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00191925,0
+Robot2,50,near,no_fallback,0.310348,0.0839340,0.210115,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,164.000,1477,0,0,63,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00191925,0
+Robot2,51,near,full,-0.00865041,0.241575,0.348144,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,140.000,1225,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000368002,0
+Robot2,51,near,no_admission,-0.00865041,0.241575,0.348144,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,101.000,1154,0,0,51,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000368002,0
+Robot2,51,near,no_preflight,-0.00865041,0.241575,0.348144,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,94.0000,1171,0,0,51,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000368002,0
+Robot2,51,near,no_fallback,-0.00865041,0.241575,0.348144,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,143.000,1226,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000368002,0
+Robot2,51,near,no_watchdog,-0.00865041,0.241575,0.348144,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,142.000,1076,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000368002,0
+Robot2,52,box,no_admission,-0.413220,-0.403816,0.0522869,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4135,4135,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,52,box,no_preflight,-0.413220,-0.403816,0.0522869,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4123,4123,0,0,0,nan,nan,nan,0,target_inside_obstacle,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,52,box,no_fallback,-0.413220,-0.403816,0.0522869,rejected_admission,0,target_inside_obstacle,nan,nan,nan,107,107,0,0,0,nan,nan,nan,0,target_inside_obstacle,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,52,box,no_watchdog,-0.413220,-0.403816,0.0522869,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4122,4122,0,0,0,nan,nan,nan,0,target_inside_obstacle,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,52,box,full,-0.413220,-0.403816,0.0522869,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4124,4124,0,0,0,nan,nan,nan,0,target_inside_obstacle,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,53,near,no_preflight,-0.0285953,0.353207,0.0496747,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,96.0000,1681,0,0,75,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00243764,0
+Robot2,53,near,no_fallback,-0.0285953,0.353207,0.0496747,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,167.000,1738,0,0,75,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00243764,0
+Robot2,53,near,no_watchdog,-0.0285953,0.353207,0.0496747,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,156.000,1501,0,0,75,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00243764,0
+Robot2,53,near,full,-0.0285953,0.353207,0.0496747,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,170.000,1726,0,0,75,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00243764,0
+Robot2,53,near,no_admission,-0.0285953,0.353207,0.0496747,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,129.000,1740,0,0,75,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00243764,0
+Robot2,54,box,no_fallback,0.116804,0.813260,0.709891,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,109,109,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,54,box,no_watchdog,0.116804,0.813260,0.709891,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4118,4118,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,54,box,full,0.116804,0.813260,0.709891,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4121,4121,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,54,box,no_admission,0.116804,0.813260,0.709891,collision,0,cartesian_target_not_reached,nan,coppeliasim_smooth_pose_ik,cartesian,178.000,1539,11,0,55,obstacle,Floor,Floor,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.796079,0
+Robot2,54,box,no_preflight,0.116804,0.813260,0.709891,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,66454,66454,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot2,55,box,no_watchdog,0.0939617,-0.630625,0.0199795,collision,1,nan,nan,collision_checked_joint_route,path,59967.0,67994,8,0,276,obstacle,Floor,Floor,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.00557622,0
+Robot2,55,box,full,0.0939617,-0.630625,0.0199795,rejected_preflight,0,no_safe_path_found,nan,nan,nan,58596,58596,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,55,box,no_admission,0.0939617,-0.630625,0.0199795,rejected_preflight,0,no_safe_path_found,nan,nan,nan,41997,41997,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot2,55,box,no_preflight,0.0939617,-0.630625,0.0199795,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,164.000,1992,0,0,54,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,55,box,no_fallback,0.0939617,-0.630625,0.0199795,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,242,242,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,56,near,full,0.369870,0.187334,0.389483,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,238.000,2066,0,0,55,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00286452,0
+Robot2,56,near,no_admission,0.369870,0.187334,0.389483,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,188.000,2029,0,0,55,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00286452,0
+Robot2,56,near,no_preflight,0.369870,0.187334,0.389483,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,160.000,1984,0,0,55,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00286452,0
+Robot2,56,near,no_fallback,0.369870,0.187334,0.389483,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,242.000,2093,0,0,55,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00286452,0
+Robot2,56,near,no_watchdog,0.369870,0.187334,0.389483,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,242.000,1910,0,0,55,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00286452,0
+Robot2,57,near,no_admission,-0.110280,0.115696,0.255753,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,189.000,2206,0,0,59,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000229828,0
+Robot2,57,near,no_preflight,-0.110280,0.115696,0.255753,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,2167,0,0,59,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000229828,0
+Robot2,57,near,no_fallback,-0.110280,0.115696,0.255753,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,248.000,2266,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000229828,0
+Robot2,57,near,no_watchdog,-0.110280,0.115696,0.255753,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,242.000,2070,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000229828,0
+Robot2,57,near,full,-0.110280,0.115696,0.255753,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,247.000,2274,0,0,59,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000229828,0
+Robot2,58,obstacle,no_preflight,-0.0204594,-0.0359491,0.385427,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,165.000,1812,0,0,49,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000722436,0
+Robot2,58,obstacle,no_fallback,-0.0204594,-0.0359491,0.385427,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,250,1944,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000722436,0
+Robot2,58,obstacle,no_watchdog,-0.0204594,-0.0359491,0.385427,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,244.000,1767,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000722436,0
+Robot2,58,obstacle,full,-0.0204594,-0.0359491,0.385427,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,1909,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000722436,0
+Robot2,58,obstacle,no_admission,-0.0204594,-0.0359491,0.385427,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,199.000,1878,0,0,49,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000722436,0
+Robot2,59,obstacle,no_fallback,-0.0132131,-0.341448,0.679673,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,261.000,1854,0,0,46,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,59,obstacle,no_watchdog,-0.0132131,-0.341448,0.679673,collision,0,cartesian_target_not_reached,nan,coppeliasim_smooth_pose_ik,cartesian,259.000,2277,26,2,68,obstacle,visible,Robot2_wall,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.242579,0
+Robot2,59,obstacle,full,-0.0132131,-0.341448,0.679673,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,262.000,1867,0,0,46,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,59,obstacle,no_admission,-0.0132131,-0.341448,0.679673,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,203.000,1816,0,0,46,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,59,obstacle,no_preflight,-0.0132131,-0.341448,0.679673,aborted_watchdog,0,motion_execution_failed,[string "/Robot2@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot2@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim.moveToPose'
+	(...tail calls...),nan,cartesian,171.000,1788,0,0,46,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot2,60,near,no_watchdog,-0.222053,0.336641,0.294064,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,247.000,2053,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00224482,0
+Robot2,60,near,full,-0.222053,0.336641,0.294064,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,243.000,2186,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00224482,0
+Robot2,60,near,no_admission,-0.222053,0.336641,0.294064,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,191.000,2181,0,0,57,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00224482,0
+Robot2,60,near,no_preflight,-0.222053,0.336641,0.294064,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,171.000,2136,0,0,57,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00224482,0
+Robot2,60,near,no_fallback,-0.222053,0.336641,0.294064,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,243.000,2205,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00224482,0
+Robot4,1,near,full,-0.346800,-0.440877,0.120762,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,391.000,2282,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00448322,0
+Robot4,1,near,no_admission,-0.346800,-0.440877,0.120762,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,198.000,2073,0,0,61,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00448322,0
+Robot4,1,near,no_preflight,-0.346800,-0.440877,0.120762,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,2085,0,0,61,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00448322,0
+Robot4,1,near,no_fallback,-0.346800,-0.440877,0.120762,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,241.000,2203,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00448322,0
+Robot4,1,near,no_watchdog,-0.346800,-0.440877,0.120762,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,236.000,2060,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00448322,0
+Robot4,2,box,no_admission,-0.0382079,0.0147276,-0.406149,collision,0,motion_execution_failed,home_path_collision_detected,nan,path,609.000,4244,4,0,116,obstacle,Floor,Floor,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,nan,0
+Robot4,2,box,no_preflight,-0.0382079,0.0147276,-0.406149,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,173.000,1947,0,0,56,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,2,box,no_fallback,-0.0382079,0.0147276,-0.406149,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,236,236,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,2,box,no_watchdog,-0.0382079,0.0147276,-0.406149,rejected_preflight,0,no_safe_path_found,nan,nan,nan,43415,43415,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot4,2,box,full,-0.0382079,0.0147276,-0.406149,rejected_preflight,0,no_safe_path_found,nan,nan,nan,40723,40723,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot4,3,near,no_preflight,-0.472937,0.138254,0.241334,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,162.000,2049,0,0,61,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00199234,0
+Robot4,3,near,no_fallback,-0.472937,0.138254,0.241334,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,235.000,2142,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00199234,0
+Robot4,3,near,no_watchdog,-0.472937,0.138254,0.241334,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,243.000,1993,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00199234,0
+Robot4,3,near,full,-0.472937,0.138254,0.241334,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,238.000,2130,0,0,61,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00199234,0
+Robot4,3,near,no_admission,-0.472937,0.138254,0.241334,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,185.000,2087,0,0,61,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00199234,0
+Robot4,4,obstacle,no_fallback,-0.287077,0.499819,-0.170905,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,253.000,2935,0,0,87,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0112825,0
+Robot4,4,obstacle,no_watchdog,-0.287077,0.499819,-0.170905,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,257.000,2756,0,0,87,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0112825,0
+Robot4,4,obstacle,full,-0.287077,0.499819,-0.170905,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2969,0,0,87,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0112825,0
+Robot4,4,obstacle,no_admission,-0.287077,0.499819,-0.170905,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,202.000,2920,0,0,87,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0112825,0
+Robot4,4,obstacle,no_preflight,-0.287077,0.499819,-0.170905,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,172.000,2910,0,0,87,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.0112825,0
+Robot4,5,obstacle,no_watchdog,-0.130947,0.477703,-0.238241,reached_fallback,1,nan,nan,collision_checked_joint_route,path,585.000,6792,0,0,222,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.0108074,0
+Robot4,5,obstacle,full,-0.130947,0.477703,-0.238241,reached_fallback,1,nan,nan,collision_checked_joint_route,path,461.000,5751,0,0,174,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00924868,0
+Robot4,5,obstacle,no_admission,-0.130947,0.477703,-0.238241,reached_fallback,1,nan,nan,collision_checked_joint_route,path,429.000,3006,0,0,82,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00983620,0
+Robot4,5,obstacle,no_preflight,-0.130947,0.477703,-0.238241,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,170.000,2297,0,0,68,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,5,obstacle,no_fallback,-0.130947,0.477703,-0.238241,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,240,240,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,6,obstacle,full,-0.544167,-0.292414,-0.319536,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,236.000,1642,0,0,45,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00340062,0
+Robot4,6,obstacle,no_admission,-0.544167,-0.292414,-0.319536,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,182.000,1637,0,0,45,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00340062,0
+Robot4,6,obstacle,no_preflight,-0.544167,-0.292414,-0.319536,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,172.000,1638,0,0,45,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00340062,0
+Robot4,6,obstacle,no_fallback,-0.544167,-0.292414,-0.319536,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,231.000,1664,0,0,45,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00340062,0
+Robot4,6,obstacle,no_watchdog,-0.544167,-0.292414,-0.319536,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,230.000,1543,0,0,45,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00340062,0
+Robot4,7,near,no_admission,-0.232497,0.417487,0.0809185,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,193.000,2405,0,0,69,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00632911,0
+Robot4,7,near,no_preflight,-0.232497,0.417487,0.0809185,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,2412,0,0,69,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00632911,0
+Robot4,7,near,no_fallback,-0.232497,0.417487,0.0809185,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,252.000,2469,0,0,69,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00632911,0
+Robot4,7,near,no_watchdog,-0.232497,0.417487,0.0809185,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2346,0,0,69,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00632911,0
+Robot4,7,near,full,-0.232497,0.417487,0.0809185,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,252.000,2464,0,0,69,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00632911,0
+Robot4,8,obstacle,no_preflight,-0.388600,0.452135,-0.325293,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,3075,0,0,91,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.0131892,0
+Robot4,8,obstacle,no_fallback,-0.388600,0.452135,-0.325293,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,251.000,3195,0,0,91,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0131892,0
+Robot4,8,obstacle,no_watchdog,-0.388600,0.452135,-0.325293,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,244.000,2888,0,0,91,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0131892,0
+Robot4,8,obstacle,full,-0.388600,0.452135,-0.325293,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,247.000,3156,0,0,91,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0131892,0
+Robot4,8,obstacle,no_admission,-0.388600,0.452135,-0.325293,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,193.000,3062,0,0,91,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0131892,0
+Robot4,9,box,no_fallback,-0.861074,0.561324,0.160065,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,190,190,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,9,box,no_watchdog,-0.861074,0.561324,0.160065,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4211,4211,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,9,box,full,-0.861074,0.561324,0.160065,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4213,4213,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,9,box,no_admission,-0.861074,0.561324,0.160065,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4262,4262,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,9,box,no_preflight,-0.861074,0.561324,0.160065,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4223,4223,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,10,near,no_watchdog,-0.0335348,0.192070,-0.245758,reached_fallback,1,nan,nan,collision_checked_joint_route,path,470.000,2801,0,0,82,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00247573,0
+Robot4,10,near,full,-0.0335348,0.192070,-0.245758,rejected_preflight,0,no_safe_path_found,nan,nan,nan,56184,56184,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot4,10,near,no_admission,-0.0335348,0.192070,-0.245758,collision,0,motion_execution_failed,home_path_collision_detected,nan,path,581.000,4472,16,0,131,obstacle,Floor,Floor,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,nan,0
+Robot4,10,near,no_preflight,-0.0335348,0.192070,-0.245758,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,163.000,1797,0,0,52,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,10,near,no_fallback,-0.0335348,0.192070,-0.245758,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,239,239,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,11,near,full,-0.483582,-0.300227,0.000965440,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,219.000,1742,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00143576,0
+Robot4,11,near,no_admission,-0.483582,-0.300227,0.000965440,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,161.000,1715,0,0,49,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00143575,0
+Robot4,11,near,no_preflight,-0.483582,-0.300227,0.000965440,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,167.000,1706,0,0,49,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00143575,0
+Robot4,11,near,no_fallback,-0.483582,-0.300227,0.000965440,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,223.000,1758,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00143576,0
+Robot4,11,near,no_watchdog,-0.483582,-0.300227,0.000965440,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,235.000,1653,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00143576,0
+Robot4,12,obstacle,no_admission,-0.250159,0.487985,-0.458067,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,188.000,3244,0,0,99,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00484678,0
+Robot4,12,obstacle,no_preflight,-0.250159,0.487985,-0.458067,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,166.000,3223,0,0,99,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00484678,0
+Robot4,12,obstacle,no_fallback,-0.250159,0.487985,-0.458067,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,248.000,3380,0,0,99,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00484678,0
+Robot4,12,obstacle,no_watchdog,-0.250159,0.487985,-0.458067,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,254.000,3136,0,0,99,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00484678,0
+Robot4,12,obstacle,full,-0.250159,0.487985,-0.458067,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,248.000,3374,0,0,99,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00484678,0
+Robot4,13,box,no_preflight,-0.872003,0.907390,0.192061,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4234,4234,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,13,box,no_fallback,-0.872003,0.907390,0.192061,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,190,190,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,13,box,no_watchdog,-0.872003,0.907390,0.192061,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4224,4224,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,13,box,full,-0.872003,0.907390,0.192061,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4213,4213,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,13,box,no_admission,-0.872003,0.907390,0.192061,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4242,4242,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,14,near,no_fallback,-0.136043,-0.252627,0.310142,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,252,252,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,14,near,no_watchdog,-0.136043,-0.252627,0.310142,reached_fallback,1,nan,nan,collision_checked_joint_route,path,31082.0,37324,0,0,226,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.00636523,0
+Robot4,14,near,full,-0.136043,-0.252627,0.310142,reached_fallback,1,nan,nan,collision_checked_joint_route,path,23864.0,30653,0,0,220,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.00681428,0
+Robot4,14,near,no_admission,-0.136043,-0.252627,0.310142,reached_fallback,1,nan,nan,collision_checked_joint_route,path,590.000,5044,0,0,144,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00737378,0
+Robot4,14,near,no_preflight,-0.136043,-0.252627,0.310142,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,167.000,2263,0,0,68,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,15,box,no_watchdog,-0.563465,-0.232388,-0.235363,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,218.000,1470,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00771585,0
+Robot4,15,box,full,-0.563465,-0.232388,-0.235363,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,227.000,1590,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00771585,0
+Robot4,15,box,no_admission,-0.563465,-0.232388,-0.235363,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,171.000,1511,0,0,43,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00771585,0
+Robot4,15,box,no_preflight,-0.563465,-0.232388,-0.235363,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,160.000,1483,0,0,43,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00771585,0
+Robot4,15,box,no_fallback,-0.563465,-0.232388,-0.235363,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,216.000,1585,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00771585,0
+Robot4,16,near,full,-0.327444,0.196612,-0.135126,reached_fallback,1,nan,nan,collision_checked_joint_route,path,33108.0,38190,0,0,166,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.000142030,0
+Robot4,16,near,no_admission,-0.327444,0.196612,-0.135126,reached_fallback,1,nan,nan,collision_checked_joint_route,path,565.000,5121,0,0,150,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00179957,0
+Robot4,16,near,no_preflight,-0.327444,0.196612,-0.135126,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,2189,0,0,65,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00503427,0
+Robot4,16,near,no_fallback,-0.327444,0.196612,-0.135126,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,248,248,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,16,near,no_watchdog,-0.327444,0.196612,-0.135126,not_reached,0,planned_cartesian_target_not_reached,nan,collision_checked_joint_route,path,13689.0,17353,0,0,129,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.481980,0
+Robot4,17,box,no_admission,-0.931651,0.769300,-0.0656378,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4239,4239,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,17,box,no_preflight,-0.931651,0.769300,-0.0656378,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4217,4217,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,17,box,no_fallback,-0.931651,0.769300,-0.0656378,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,193,193,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,17,box,no_watchdog,-0.931651,0.769300,-0.0656378,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4221,4221,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,17,box,full,-0.931651,0.769300,-0.0656378,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4215,4215,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,18,near,no_preflight,-0.106486,-0.0505672,-0.290668,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,166.000,1821,0,0,52,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,18,near,no_fallback,-0.106486,-0.0505672,-0.290668,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,243,243,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,18,near,no_watchdog,-0.106486,-0.0505672,-0.290668,reached_fallback,1,nan,nan,collision_checked_joint_route,path,501.000,3116,0,0,92,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00273456,0
+Robot4,18,near,full,-0.106486,-0.0505672,-0.290668,reached_fallback,1,nan,nan,collision_checked_joint_route,path,29331.0,33381,0,0,132,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.00485104,0
+Robot4,18,near,no_admission,-0.106486,-0.0505672,-0.290668,reached_fallback,1,nan,nan,collision_checked_joint_route,path,561.000,4800,0,0,136,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00304293,0
+Robot4,19,obstacle,no_fallback,-0.301756,-0.335478,-0.217846,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,247.000,2243,0,0,63,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00351522,0
+Robot4,19,obstacle,no_watchdog,-0.301756,-0.335478,-0.217846,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,243.000,2063,0,0,63,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00351522,0
+Robot4,19,obstacle,full,-0.301756,-0.335478,-0.217846,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,242.000,2249,0,0,63,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00351522,0
+Robot4,19,obstacle,no_admission,-0.301756,-0.335478,-0.217846,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,187.000,2175,0,0,63,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00351522,0
+Robot4,19,obstacle,no_preflight,-0.301756,-0.335478,-0.217846,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,176.000,2175,0,0,63,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00351522,0
+Robot4,20,near,no_watchdog,-0.175828,0.0491250,-0.306869,reached_fallback,1,nan,nan,collision_checked_joint_route,path,684.000,5527,0,0,172,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000659557,0
+Robot4,20,near,full,-0.175828,0.0491250,-0.306869,reached_fallback,1,nan,nan,collision_checked_joint_route,path,523.000,3376,0,0,92,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00288493,0
+Robot4,20,near,no_admission,-0.175828,0.0491250,-0.306869,reached_fallback,1,nan,nan,collision_checked_joint_route,path,631.000,5834,0,0,170,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000672667,0
+Robot4,20,near,no_preflight,-0.175828,0.0491250,-0.306869,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,165.000,1920,0,0,56,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,20,near,no_fallback,-0.175828,0.0491250,-0.306869,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,248,248,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,21,near,full,-0.0649119,-0.324739,-0.112695,reached_fallback,1,nan,nan,collision_checked_joint_route,path,620.000,5176,0,0,146,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,1,nan,0,nan,nan,0.00125057,0
+Robot4,21,near,no_admission,-0.0649119,-0.324739,-0.112695,rejected_preflight,0,no_safe_path_found,nan,nan,nan,30248,30248,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot4,21,near,no_preflight,-0.0649119,-0.324739,-0.112695,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,161.000,2705,0,0,83,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00395988,0
+Robot4,21,near,no_fallback,-0.0649119,-0.324739,-0.112695,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,232,232,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,21,near,no_watchdog,-0.0649119,-0.324739,-0.112695,reached_fallback,1,nan,nan,collision_checked_joint_route,path,468.000,2872,0,0,86,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,1,nan,0,nan,nan,0.00635517,0
+Robot4,22,box,no_admission,-0.676418,0.349677,-0.481718,not_reached,0,cartesian_target_not_reached,nan,coppeliasim_smooth_pose_ik,cartesian,202.000,3076,0,0,91,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0511757,0
+Robot4,22,box,no_preflight,-0.676418,0.349677,-0.481718,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4213,4213,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,22,box,no_fallback,-0.676418,0.349677,-0.481718,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,189,189,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,22,box,no_watchdog,-0.676418,0.349677,-0.481718,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4217,4217,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,22,box,full,-0.676418,0.349677,-0.481718,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4213,4213,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,23,obstacle,no_preflight,-0.398715,-0.394644,-0.250563,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,163.000,1932,0,0,57,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00480390,0
+Robot4,23,obstacle,no_fallback,-0.398715,-0.394644,-0.250563,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,234.000,1997,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00480390,0
+Robot4,23,obstacle,no_watchdog,-0.398715,-0.394644,-0.250563,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,227.000,1890,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00480390,0
+Robot4,23,obstacle,full,-0.398715,-0.394644,-0.250563,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,232.000,2035,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00480390,0
+Robot4,23,obstacle,no_admission,-0.398715,-0.394644,-0.250563,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,183.000,1939,0,0,57,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00480390,0
+Robot4,24,box,no_fallback,-0.941770,-0.676011,-0.571476,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,196,196,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,24,box,no_watchdog,-0.941770,-0.676011,-0.571476,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4222,4222,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,24,box,full,-0.941770,-0.676011,-0.571476,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4220,4220,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,24,box,no_admission,-0.941770,-0.676011,-0.571476,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4246,4246,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,24,box,no_preflight,-0.941770,-0.676011,-0.571476,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4213,4213,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,25,near,no_watchdog,-0.378662,0.0730378,0.182371,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,237.000,1892,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00140060,0
+Robot4,25,near,full,-0.378662,0.0730378,0.182371,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,236.000,2033,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00140060,0
+Robot4,25,near,no_admission,-0.378662,0.0730378,0.182371,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,190.000,2001,0,0,57,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00140060,0
+Robot4,25,near,no_preflight,-0.378662,0.0730378,0.182371,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,1973,0,0,57,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00140060,0
+Robot4,25,near,no_fallback,-0.378662,0.0730378,0.182371,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,240.000,2021,0,0,57,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00140060,0
+Robot4,26,near,full,-0.514469,0.449396,-0.0511986,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,241.000,2605,0,0,77,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0107702,0
+Robot4,26,near,no_admission,-0.514469,0.449396,-0.0511986,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,186.000,2585,0,0,77,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0107702,0
+Robot4,26,near,no_preflight,-0.514469,0.449396,-0.0511986,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,2634,0,0,77,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.0107702,0
+Robot4,26,near,no_fallback,-0.514469,0.449396,-0.0511986,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,248.000,2660,0,0,77,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0107702,0
+Robot4,26,near,no_watchdog,-0.514469,0.449396,-0.0511986,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,244.000,2482,0,0,77,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0107702,0
+Robot4,27,near,no_admission,-0.759332,-0.0466699,-0.164403,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,1805,0,0,51,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00729147,0
+Robot4,27,near,no_preflight,-0.759332,-0.0466699,-0.164403,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,164.000,1729,0,0,51,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00729147,0
+Robot4,27,near,no_fallback,-0.759332,-0.0466699,-0.164403,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,215.000,1827,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00729147,0
+Robot4,27,near,no_watchdog,-0.759332,-0.0466699,-0.164403,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,228.000,1718,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00729147,0
+Robot4,27,near,full,-0.759332,-0.0466699,-0.164403,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,222.000,1806,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00729147,0
+Robot4,28,box,no_preflight,-0.998415,0.582963,0.302727,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4219,4219,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,28,box,no_fallback,-0.998415,0.582963,0.302727,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,190,190,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,28,box,no_watchdog,-0.998415,0.582963,0.302727,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4221,4221,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,28,box,full,-0.998415,0.582963,0.302727,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4228,4228,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,28,box,no_admission,-0.998415,0.582963,0.302727,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4261,4261,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,29,near,no_fallback,-0.0962599,0.446388,-0.0345684,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,234,234,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,29,near,no_watchdog,-0.0962599,0.446388,-0.0345684,reached_fallback,1,nan,nan,collision_checked_joint_route,path,549.000,6414,0,0,204,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00813556,0
+Robot4,29,near,full,-0.0962599,0.446388,-0.0345684,rejected_preflight,0,no_safe_path_found,nan,nan,nan,25722,25722,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,0,no_safe_path_found,nan,0
+Robot4,29,near,no_admission,-0.0962599,0.446388,-0.0345684,reached_fallback,1,nan,nan,collision_checked_joint_route,path,394.000,2555,0,0,70,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00549975,0
+Robot4,29,near,no_preflight,-0.0962599,0.446388,-0.0345684,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,167.000,1788,0,0,52,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,30,near,no_watchdog,-0.473515,0.371435,0.382246,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,241.000,2582,0,0,81,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00909396,0
+Robot4,30,near,full,-0.473515,0.371435,0.382246,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,241.000,2754,0,0,81,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00909396,0
+Robot4,30,near,no_admission,-0.473515,0.371435,0.382246,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,192.000,2707,0,0,81,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00909396,0
+Robot4,30,near,no_preflight,-0.473515,0.371435,0.382246,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,2740,0,0,81,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00909396,0
+Robot4,30,near,no_fallback,-0.473515,0.371435,0.382246,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2778,0,0,81,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00909396,0
+Robot4,31,obstacle,full,-0.727947,-0.269220,-0.199443,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,213.000,1435,0,0,39,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00645557,0
+Robot4,31,obstacle,no_admission,-0.727947,-0.269220,-0.199443,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,162.000,1371,0,0,39,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00645557,0
+Robot4,31,obstacle,no_preflight,-0.727947,-0.269220,-0.199443,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,167.000,1412,0,0,39,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00645557,0
+Robot4,31,obstacle,no_fallback,-0.727947,-0.269220,-0.199443,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,222.000,1488,0,0,39,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00645557,0
+Robot4,31,obstacle,no_watchdog,-0.727947,-0.269220,-0.199443,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,224.000,1387,0,0,39,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00645557,0
+Robot4,32,box,no_admission,-1.06618,-0.509188,-0.186871,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4236,4236,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,32,box,no_preflight,-1.06618,-0.509188,-0.186871,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4220,4220,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,32,box,no_fallback,-1.06618,-0.509188,-0.186871,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,187,187,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,32,box,no_watchdog,-1.06618,-0.509188,-0.186871,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4212,4212,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,32,box,full,-1.06618,-0.509188,-0.186871,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4216,4216,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,33,near,no_preflight,-0.0722964,-0.0437279,0.0893183,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,168.000,1922,0,0,56,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,33,near,no_fallback,-0.0722964,-0.0437279,0.0893183,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,260.000,2012,0,0,56,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,33,near,no_watchdog,-0.0722964,-0.0437279,0.0893183,collision,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,257.000,2652,11,2,82,self,leftPad,Link2_respondable,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000909361,0
+Robot4,33,near,full,-0.0722964,-0.0437279,0.0893183,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,259.000,2071,0,0,56,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,33,near,no_admission,-0.0722964,-0.0437279,0.0893183,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,205.000,2015,0,0,56,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,34,near,no_fallback,-0.106879,0.0718234,-0.475301,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,233,233,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,34,near,no_watchdog,-0.106879,0.0718234,-0.475301,reached_fallback,1,nan,nan,collision_checked_joint_route,path,557.000,3873,0,0,116,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00521126,0
+Robot4,34,near,full,-0.106879,0.0718234,-0.475301,reached_fallback,1,nan,nan,collision_checked_joint_route,path,471.000,2819,0,0,74,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00598003,0
+Robot4,34,near,no_admission,-0.106879,0.0718234,-0.475301,reached_fallback,1,nan,nan,collision_checked_joint_route,path,394.000,2661,0,0,72,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00793125,0
+Robot4,34,near,no_preflight,-0.106879,0.0718234,-0.475301,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,180.000,2002,0,0,58,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,35,obstacle,no_watchdog,-0.713374,-0.249889,-0.270784,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,218.000,1456,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00771115,0
+Robot4,35,obstacle,full,-0.713374,-0.249889,-0.270784,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,216.000,1569,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00771115,0
+Robot4,35,obstacle,no_admission,-0.713374,-0.249889,-0.270784,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,162.000,1503,0,0,43,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00771115,0
+Robot4,35,obstacle,no_preflight,-0.713374,-0.249889,-0.270784,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,171.000,1563,0,0,43,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00771115,0
+Robot4,35,obstacle,no_fallback,-0.713374,-0.249889,-0.270784,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,229.000,1600,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00771115,0
+Robot4,36,near,full,-0.121273,0.304485,-0.150074,reached_fallback,1,nan,nan,collision_checked_joint_route,path,708.000,6067,0,0,170,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00367049,0
+Robot4,36,near,no_admission,-0.121273,0.304485,-0.150074,reached_fallback,1,nan,nan,collision_checked_joint_route,path,650.000,5920,0,0,166,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00593280,0
+Robot4,36,near,no_preflight,-0.121273,0.304485,-0.150074,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,170.000,1925,0,0,54,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,36,near,no_fallback,-0.121273,0.304485,-0.150074,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,246,246,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,36,near,no_watchdog,-0.121273,0.304485,-0.150074,reached_fallback,1,nan,nan,collision_checked_joint_route,path,713.000,5639,0,0,170,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000862502,0
+Robot4,37,near,no_admission,-0.563717,-0.354478,0.142378,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,165.000,1542,0,0,43,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00104632,0
+Robot4,37,near,no_preflight,-0.563717,-0.354478,0.142378,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,178.000,1549,0,0,43,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00104632,0
+Robot4,37,near,no_fallback,-0.563717,-0.354478,0.142378,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,218.000,1574,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00104632,0
+Robot4,37,near,no_watchdog,-0.563717,-0.354478,0.142378,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,216.000,1470,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00104632,0
+Robot4,37,near,full,-0.563717,-0.354478,0.142378,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,227.000,1597,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00104632,0
+Robot4,38,near,no_preflight,-0.117543,-0.147481,0.267651,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,174.000,2695,0,0,79,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00378357,0
+Robot4,38,near,no_fallback,-0.117543,-0.147481,0.267651,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,258.000,2765,0,0,79,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00378357,0
+Robot4,38,near,no_watchdog,-0.117543,-0.147481,0.267651,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,272.000,2609,0,0,79,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00378357,0
+Robot4,38,near,full,-0.117543,-0.147481,0.267651,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,254.000,2767,0,0,79,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00378357,0
+Robot4,38,near,no_admission,-0.117543,-0.147481,0.267651,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,202.000,2734,0,0,79,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00378357,0
+Robot4,39,near,no_fallback,-0.501465,-0.0583922,-0.0933767,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,226.000,1724,0,0,47,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00455805,0
+Robot4,39,near,no_watchdog,-0.501465,-0.0583922,-0.0933767,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,234.000,1655,0,0,47,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00455805,0
+Robot4,39,near,full,-0.501465,-0.0583922,-0.0933767,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,229.000,1724,0,0,47,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00455805,0
+Robot4,39,near,no_admission,-0.501465,-0.0583922,-0.0933767,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,175.000,1708,0,0,47,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00455805,0
+Robot4,39,near,no_preflight,-0.501465,-0.0583922,-0.0933767,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,175.000,1654,0,0,47,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00455805,0
+Robot4,40,near,no_watchdog,-0.453648,-0.535767,0.0196054,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,227.000,1748,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00725783,0
+Robot4,40,near,full,-0.453648,-0.535767,0.0196054,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,248.000,1897,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00725783,0
+Robot4,40,near,no_admission,-0.453648,-0.535767,0.0196054,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,185.000,1845,0,0,51,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00725783,0
+Robot4,40,near,no_preflight,-0.453648,-0.535767,0.0196054,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,179.000,1803,0,0,51,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00725783,0
+Robot4,40,near,no_fallback,-0.453648,-0.535767,0.0196054,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,230.000,1836,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00725783,0
+Robot4,41,obstacle,full,-0.445493,-0.275528,-0.347414,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,240.000,1925,0,0,53,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00387586,0
+Robot4,41,obstacle,no_admission,-0.445493,-0.275528,-0.347414,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,181.000,1843,0,0,53,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00387586,0
+Robot4,41,obstacle,no_preflight,-0.445493,-0.275528,-0.347414,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,170.000,1853,0,0,53,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00387586,0
+Robot4,41,obstacle,no_fallback,-0.445493,-0.275528,-0.347414,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,239.000,1937,0,0,53,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00387586,0
+Robot4,41,obstacle,no_watchdog,-0.445493,-0.275528,-0.347414,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,239.000,1793,0,0,53,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00387586,0
+Robot4,42,near,no_admission,-0.175050,0.305132,0.0524331,reached_fallback,1,nan,nan,collision_checked_joint_route,path,628.000,5651,0,0,160,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000325360,0
+Robot4,42,near,no_preflight,-0.175050,0.305132,0.0524331,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,2527,0,0,73,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00349223,0
+Robot4,42,near,no_fallback,-0.175050,0.305132,0.0524331,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,257,257,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,42,near,no_watchdog,-0.175050,0.305132,0.0524331,reached_fallback,1,nan,nan,collision_checked_joint_route,path,43023.0,48360,0,0,188,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.00502488,0
+Robot4,42,near,full,-0.175050,0.305132,0.0524331,reached_fallback,1,nan,nan,collision_checked_joint_route,path,487.000,3275,0,0,90,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000403074,0
+Robot4,43,obstacle,no_preflight,-0.461516,-0.243471,-0.326937,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,170.000,1768,0,0,51,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00239634,0
+Robot4,43,obstacle,no_fallback,-0.461516,-0.243471,-0.326937,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,243.000,1838,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00239634,0
+Robot4,43,obstacle,no_watchdog,-0.461516,-0.243471,-0.326937,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,233.000,1723,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00239634,0
+Robot4,43,obstacle,full,-0.461516,-0.243471,-0.326937,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,235.000,1870,0,0,51,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00239634,0
+Robot4,43,obstacle,no_admission,-0.461516,-0.243471,-0.326937,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,176.000,1760,0,0,51,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00239634,0
+Robot4,44,near,no_fallback,-0.196030,-0.0631644,0.665729,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,245.000,2837,0,0,81,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0134014,0
+Robot4,44,near,no_watchdog,-0.196030,-0.0631644,0.665729,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,246.000,2588,0,0,81,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0134014,0
+Robot4,44,near,full,-0.196030,-0.0631644,0.665729,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,248.000,2831,0,0,81,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0134014,0
+Robot4,44,near,no_admission,-0.196030,-0.0631644,0.665729,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,195.000,2767,0,0,81,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.0134014,0
+Robot4,44,near,no_preflight,-0.196030,-0.0631644,0.665729,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,167.000,2695,0,0,81,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.0134014,0
+Robot4,45,obstacle,no_watchdog,-0.763157,-0.258634,-0.310331,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,224.000,1516,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00815631,0
+Robot4,45,obstacle,full,-0.763157,-0.258634,-0.310331,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,232.000,1574,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00815631,0
+Robot4,45,obstacle,no_admission,-0.763157,-0.258634,-0.310331,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,167.000,1504,0,0,43,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00815631,0
+Robot4,45,obstacle,no_preflight,-0.763157,-0.258634,-0.310331,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,169.000,1544,0,0,43,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00815631,0
+Robot4,45,obstacle,no_fallback,-0.763157,-0.258634,-0.310331,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,223.000,1596,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00815631,0
+Robot4,46,obstacle,full,-0.498531,-0.312455,-0.227666,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,231.000,1769,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00185557,0
+Robot4,46,obstacle,no_admission,-0.498531,-0.312455,-0.227666,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,1712,0,0,49,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00185557,0
+Robot4,46,obstacle,no_preflight,-0.498531,-0.312455,-0.227666,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,164.000,1691,0,0,49,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00185557,0
+Robot4,46,obstacle,no_fallback,-0.498531,-0.312455,-0.227666,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,230.000,1796,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00185557,0
+Robot4,46,obstacle,no_watchdog,-0.498531,-0.312455,-0.227666,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,227.000,1653,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00185557,0
+Robot4,47,box,no_admission,-0.179003,0.672366,0.563360,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4253,4253,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,47,box,no_preflight,-0.179003,0.672366,0.563360,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4220,4220,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,47,box,no_fallback,-0.179003,0.672366,0.563360,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,193,193,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,47,box,no_watchdog,-0.179003,0.672366,0.563360,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4216,4216,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,47,box,full,-0.179003,0.672366,0.563360,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4215,4215,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,48,box,no_preflight,-0.884673,0.449703,0.221352,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4217,4217,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,48,box,no_fallback,-0.884673,0.449703,0.221352,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,190,190,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,48,box,no_watchdog,-0.884673,0.449703,0.221352,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4218,4218,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,48,box,full,-0.884673,0.449703,0.221352,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4216,4216,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,48,box,no_admission,-0.884673,0.449703,0.221352,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4263,4263,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,49,box,no_fallback,-0.986201,-0.185883,-0.123705,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,201,201,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,49,box,no_watchdog,-0.986201,-0.185883,-0.123705,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4216,4216,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,49,box,full,-0.986201,-0.185883,-0.123705,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4218,4218,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,49,box,no_admission,-0.986201,-0.185883,-0.123705,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,189.000,1371,0,0,34,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,49,box,no_preflight,-0.986201,-0.185883,-0.123705,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4230,4230,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,50,box,no_watchdog,-0.502858,0.651052,0.455937,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4220,4220,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,50,box,full,-0.502858,0.651052,0.455937,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4215,4215,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,50,box,no_admission,-0.502858,0.651052,0.455937,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4255,4255,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,50,box,no_preflight,-0.502858,0.651052,0.455937,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4218,4218,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,50,box,no_fallback,-0.502858,0.651052,0.455937,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,190,190,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,51,near,full,-0.318360,-0.407158,0.0701907,reached_fallback,1,nan,nan,collision_checked_joint_route,path,625,5168,0,0,146,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,1,nan,0,nan,nan,0.00659843,0
+Robot4,51,near,no_admission,-0.318360,-0.407158,0.0701907,reached_fallback,1,nan,nan,collision_checked_joint_route,path,422.000,2858,0,0,78,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,visible,1,1,1,nan,0,nan,nan,0.00472206,0
+Robot4,51,near,no_preflight,-0.318360,-0.407158,0.0701907,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,2150,0,0,63,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00343714,0
+Robot4,51,near,no_fallback,-0.318360,-0.407158,0.0701907,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,246,246,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,51,near,no_watchdog,-0.318360,-0.407158,0.0701907,reached_fallback,1,nan,nan,collision_checked_joint_route,path,623.000,4771,0,0,144,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,visible,1,1,1,nan,0,nan,nan,0.00304882,0
+Robot4,52,box,no_admission,-0.687948,0.0227030,-0.761686,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4271,4271,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,52,box,no_preflight,-0.687948,0.0227030,-0.761686,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4215,4215,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,52,box,no_fallback,-0.687948,0.0227030,-0.761686,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,205,205,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,52,box,no_watchdog,-0.687948,0.0227030,-0.761686,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4214,4214,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,52,box,full,-0.687948,0.0227030,-0.761686,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4216,4216,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,53,box,no_preflight,-0.999970,-0.738019,0.590285,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4217,4217,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,53,box,no_fallback,-0.999970,-0.738019,0.590285,rejected_admission,0,target_not_near_workspace_samples,nan,nan,nan,189,189,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,53,box,no_watchdog,-0.999970,-0.738019,0.590285,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4213,4213,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,53,box,full,-0.999970,-0.738019,0.590285,rejected_admission,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4213,4213,0,0,0,nan,nan,nan,0,target_not_near_workspace_samples,nan,nan,nan,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,53,box,no_admission,-0.999970,-0.738019,0.590285,rejected_preflight,0,cartesian_goal_config_unavailable,nan,no_collision_free_goal_config,nan,4240,4240,0,0,0,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,Floor,1,0,nan,nan,0,nan,nan,nan,0
+Robot4,54,near,no_fallback,-0.0769601,0.111231,-0.139393,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,240,240,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,54,near,no_watchdog,-0.0769601,0.111231,-0.139393,reached_fallback,1,nan,nan,collision_checked_joint_route,path,538.000,3420,0,0,102,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000490223,0
+Robot4,54,near,full,-0.0769601,0.111231,-0.139393,reached_fallback,1,nan,nan,collision_checked_joint_route,path,507.000,3054,0,0,82,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000836398,0
+Robot4,54,near,no_admission,-0.0769601,0.111231,-0.139393,reached_fallback,1,nan,nan,collision_checked_joint_route,path,406.000,2791,0,0,76,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000210388,0
+Robot4,54,near,no_preflight,-0.0769601,0.111231,-0.139393,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,169.000,1770,0,0,50,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,55,near,no_watchdog,-0.511360,-0.0207169,0.160833,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,234.000,1686,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000982284,0
+Robot4,55,near,full,-0.511360,-0.0207169,0.160833,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,231.000,1782,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000982284,0
+Robot4,55,near,no_admission,-0.511360,-0.0207169,0.160833,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,175.000,1723,0,0,49,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000982284,0
+Robot4,55,near,no_preflight,-0.511360,-0.0207169,0.160833,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,172.000,1723,0,0,49,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.000982284,0
+Robot4,55,near,no_fallback,-0.511360,-0.0207169,0.160833,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,232.000,1770,0,0,49,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.000982284,0
+Robot4,56,obstacle,full,-0.595042,-0.310129,-0.267194,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,230.000,1591,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00260498,0
+Robot4,56,obstacle,no_admission,-0.595042,-0.310129,-0.267194,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,1535,0,0,43,nan,nan,nan,nan,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00260498,0
+Robot4,56,obstacle,no_preflight,-0.595042,-0.310129,-0.267194,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,168.000,1536,0,0,43,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00260498,0
+Robot4,56,obstacle,no_fallback,-0.595042,-0.310129,-0.267194,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,225.000,1600,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00260498,0
+Robot4,56,obstacle,no_watchdog,-0.595042,-0.310129,-0.267194,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,231.000,1504,0,0,43,nan,nan,nan,1,nan,1,nan,nan,0,nan,nan,nan,0,nan,nan,0.00260498,0
+Robot4,57,near,no_admission,-0.106226,0.298361,0.0640548,reached_fallback,1,nan,nan,collision_checked_joint_route,path,567.000,4630,0,0,130,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00179345,0
+Robot4,57,near,no_preflight,-0.106226,0.298361,0.0640548,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,171.000,2685,0,0,79,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00377520,0
+Robot4,57,near,no_fallback,-0.106226,0.298361,0.0640548,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,245,245,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,57,near,no_watchdog,-0.106226,0.298361,0.0640548,reached_fallback,1,nan,nan,collision_checked_joint_route,path,531.000,3173,0,0,92,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00317853,0
+Robot4,57,near,full,-0.106226,0.298361,0.0640548,reached_fallback,1,nan,nan,collision_checked_joint_route,path,653.000,4434,0,0,114,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000497229,0
+Robot4,58,near,no_preflight,-0.375518,0.137068,-0.0292741,reached_direct,1,nan,nan,coppeliasim_smooth_pose_ik,cartesian,173.000,1994,0,0,57,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,0.00285109,0
+Robot4,58,near,no_fallback,-0.375518,0.137068,-0.0292741,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,257,257,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,58,near,no_watchdog,-0.375518,0.137068,-0.0292741,reached_fallback,1,nan,nan,collision_checked_joint_route,path,516.000,3174,0,0,92,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000406694,0
+Robot4,58,near,full,-0.375518,0.137068,-0.0292741,reached_fallback,1,nan,nan,collision_checked_joint_route,path,27253.0,33487,0,0,200,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,0,joint_path_collision_detected,0,1,nan,0.00314898,0
+Robot4,58,near,no_admission,-0.375518,0.137068,-0.0292741,reached_fallback,1,nan,nan,collision_checked_joint_route,path,547.000,4720,0,0,134,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00152157,0
+Robot4,59,obstacle,no_fallback,-0.151036,0.413416,-0.0973301,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,239,239,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,59,obstacle,no_watchdog,-0.151036,0.413416,-0.0973301,reached_fallback,1,nan,nan,collision_checked_joint_route,path,429.000,2360,0,0,66,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00395933,0
+Robot4,59,obstacle,full,-0.151036,0.413416,-0.0973301,reached_fallback,1,nan,nan,collision_checked_joint_route,path,532.000,6562,0,0,192,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00770459,0
+Robot4,59,obstacle,no_admission,-0.151036,0.413416,-0.0973301,reached_fallback,1,nan,nan,collision_checked_joint_route,path,374.000,5334,0,0,160,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00843078,0
+Robot4,59,obstacle,no_preflight,-0.151036,0.413416,-0.0973301,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,175.000,2231,0,0,64,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,60,near,no_watchdog,-0.121747,0.104725,-0.111867,reached_fallback,1,nan,nan,collision_checked_joint_route,path,484.000,2914,0,0,84,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00173932,0
+Robot4,60,near,full,-0.121747,0.104725,-0.111867,reached_fallback,1,nan,nan,collision_checked_joint_route,path,550.000,3445,0,0,92,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.000448652,0
+Robot4,60,near,no_admission,-0.121747,0.104725,-0.111867,reached_fallback,1,nan,nan,collision_checked_joint_route,path,577.000,4896,0,0,138,nan,nan,nan,nan,nan,0,simple_cartesian_path_collision_detected,nan,1,1,1,nan,0,nan,nan,0.00172910,0
+Robot4,60,near,no_preflight,-0.121747,0.104725,-0.111867,aborted_watchdog,0,motion_execution_failed,[string "/Robot4@customizationScript"]:590: simple_cartesian_path_collision_detected
+stack traceback:
+	[C]: in function 'error'
+	[string "/Robot4@customizationScript"]:590: in function 'womatSimplePoseCallback'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:524: in function 'sim-1.moveToPose_step'
+	.../CoppeliaSim_Edu_V4_10_0_rev0_Ubuntu22_04/lua/motion.lua:622: in function 'sim-1.moveToPose'
+	(...tail calls...),nan,cartesian,171.000,1762,0,0,50,nan,nan,nan,1,nan,nan,nan,nan,0,nan,nan,nan,0,nan,nan,nan,0
+Robot4,60,near,no_fallback,-0.121747,0.104725,-0.111867,rejected_preflight,0,simple_cartesian_path_collision_detected,nan,nan,nan,240,240,0,0,0,nan,nan,nan,1,nan,0,simple_cartesian_path_collision_detected,nan,0,nan,nan,nan,0,nan,nan,nan,0

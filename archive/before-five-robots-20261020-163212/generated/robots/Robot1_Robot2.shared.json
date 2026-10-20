@@ -1,0 +1,118 @@
+{
+  "name": "Robot1_Robot2",
+  "scene": "generated/robots/Robot1_Robot2_shared.ttt",
+  "environmentScene": "generated/robots/Robot1_Robot2_environment.ttt",
+  "collisionObstacles": [
+    "Robot1_wall",
+    "Robot2_wall",
+    "Robot1_grip_support"
+  ],
+  "support": "Robot1_grip_support",
+  "cube": "Robot1_grip_cube",
+  "interactionSpace": {
+    "ownerRobot": "Robot1",
+    "partners": [
+      "Robot2"
+    ],
+    "targetVoxelCount": 1000,
+    "proximityFactor": 1.25,
+    "sampleSize": 20000,
+    "spacingPercentile": 0.75,
+    "minVoxelSize": 0,
+    "maxVoxelSize": 0.2,
+    "bidirectional": true,
+    "seed": 42,
+    "output": {
+      "csv": "generated/robots/Robot1_Robot2.shared-space.csv",
+      "metadata": "generated/robots/Robot1_Robot2.shared-space.json"
+    },
+    "visual": {
+      "object": "workspace_shared_reachable_points",
+      "color": [
+        0,
+        255,
+        0
+      ]
+    }
+  },
+  "handoverCalibration": {
+    "type": "shared_point_world_offset",
+    "sourceRobot": "Robot1",
+    "targetRobot": "Robot2",
+    "referenceSeed": 42,
+    "referenceSharedPointWorld": [
+      0.775,
+      0.275,
+      0.425
+    ],
+    "referenceCalculatedGiverLocalTcp": [
+      0.775,
+      0.095,
+      0.43
+    ],
+    "referenceMeasuredGiverLocalTcp": [
+      0.89,
+      0,
+      0.43
+    ],
+    "sharedPointWorldOffset": [
+      0.115,
+      -0.095,
+      0
+    ],
+    "coordinateFrame": "world",
+    "description": "Correction derived from seed 42 and applied to every selected green shared point before deriving both robots' TCP targets."
+  },
+  "robots": [
+    {
+      "name": "Robot1",
+      "manifest": "generated/robots/Robot1/manifest.json",
+      "workspaceCsv": "generated/robots/Robot1/info/Robot1_data_point.csv",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "rotationDeg": 0
+    },
+    {
+      "name": "Robot2",
+      "manifest": "generated/robots/Robot2/manifest.json",
+      "workspaceCsv": "generated/robots/Robot2/info/Robot2_data_point.csv",
+      "offset": [
+        1.25,
+        0.2,
+        0
+      ],
+      "rotationDeg": 180
+    }
+  ],
+  "sharedSpace": {
+    "pairKey": "Robot1_Robot2",
+    "voxelSize": 0.03950949755064699,
+    "voxelCount": 967,
+    "csv": "generated/robots/Robot1_Robot2.shared-space.csv",
+    "metadata": "generated/robots/Robot1_Robot2.shared-space.json",
+    "visualObject": "interaction_Robot1_Robot2",
+    "color": [
+      0,
+      255,
+      0
+    ]
+  },
+  "sharedSpaces": [
+    {
+      "pairKey": "Robot1_Robot2",
+      "voxelSize": 0.03950949755064699,
+      "voxelCount": 967,
+      "csv": "generated/robots/Robot1_Robot2.shared-space.csv",
+      "metadata": "generated/robots/Robot1_Robot2.shared-space.json",
+      "visualObject": "interaction_Robot1_Robot2",
+      "color": [
+        0,
+        255,
+        0
+      ]
+    }
+  ]
+}

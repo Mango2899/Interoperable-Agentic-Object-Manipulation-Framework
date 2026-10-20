@@ -1,0 +1,23 @@
+% Representative: lower median successful makespan in each mode. Bars are participation, NOT motion.
+% exclusive, repetition 2
+\begin{tikzpicture}
+\begin{axis}[width=\linewidth,height=4.5cm,title={Exclusive},xmin=0,xmax=77.894,
+ymin=0.5,ymax=5.5,ytick={1,2,3,4,5},yticklabels={R1,R2,R3,R4,R5},xlabel={Time since delivery request [s]},xmajorgrids=true]
+\addplot+[no marks,line width=7pt,blue!65] coordinates {(0.055,1) (26.755,1)};
+\addplot+[no marks,line width=7pt,blue!65] coordinates {(12.254,2) (48.513,2)};
+\addplot+[no marks,line width=7pt,blue!65] coordinates {(33.754,4) (65.300,4)};
+\addplot+[no marks,line width=7pt,blue!65] coordinates {(52.355,5) (74.898,5)};
+\addplot[black,dashed] coordinates {(71.355,0.5) (71.355,5.5)};
+\end{axis}
+\end{tikzpicture}\par
+% region, repetition 4
+\begin{tikzpicture}
+\begin{axis}[width=\linewidth,height=4.5cm,title={Region-based},xmin=0,xmax=77.894,
+ymin=0.5,ymax=5.5,ytick={1,2,3,4,5},yticklabels={R1,R2,R3,R4,R5},xlabel={Time since delivery request [s]},xmajorgrids=true]
+\addplot+[no marks,line width=7pt,orange!85!black] coordinates {(0.078,1) (26.891,1)};
+\addplot+[no marks,line width=7pt,orange!85!black] coordinates {(12.478,2) (46.810,2)};
+\addplot+[no marks,line width=7pt,orange!85!black] coordinates {(31.078,4) (65.302,4)};
+\addplot+[no marks,line width=7pt,orange!85!black] coordinates {(50.178,5) (71.763,5)};
+\addplot[black,dashed] coordinates {(66.578,0.5) (66.578,5.5)};
+\end{axis}
+\end{tikzpicture}\par

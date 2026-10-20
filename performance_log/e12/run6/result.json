@@ -1,0 +1,324 @@
+{
+  "run": 6,
+  "status": "incomplete",
+  "reason": "Gradle exited before the cube was placed",
+  "issues": [
+    "The cube was never reported placed on the target support"
+  ],
+  "started_at": "2026-09-21T00:06:24.650Z",
+  "elapsed_ms": 193656,
+  "durations_ms": {
+    "neighbour_discovery": 261.9895000010729,
+    "interaction_space": 3691.056980997324,
+    "task_sites": 3726.3901329934597,
+    "initial_edge_pricing": 6841.865169003606,
+    "route_discovery": 3263.7729000002146
+  },
+  "route": {
+    "outcome": "success",
+    "origin": "robot1_agent",
+    "cost_m": 4.049873754856792,
+    "path": [
+      "robot1",
+      "robot2",
+      "robot4",
+      "robot5"
+    ],
+    "options_reported": 2,
+    "options": "[total(4.049873754856792,robot2_agent,robot2,[robot2,robot4,robot5]),total(4.236558260676997,robot2_agent,robot2,[robot2,robot3,robot5])]"
+  },
+  "legs": [
+    {
+      "agent": "robot1_agent",
+      "neighbour": "robot2",
+      "mode": "pickup",
+      "distance_m": 0.6767385133318435,
+      "candidate": "candidate_26"
+    },
+    {
+      "agent": "robot2_agent",
+      "neighbour": "robot1",
+      "mode": "pose",
+      "distance_m": 0.5179844344010258,
+      "candidate": "candidate_26"
+    },
+    {
+      "agent": "robot3_agent",
+      "neighbour": "robot2",
+      "mode": "pose",
+      "distance_m": 1.129794888218622,
+      "candidate": "candidate_24"
+    },
+    {
+      "agent": "robot5_agent",
+      "neighbour": "robot3",
+      "mode": "pose",
+      "distance_m": 1.9120404247255052,
+      "candidate": "candidate_55"
+    },
+    {
+      "agent": "robot4_agent",
+      "neighbour": "robot2",
+      "mode": "pose",
+      "distance_m": 0.9036805628245925,
+      "candidate": "candidate_59"
+    },
+    {
+      "agent": "robot5_agent",
+      "neighbour": "robot4",
+      "mode": "pose",
+      "distance_m": 1.9514702442993304,
+      "candidate": "candidate_31"
+    }
+  ],
+  "refused_edges": [
+    {
+      "agent": "robot1_agent",
+      "neighbour": "robot4",
+      "mode": "pickup",
+      "reason": "voxel_intersection_empty"
+    },
+    {
+      "agent": "robot1_agent",
+      "neighbour": "robot3",
+      "mode": "pickup",
+      "reason": "interaction_space_below_minimum"
+    },
+    {
+      "agent": "robot3_agent",
+      "neighbour": "robot1",
+      "mode": "pose",
+      "reason": "interaction_space_below_minimum"
+    },
+    {
+      "agent": "robot5_agent",
+      "neighbour": "robot2",
+      "mode": "pose",
+      "reason": "interaction_space_below_minimum"
+    },
+    {
+      "agent": "robot4_agent",
+      "neighbour": "robot1",
+      "mode": "pose",
+      "reason": "voxel_intersection_empty"
+    }
+  ],
+  "refused_candidates": [],
+  "selected_candidates": [
+    {
+      "agent": "robot1_agent",
+      "receiver": "robot2",
+      "candidate": "candidate_26",
+      "score": 0.8154100904116866,
+      "usable": 48,
+      "mono_ms": 42665689.755626
+    },
+    {
+      "agent": "robot2_agent",
+      "receiver": "robot4",
+      "candidate": "candidate_59",
+      "score": 0.8758028598166603,
+      "usable": 60,
+      "mono_ms": 42685208.915522
+    },
+    {
+      "agent": "robot4_agent",
+      "receiver": "robot5",
+      "candidate": "candidate_31",
+      "score": 0.8553078384593902,
+      "usable": 60,
+      "mono_ms": 42696086.283495
+    }
+  ],
+  "handovers": [
+    {
+      "run": 6,
+      "hop": 1,
+      "abandoned": false,
+      "refused_candidate": null,
+      "session": "handover_1789949223312_6",
+      "giver": "robot1",
+      "receiver": "robot2",
+      "giver_agent": "robot1_agent",
+      "start_ms": 38753,
+      "start_mono": 42665782.017592,
+      "end_mono": 42677262.649586,
+      "windows": {
+        "handover_plan": [
+          42665680.874287,
+          42665781.535226
+        ],
+        "giver_approach": [
+          42665782.235711,
+          42670345.077662
+        ],
+        "receiver_approach": [
+          42670407.223661,
+          42675660.510512
+        ],
+        "wait_receiver": [
+          42670346.103316,
+          42675661.338887
+        ],
+        "transfer": [
+          42675661.559559,
+          42675822.092751
+        ],
+        "receiver_retreat_motion": [
+          42675922.74319,
+          42677262.302818
+        ],
+        "receiver_retreat": [
+          42675856.975641,
+          42677263.302973
+        ],
+        "giver_home": [
+          42677263.761977,
+          42684239.397951
+        ]
+      },
+      "duration_ms": 11480.631994001567,
+      "giver_observed_ms": 11481.518300004303,
+      "handover_plan_ms": 100.66093900054693,
+      "giver_approach_ms": 4562.84195099771,
+      "receiver_approach_ms": 5253.286851003766,
+      "wait_receiver_ms": 5315.235570997,
+      "transfer_ms": 160.5331919938326,
+      "receiver_retreat_motion_ms": 1339.5596280023456,
+      "receiver_retreat_ms": 1406.3273320049047,
+      "giver_home_ms": 6975.635973997414
+    },
+    {
+      "run": 6,
+      "hop": 2,
+      "abandoned": false,
+      "refused_candidate": null,
+      "session": "handover_1789949242830_6",
+      "giver": "robot2",
+      "receiver": "robot4",
+      "giver_agent": "robot2_agent",
+      "start_ms": 58259,
+      "start_mono": 42685288.854786,
+      "end_mono": 42693575.54722,
+      "windows": {
+        "handover_plan": [
+          42685197.9851,
+          42685288.530172
+        ],
+        "giver_approach": [
+          42685288.995854,
+          42687937.031284
+        ],
+        "receiver_approach": [
+          42687996.800498,
+          42692497.952905
+        ],
+        "wait_receiver": [
+          42687937.856102,
+          42692498.965773
+        ],
+        "transfer": [
+          42692499.116907,
+          42692660.672063
+        ],
+        "receiver_retreat_motion": [
+          42692750.018074,
+          42693575.282007
+        ],
+        "receiver_retreat": [
+          42692691.447699,
+          42693576.018938
+        ],
+        "giver_home": [
+          42693576.341064,
+          42701913.135952
+        ]
+      },
+      "duration_ms": 8286.692433997989,
+      "giver_observed_ms": 8287.303334996104,
+      "handover_plan_ms": 90.54507199674845,
+      "giver_approach_ms": 2648.0354299992323,
+      "receiver_approach_ms": 4501.152406997979,
+      "wait_receiver_ms": 4561.1096710041165,
+      "transfer_ms": 161.55515599995852,
+      "receiver_retreat_motion_ms": 825.2639330029488,
+      "receiver_retreat_ms": 884.5712389945984,
+      "giver_home_ms": 8336.79488800466
+    },
+    {
+      "run": 6,
+      "hop": 3,
+      "abandoned": false,
+      "refused_candidate": null,
+      "session": "handover_1789949253708_7",
+      "giver": "robot4",
+      "receiver": "robot5",
+      "giver_agent": "robot4_agent",
+      "start_ms": 69179,
+      "start_mono": 42696208.378782,
+      "end_mono": 42712561.155382,
+      "windows": {
+        "handover_plan": [
+          42696078.326578,
+          42696207.857242
+        ],
+        "giver_approach": [
+          42696208.579162,
+          42705759.560954
+        ],
+        "receiver_approach": [
+          42705818.088315,
+          42711329.111687
+        ],
+        "wait_receiver": [
+          42705760.111688,
+          42711329.928436
+        ],
+        "transfer": [
+          42711330.155126,
+          42711517.921995
+        ],
+        "receiver_retreat_motion": [
+          42711617.478067,
+          42712560.90444
+        ],
+        "receiver_retreat": [
+          42711553.463792,
+          42712561.621025
+        ],
+        "giver_home": [
+          42712561.96038,
+          42772313.479242
+        ]
+      },
+      "duration_ms": 16352.776600003242,
+      "giver_observed_ms": 16353.397499002516,
+      "handover_plan_ms": 129.53066400438547,
+      "giver_approach_ms": 9550.981791995466,
+      "receiver_approach_ms": 5511.023371994495,
+      "wait_receiver_ms": 5569.816748000681,
+      "transfer_ms": 187.76686900109053,
+      "receiver_retreat_motion_ms": 943.4263729974627,
+      "receiver_retreat_ms": 1008.1572329998016,
+      "giver_home_ms": 59751.51886199415
+    }
+  ],
+  "transport": {
+    "delivery_requested_ms": 32093,
+    "delivery_ms": null,
+    "source_pickup_ms": 6401.4891240000725,
+    "placement_ms": null,
+    "handover_total_ms": 36120.1010280028,
+    "unpriced_ms": null,
+    "sink": null,
+    "goal": null,
+    "start_mono": 42659122.513311,
+    "placed_mono": null,
+    "pickup_window": [
+      42659144.827992,
+      42665546.317116
+    ],
+    "placement_window": null
+  },
+  "messages_total": 66
+}

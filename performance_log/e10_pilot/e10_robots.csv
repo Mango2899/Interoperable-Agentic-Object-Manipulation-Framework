@@ -1,0 +1,6 @@
+mode,repetition,success,robot,participated,beginS,homeS,durationS,deliveryS,taskS
+exclusive,1,0,Robot1,0,nan,nan,nan,nan,nan
+exclusive,1,0,Robot2,0,nan,nan,nan,nan,nan
+exclusive,1,0,Robot3,0,nan,nan,nan,nan,nan
+exclusive,1,0,Robot4,0,nan,nan,nan,nan,nan
+exclusive,1,0,Robot5,0,nan,nan,nan,nan,nan

@@ -1,0 +1,199 @@
+{
+  "cell": 4,
+  "run": 5,
+  "status": "ok",
+  "reason": null,
+  "issues": [],
+  "started_at": "2026-09-20T22:26:03.625Z",
+  "elapsed_ms": 11954,
+  "gradle_to_first_phase_ms": 1477,
+  "durations_ms": {
+    "neighbour_discovery": 203.37210900336504,
+    "interaction_space": 3588.6408509984612,
+    "task_sites": 3614.8320819959044,
+    "initial_edge_pricing": 6844.314603000879,
+    "route_discovery": 3391.658834002912
+  },
+  "phases": [
+    {
+      "phase": "neighbour_discovery",
+      "agent": "robot1_agent",
+      "start_ms": 1513,
+      "end_ms": 1680,
+      "duration_ms": 166.71863999962807,
+      "start_mono": 36607517.675221,
+      "end_mono": 36607684.393861
+    },
+    {
+      "phase": "neighbour_discovery",
+      "agent": "robot2_agent",
+      "start_ms": 1477,
+      "end_ms": 1680,
+      "duration_ms": 203.37210900336504,
+      "start_mono": 36607481.237128,
+      "end_mono": 36607684.609237
+    },
+    {
+      "phase": "neighbour_discovery",
+      "agent": "robot3_agent",
+      "start_ms": 1515,
+      "end_ms": 1679,
+      "duration_ms": 164.0503199994564,
+      "start_mono": 36607519.302884,
+      "end_mono": 36607683.353204
+    },
+    {
+      "phase": "neighbour_discovery",
+      "agent": "robot4_agent",
+      "start_ms": 1515,
+      "end_ms": 1680,
+      "duration_ms": 164.26704899966717,
+      "start_mono": 36607519.839838,
+      "end_mono": 36607684.106887
+    },
+    {
+      "phase": "interaction_space",
+      "agent": "robot1_agent",
+      "start_ms": 1681,
+      "end_ms": 5270,
+      "duration_ms": 3588.6408509984612,
+      "start_mono": 36607685.702386,
+      "end_mono": 36611274.343237
+    },
+    {
+      "phase": "interaction_space",
+      "agent": "robot2_agent",
+      "start_ms": 1681,
+      "end_ms": 2098,
+      "duration_ms": 416.75982600450516,
+      "start_mono": 36607685.895499,
+      "end_mono": 36608102.655325
+    },
+    {
+      "phase": "interaction_space",
+      "agent": "robot3_agent",
+      "start_ms": 1682,
+      "end_ms": 1904,
+      "duration_ms": 222.0911520048976,
+      "start_mono": 36607686.40153,
+      "end_mono": 36607908.492682
+    },
+    {
+      "phase": "interaction_space",
+      "agent": "robot4_agent",
+      "start_ms": 1682,
+      "end_ms": 1686,
+      "duration_ms": 4.479997999966145,
+      "start_mono": 36607686.156717,
+      "end_mono": 36607690.636715
+    },
+    {
+      "phase": "task_sites",
+      "agent": "robot1_agent",
+      "start_ms": 5270,
+      "end_ms": 5301,
+      "duration_ms": 31.18232099711895,
+      "start_mono": 36611274.669784,
+      "end_mono": 36611305.852105
+    },
+    {
+      "phase": "task_sites",
+      "agent": "robot2_agent",
+      "start_ms": 2099,
+      "end_ms": 2134,
+      "duration_ms": 34.73596700280905,
+      "start_mono": 36608103.202965,
+      "end_mono": 36608137.938932
+    },
+    {
+      "phase": "task_sites",
+      "agent": "robot3_agent",
+      "start_ms": 1904,
+      "end_ms": 1943,
+      "duration_ms": 38.8728040009737,
+      "start_mono": 36607908.840325,
+      "end_mono": 36607947.713129
+    },
+    {
+      "phase": "task_sites",
+      "agent": "robot4_agent",
+      "start_ms": 1687,
+      "end_ms": 1717,
+      "duration_ms": 30.34000499546528,
+      "start_mono": 36607691.020023,
+      "end_mono": 36607721.360028
+    },
+    {
+      "phase": "initial_edge_pricing",
+      "agent": "robot1_agent",
+      "start_ms": 5302,
+      "end_ms": 8562,
+      "duration_ms": 3259.8412330001593,
+      "start_mono": 36611306.145958,
+      "end_mono": 36614565.987191
+    },
+    {
+      "phase": "initial_edge_pricing",
+      "agent": "robot2_agent",
+      "start_ms": 2134,
+      "end_ms": 2134,
+      "duration_ms": 0.46543100476264954,
+      "start_mono": 36608138.283346,
+      "end_mono": 36608138.748777
+    },
+    {
+      "phase": "initial_edge_pricing",
+      "agent": "robot3_agent",
+      "start_ms": 1944,
+      "end_ms": 1944,
+      "duration_ms": 0.5632550045847893,
+      "start_mono": 36607948.084992,
+      "end_mono": 36607948.648247
+    },
+    {
+      "phase": "initial_edge_pricing",
+      "agent": "robot4_agent",
+      "start_ms": 1717,
+      "end_ms": 1718,
+      "duration_ms": 0.45927300304174423,
+      "start_mono": 36607721.672588,
+      "end_mono": 36607722.131861
+    },
+    {
+      "phase": "route_discovery",
+      "agent": "robot1_agent",
+      "start_ms": 8563,
+      "end_ms": 11954,
+      "duration_ms": 3391.658834002912,
+      "start_mono": 36614567.229426,
+      "end_mono": 36617958.88826
+    }
+  ],
+  "messages_total": 25,
+  "messages_by_type": {
+    "workspaceCloud": 6,
+    "interactionSpaceReady": 5,
+    "findRoute": 7,
+    "noRoute": 3,
+    "routeCost": 4
+  },
+  "route": [
+    {
+      "agent": "robot1_agent",
+      "data": [
+        "success",
+        "route(robot1,v_Robot4_grip_support_b,0)",
+        "2.0984578612573666",
+        "[robot1,robot2,robot4]"
+      ]
+    }
+  ],
+  "interaction_attempts": 6,
+  "interaction_computed": 0,
+  "interaction_cached": 5,
+  "interaction_refused": 1,
+  "startup_interaction_computed": 0,
+  "startup_interaction_cached": 5,
+  "cache_observation": "cached",
+  "interaction_compute_work_ms": 3521
+}

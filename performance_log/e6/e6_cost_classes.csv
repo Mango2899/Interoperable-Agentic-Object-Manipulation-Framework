@@ -1,0 +1,4 @@
+class,description,n,voxelizeMs_median,voxelizeMs_q25,voxelizeMs_q75,voxelizeMs_min,voxelizeMs_max,voxelizeMs_mean,testUs_median
+admitted_shares,"admitted, shares space",160,1938.9198,1679.5678,2036.1752,1510.1269,2370.8597,1875.7496,0.097562400
+admitted_empty,"admitted, empty",20,24035.830,10300.664,38110.891,8877.9594,38721.107,24081.146,0.097562400
+rejected,rejected (never computed in operation),20,111.80526,107.57841,117.89993,96.920847,159.39137,115.02268,0.097562400

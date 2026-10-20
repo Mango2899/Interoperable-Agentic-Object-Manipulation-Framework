@@ -1,0 +1,357 @@
+{
+  "descriptorPath": "generated/robots/Robot1_Robot2_Robot3_Robot4_Robot5.shared.json",
+  "configs": 200,
+  "reps": 3,
+  "seed": 1,
+  "batch": 10,
+  "cells": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "robots": [
+    {
+      "robot": "Robot1",
+      "cells": [
+        {
+          "obstacleShapes": 25,
+          "cell": 2
+        },
+        {
+          "obstacleShapes": 46,
+          "cell": 3
+        },
+        {
+          "obstacleShapes": 59,
+          "cell": 4
+        },
+        {
+          "obstacleShapes": 81,
+          "cell": 5
+        }
+      ],
+      "roots": [
+        {
+          "alias": "Robot5",
+          "robot": 5
+        },
+        {
+          "alias": "Floor",
+          "robot": 0
+        },
+        {
+          "alias": "Robot2",
+          "robot": 2
+        },
+        {
+          "alias": "Robot2_wall",
+          "robot": 2
+        },
+        {
+          "alias": "Robot4",
+          "robot": 4
+        },
+        {
+          "alias": "Robot4_wall",
+          "robot": 4
+        },
+        {
+          "alias": "Robot5_wall",
+          "robot": 5
+        },
+        {
+          "alias": "Robot3_wall",
+          "robot": 3
+        },
+        {
+          "alias": "Robot3",
+          "robot": 3
+        },
+        {
+          "alias": "Robot1_grip_support",
+          "robot": 1
+        },
+        {
+          "alias": "Robot5_grip_support_b",
+          "robot": 5
+        },
+        {
+          "alias": "Robot1_wall",
+          "robot": 1
+        }
+      ],
+      "robotShapes": 19,
+      "joints": 6
+    },
+    {
+      "robot": "Robot2",
+      "cells": [
+        {
+          "obstacleShapes": 25,
+          "cell": 2
+        },
+        {
+          "obstacleShapes": 46,
+          "cell": 3
+        },
+        {
+          "obstacleShapes": 59,
+          "cell": 4
+        },
+        {
+          "obstacleShapes": 81,
+          "cell": 5
+        }
+      ],
+      "roots": [
+        {
+          "alias": "Robot3_wall",
+          "robot": 3
+        },
+        {
+          "alias": "Robot1_grip_support",
+          "robot": 1
+        },
+        {
+          "alias": "Robot4_wall",
+          "robot": 4
+        },
+        {
+          "alias": "Robot1_wall",
+          "robot": 1
+        },
+        {
+          "alias": "Robot5",
+          "robot": 5
+        },
+        {
+          "alias": "Robot5_wall",
+          "robot": 5
+        },
+        {
+          "alias": "Robot5_grip_support_b",
+          "robot": 5
+        },
+        {
+          "alias": "Robot2_wall",
+          "robot": 2
+        },
+        {
+          "alias": "Robot4",
+          "robot": 4
+        },
+        {
+          "alias": "Floor",
+          "robot": 0
+        },
+        {
+          "alias": "Robot3",
+          "robot": 3
+        },
+        {
+          "alias": "Robot1",
+          "robot": 1
+        }
+      ],
+      "robotShapes": 19,
+      "joints": 6
+    },
+    {
+      "robot": "Robot3",
+      "cells": [
+        {
+          "obstacleShapes": 46,
+          "cell": 3
+        },
+        {
+          "obstacleShapes": 59,
+          "cell": 4
+        },
+        {
+          "obstacleShapes": 81,
+          "cell": 5
+        }
+      ],
+      "roots": [
+        {
+          "alias": "Robot1_grip_support",
+          "robot": 1
+        },
+        {
+          "alias": "Robot3_wall",
+          "robot": 3
+        },
+        {
+          "alias": "Robot1_wall",
+          "robot": 1
+        },
+        {
+          "alias": "Robot5",
+          "robot": 5
+        },
+        {
+          "alias": "Robot4_wall",
+          "robot": 4
+        },
+        {
+          "alias": "Robot5_grip_support_b",
+          "robot": 5
+        },
+        {
+          "alias": "Floor",
+          "robot": 0
+        },
+        {
+          "alias": "Robot2_wall",
+          "robot": 2
+        },
+        {
+          "alias": "Robot5_wall",
+          "robot": 5
+        },
+        {
+          "alias": "Robot1",
+          "robot": 1
+        },
+        {
+          "alias": "Robot4",
+          "robot": 4
+        },
+        {
+          "alias": "Robot2",
+          "robot": 2
+        }
+      ],
+      "robotShapes": 19,
+      "joints": 6
+    },
+    {
+      "robot": "Robot4",
+      "cells": [
+        {
+          "obstacleShapes": 67,
+          "cell": 4
+        },
+        {
+          "obstacleShapes": 89,
+          "cell": 5
+        }
+      ],
+      "roots": [
+        {
+          "alias": "Robot5_wall",
+          "robot": 5
+        },
+        {
+          "alias": "Robot5_grip_support_b",
+          "robot": 5
+        },
+        {
+          "alias": "Robot3",
+          "robot": 3
+        },
+        {
+          "alias": "Robot5",
+          "robot": 5
+        },
+        {
+          "alias": "Robot2",
+          "robot": 2
+        },
+        {
+          "alias": "Robot4_wall",
+          "robot": 4
+        },
+        {
+          "alias": "Robot3_wall",
+          "robot": 3
+        },
+        {
+          "alias": "Floor",
+          "robot": 0
+        },
+        {
+          "alias": "Robot1",
+          "robot": 1
+        },
+        {
+          "alias": "Robot1_wall",
+          "robot": 1
+        },
+        {
+          "alias": "Robot1_grip_support",
+          "robot": 1
+        },
+        {
+          "alias": "Robot2_wall",
+          "robot": 2
+        }
+      ],
+      "robotShapes": 11,
+      "joints": 6
+    },
+    {
+      "robot": "Robot5",
+      "cells": [
+        {
+          "obstacleShapes": 81,
+          "cell": 5
+        }
+      ],
+      "roots": [
+        {
+          "alias": "Robot5_grip_support_b",
+          "robot": 5
+        },
+        {
+          "alias": "Robot1_grip_support",
+          "robot": 1
+        },
+        {
+          "alias": "Floor",
+          "robot": 0
+        },
+        {
+          "alias": "Robot3_wall",
+          "robot": 3
+        },
+        {
+          "alias": "Robot4",
+          "robot": 4
+        },
+        {
+          "alias": "Robot3",
+          "robot": 3
+        },
+        {
+          "alias": "Robot2_wall",
+          "robot": 2
+        },
+        {
+          "alias": "Robot4_wall",
+          "robot": 4
+        },
+        {
+          "alias": "Robot5_wall",
+          "robot": 5
+        },
+        {
+          "alias": "Robot2",
+          "robot": 2
+        },
+        {
+          "alias": "Robot1",
+          "robot": 1
+        },
+        {
+          "alias": "Robot1_wall",
+          "robot": 1
+        }
+      ],
+      "robotShapes": 19,
+      "joints": 6
+    }
+  ],
+  "finishedAt": "2026-09-19T18:39:59.733Z"
+}

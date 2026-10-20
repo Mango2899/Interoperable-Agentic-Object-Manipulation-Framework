@@ -1,0 +1,3 @@
+{"t":1789942638394,"agent":"Robot2","pairKey":"Robot2__Robot3","targetRobot":"Robot3","cached":true,"voxelCount":357,"version":"c42625183f9c","durationMs":48}
+{"t":1789942638394,"agent":"Robot1","pairKey":"Robot1__Robot3","targetRobot":"Robot3","cached":true,"voxelCount":1,"version":"61e90f3c49c4","durationMs":48}
+{"t":1789942638561,"agent":"Robot1","pairKey":"Robot1__Robot2","targetRobot":"Robot2","cached":true,"voxelCount":565,"version":"fc9c92a007a5","durationMs":51}

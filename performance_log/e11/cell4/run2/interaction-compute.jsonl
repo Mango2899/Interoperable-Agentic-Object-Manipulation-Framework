@@ -1,0 +1,6 @@
+{"t":1789943075164,"agent":"Robot3","pairKey":"Robot3__Robot4","targetRobot":"Robot4","cached":true,"voxelCount":143,"version":"330856b471f2","durationMs":53}
+{"t":1789943075164,"agent":"Robot2","pairKey":"Robot2__Robot4","targetRobot":"Robot4","cached":true,"voxelCount":1043,"version":"932371f23353","durationMs":53}
+{"t":1789943075399,"agent":"Robot2","pairKey":"Robot2__Robot3","targetRobot":"Robot3","cached":true,"voxelCount":357,"version":"c42625183f9c","durationMs":66}
+{"t":1789943078533,"agent":"Robot1","pairKey":"Robot1__Robot4","targetRobot":"Robot4","durationMs":3421,"reason":"voxel_intersection_empty","diagnostics":{"nearestApproach":0.1168,"voxelSize":0.0485,"estimatedClosePoints":0,"estimatorMode":"bounding_box_fallback"}}
+{"t":1789943078570,"agent":"Robot1","pairKey":"Robot1__Robot3","targetRobot":"Robot3","cached":true,"voxelCount":1,"version":"61e90f3c49c4","durationMs":33}
+{"t":1789943078715,"agent":"Robot1","pairKey":"Robot1__Robot2","targetRobot":"Robot2","cached":true,"voxelCount":565,"version":"fc9c92a007a5","durationMs":46}

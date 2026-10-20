@@ -1,0 +1,11 @@
+% E10 means and sample standard deviations; successful runs only.
+\begin{tikzpicture}
+\begin{axis}[ybar,bar width=7pt,width=\linewidth,height=6.5cm,
+symbolic x coords={Delivery,All home,R1,R2,R3,R4,R5},xtick=data,ymin=0,ylabel={Time [s]},
+legend style={at={(0.5,1.03)},anchor=south,legend columns=2},enlarge x limits=0.1,ymajorgrids=true]
+\addplot+[error bars/.cd,y dir=both,y explicit] coordinates {(Delivery,74.1866) +- (0,0.0000) (All home,77.6637) +- (0,0.0000) (R1,26.2718) +- (0,0.0000) (R2,35.8148) +- (0,0.0000) (R4,34.8183) +- (0,0.0000) (R5,23.2772) +- (0,0.0000)};
+\addlegendentry{Exclusive}
+\addplot+[error bars/.cd,y dir=both,y explicit] coordinates {(Delivery,66.6506) +- (0,0.0000) (All home,71.0274) +- (0,0.0000) (R1,27.6254) +- (0,0.0000) (R2,33.4880) +- (0,0.0000) (R4,34.0417) +- (0,0.0000) (R5,21.4770) +- (0,0.0000)};
+\addlegendentry{Region-based}
+\end{axis}
+\end{tikzpicture}

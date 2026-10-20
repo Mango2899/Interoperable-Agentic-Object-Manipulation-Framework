@@ -1,0 +1,9 @@
+{
+  "cell": 5,
+  "run": 6,
+  "runs": 10,
+  "arm": "kill",
+  "failed_robot": "Robot4",
+  "t": 1790008471122,
+  "jcm": "/home/maxchrs/Desktop/MA/WoMAT/performance_log/e13/plans/e13_kill.jcm"
+}

@@ -1,0 +1,14 @@
+1. Heteregonität: robotische zwillinge, agenten und td sind standardisiert
+2. Wie genau die gesamte agentenkommunikation semantisch abläuft ?
+State of the Art teilen in Vergleich Background (separates Kapitel)
+Figure 1: Kein screenshot, Abstrakte beschreibung des Problems und der globalen Lösung. Abstract visualiziert
+Approach: Subchapter Übersicht, wie das ganze Zusammen funktioniert, 
+Evaluation: Gesamtsystemtests, d.h. Wände sehr nah an roboter, reroute durch robot3, versch. Position von Robotern
+Kleine Tests auf verschiedene Szenen auch anwenden 
+Pro Agent die Parameter in Manifest ändern und Schauen, wie es funktioniert
+Appendix: full manifest 
+Gitlab verlinken!
+Auch bei Evaluation. Bei Evaluation bei kleinen Experimenten verweisen, warum das fürs Gesamtsystem wichtig ist.
+Discussion: global diskutieren ob das System für heteregonene Roboter in versch. Konfigurationen funktioniert
+Approach: mehr figures, gleiches Schrift und Schriftgröße
+FIgures: Leser an die Hand nehmen und interpretation der figure/Wichtigkeit bei caption zeigen

@@ -1,0 +1,309 @@
+WoMAT TWO-ROBOT CUBE HANDOVER PROTOCOL
+=======================================
+Research Frage: Was will ich Untersuchen und wie beantworte ich das Problem mit meiner Lösung.
+Lösung ist hier, Problem muss man genauer definieren.
+Status
+------
+This document describes the agent-owned adaptive interaction-space protocol. The shared
+plans are installed from src/agt/handoverPlans.asl in the generated Robot1 and
+Robot2 agents. Robot 1 alone estimates, voxelises, intersects, and selects from
+the workspaces; the lower runtime handles only physical session coordination.
+
+
+1. PURPOSE
+----------
+
+Robot 1 shall:
+
+1. Pick up the shared red cube.
+2. Request a handover plan.
+3. Carry the cube to the planned giver TCP position.
+4. Tell Robot 2 that the cube is ready.
+5. Transfer ownership only after Robot 2 reaches the receiver position.
+6. Wait until Robot 2 has cleared the interaction point.
+7. Return every joint to zero, then restore normal collision checking.
+
+Robot 2 shall:
+
+1. Wait for Robot 1's handover request.
+2. Enable the restricted handover approach mode.
+3. Move to the planned receiver TCP position.
+4. Tell Robot 1 that it is ready.
+5. Accept the atomic cube transfer.
+6. Move 0.10 m away from the interaction point and notify Robot 1.
+7. Wait until Robot 1 is upright at its all-zero joint pose.
+8. Restore normal collision checking and return the cube to support.
+
+
+2. CURRENT CALIBRATION
+----------------------
+
+Calibration is applied to every Robot-1-selected interaction-space point:
+
+    sharedPointWorldOffset = [+0.115, -0.095, 0.000]
+
+The exact seed-42 point changes when the raw workspaces or estimated voxel size
+change. Inspect generated/robots/Robot1_Robot2.shared-space.json and CSV for the
+current result. The following values are retained as historical calibration data:
+
+    selected green point:       [0.775, 0.275, 0.425]
+    corrected cube world point: [0.890, 0.180, 0.425]
+    Robot 1 local TCP:          [0.890, 0.000, 0.430]
+    Robot 2 local TCP:          [0.360, -0.160, 0.430]
+
+The runtime derives both TCP targets from the selected point, current robot
+base transforms, and robot-local jaw offsets.
+
+
+3. LOWER-LEVEL WOT OPERATIONS
+-----------------------------
+
+Robot 1 base URL:
+
+    http://localhost:8110/coppeliasim_virtualrobot_robot1
+
+Robot 2 base URL:
+
+    http://localhost:8120/coppeliasim_virtualrobot_robot2
+
+Relevant actions and properties:
+
+    POST /actions/moveTocartesianPosition
+    POST /actions/closeGripper
+    POST /actions/openGripper
+    POST /actions/beginHandoverSession
+    POST /actions/setHandoverApproach
+    POST /actions/transferCube
+
+    GET  /properties/getCubeOwnership
+    GET  /properties/getGripperState
+
+There is deliberately no lower-level planHandover action or getHandoverPlan
+property. Those would reintroduce global spatial reasoning.
+
+
+4. PROTOCOL STATE AND BELIEFS
+-----------------------------
+
+Suggested shared/static beliefs:
+
+    handoverPartner(robot2_agent, robot2).
+    interactionSpaceOwner(robot1).
+    interactionSpacePartner(robot2).
+    handoverSeed(42).
+    handoverHeightRange(0.3, 0.65).
+
+Suggested runtime beliefs:
+
+    interactionRobot(robot2_agent, robot2).
+    interactionSpace(Space, robot2, VoxelSize, Ox, Oy, Oz, VoxelCount).
+    interactionSpaceReady(Space, robot2).
+
+    cubeOwner(none).
+    cubeOwner(robot1).
+    cubeOwner(robot2).
+
+    handoverSession(Session, Giver, Receiver).
+    handoverPlan(Session, CubeX, CubeY, CubeZ,
+                 GiverX, GiverY, GiverZ,
+                 ReceiverX, ReceiverY, ReceiverZ).
+
+    giverAtHandover(Session).
+    giverReady(Session).
+    receiverAtHandover(Session).
+    receiverReady(Session).
+    cubeTransferred(Session).
+    receiverRetreated(Session).
+    giverHome(Session).
+    handoverComplete(Session).
+
+Suggested failure beliefs:
+
+    handoverFailed(Session, Reason).
+    motionFailed(Robot, Reason).
+    transferFailed(Session, Reason).
+    handoverTimedOut(Session, Stage).
+
+
+5. MESSAGE FLOW
+---------------
+
+    Robot 1                                      Robot 2
+       |                                            |
+       | pick cube                                  |
+       | create calibrated plan                     |
+       | move to giver TCP                          |
+       |                                            |
+       |---- achieve receiveCube(Session,Plan) ---->|
+       |                                            | enable approach mode
+       |                                            | move to receiver TCP
+       |<----------- tell receiverReady ------------|
+       |                                            |
+       | atomic transferCube(robot2)                |
+       |---- tell cubeTransferred ----------------->|
+       |                                            |
+       |                                            | retreat 0.10 m with cube
+       |<--------- tell receiverRetreated -----------|
+       | return all joints to zero                  |
+       | disable handover mode                      |
+       |-------------- tell giverHome ------------->|
+       |                                            | disable handover mode
+       |                                            | return cube to support
+       |<---------- tell handoverComplete ----------|
+
+
+6. ILLUSTRATIVE ROBOT 1 PLAN
+----------------------------
+
+The following is AgentSpeak/Jason-style pseudocode. The exact internal actions
+used to parse WoT results will be adapted to the project's WoT artifact.
+
+    +!handoverCubeTo(robot2_agent)
+        : cubeOwner(robot1)
+    <-
+        handoverSeed(Seed);
+        handoverHeightRange(MinZ, MaxZ);
+
+        // Robot 1's AgentThing selects from its private interaction space and
+        // registers only the resulting session identity with the lower runtime.
+        !requestHandoverPlan("Robot2", Seed, MinZ, MaxZ, Session,
+            CubeX, CubeY, CubeZ,
+            GiverX, GiverY, GiverZ,
+            ReceiverX, ReceiverY, ReceiverZ);
+
+        +handoverSession(Session, robot1_agent, robot2_agent);
+        +handoverPlan(Session, CubeX, CubeY, CubeZ,
+            GiverX, GiverY, GiverZ,
+            ReceiverX, ReceiverY, ReceiverZ);
+
+        !moveTo(GiverX, GiverY, GiverZ);
+        +giverAtHandover(Session);
+
+        .send(robot2_agent, achieve,
+            receiveCube(Session, CubeX, CubeY, CubeZ,
+                ReceiverX, ReceiverY, ReceiverZ));
+
+        +giverReady(Session);
+        .send(robot2_agent, tell, giverReady(Session));
+
+        // Wait with a finite timeout in the concrete implementation.
+        .wait(receiverReady(Session));
+
+        !transferCubeTo("Robot2");
+        -cubeOwner(robot1);
+        +cubeOwner(robot2);
+        +cubeTransferred(Session);
+        .send(robot2_agent, tell, cubeTransferred(Session));
+
+        // Let Robot 2 clear the shared interaction point first.
+        .wait(receiverRetreated(Session));
+        !returnToDefaultJointPose;
+        !setHandoverApproach(false);
+        +giverHome(Session);
+        .send(robot2_agent, tell, giverHome(Session)).
+
+
+7. ILLUSTRATIVE ROBOT 2 PLAN
+----------------------------
+
+    +!receiveCube(Session, CubeX, CubeY, CubeZ,
+                  ReceiverX, ReceiverY, ReceiverZ)
+    <-
+        +handoverSession(Session, robot1_agent, robot2_agent);
+
+        // Enables a narrow exception for Robot 1's gripper only.
+        !setHandoverApproach(true);
+
+        !moveTo(ReceiverX, ReceiverY, ReceiverZ);
+        +receiverAtHandover(Session);
+        +receiverReady(Session);
+        .send(robot1_agent, tell, receiverReady(Session));
+
+        .wait(cubeTransferred(Session));
+        -cubeOwner(robot1);
+        +cubeOwner(robot2);
+
+        // Clear the interaction point while the scoped peer-gripper collision
+        // exception remains active, then let Robot 1 return upright.
+        !moveTo(ReceiverX - 0.10, ReceiverY, ReceiverZ);
+        +receiverRetreated(Session);
+        .send(robot1_agent, tell, receiverRetreated(Session));
+
+        .wait(giverHome(Session));
+        !setHandoverApproach(false);
+
+        !returnCubeToSupport;
+        +handoverComplete(Session);
+        .send(robot1_agent, tell, handoverComplete(Session)).
+
+
+8. SUPPORT-RETURN PLAN FOR ROBOT 2
+----------------------------------
+
+    +!returnCubeToSupport
+        : cubeOwner(robot2)
+    <-
+        !moveToSupportApproach;
+        !moveToSupportReleasePose;
+        !openGripper;
+        -cubeOwner(robot2);
+        +cubeOwner(none);
+        !moveToSupportRetreat.
+
+The support approach, release, and retreat poses should be calibrated during a
+later checkpoint. They should not be generated from a random green point.
+
+
+9. FAILURE AND RECOVERY RULES
+-----------------------------
+
+1. Robot 1 never transfers or opens before receiverReady(Session).
+2. Robot 2 never assumes ownership before transferCube succeeds.
+3. If Robot 2 cannot reach the receiver pose:
+   - disable its handover approach mode;
+   - report handoverFailed(Session, Reason);
+   - Robot 1 keeps the cube;
+   - request another seeded shared point or abort.
+4. If transferCube fails, Robot 1 remains the owner and retreats with the cube.
+5. If either agent times out, both disable handover approach mode.
+6. If cube ownership and gripper state disagree, both robots stop and query:
+
+       getCubeOwnership
+       getGripperState
+
+7. Collision relaxation must never remain enabled after both robots retreat.
+8. Only the peer gripper is ignored during approach/retreat; peer arms, walls,
+   support geometry, and other obstacles remain collision checked.
+
+
+10. CHECKPOINT-3 IMPLEMENTATION BOUNDARY
+----------------------------------------
+
+The agent implementation now includes:
+
+1. WoT mappings for planHandover, setHandoverApproach, transferCube, and
+   getCubeOwnership.
+2. Robot 1 coordinator plans.
+3. Robot 2 receiver and support-return plans.
+4. Jason messages and finite timeouts.
+5. Belief updates based on actual WoT results, not fixed delays alone.
+
+The lower runtime already supplies the geometric plan, scoped collision mode,
+and atomic ownership transfer. The BDI agents should coordinate those existing
+capabilities rather than reproduce geometry or ownership logic.
+
+
+11. STARTING THE IMPLEMENTED PROTOCOL
+-------------------------------------
+
+After the shared lower runtime, both AgentThing bridges, and the combined JaCaMo
+application are running, start the coordinator through Robot 1's agent TD:
+
+    POST http://localhost:8111/robot1_agent/actions/handoverCube
+    Content-Type: application/json
+
+    {"targetAgent":"robot2_agent","targetRobot":"Robot2"}
+
+Robot 2's explicit support approach/release/retreat TCP poses are derived from
+the current shared support pose and configured jaw offset. They must be checked
+again if either robot base, support, cube, or gripper calibration changes.

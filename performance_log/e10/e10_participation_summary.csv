@@ -1,0 +1,11 @@
+mode,metric,origin,attempted,succeeded,failed,setupFailures,n,mean,sd
+exclusive,Robot1,participation,10,9,1,0,9,21.7661,6.08888
+exclusive,Robot2,participation,10,9,1,0,9,30.3162,8.33964
+exclusive,Robot3,participation,10,9,1,0,0,nan,nan
+exclusive,Robot4,participation,10,9,1,0,9,29.5767,10.2364
+exclusive,Robot5,participation,10,9,1,0,9,20.4636,6.91648
+region,Robot1,participation,10,9,1,0,9,24.7311,4.86884
+region,Robot2,participation,10,9,1,0,9,31.0318,6.60525
+region,Robot3,participation,10,9,1,0,0,nan,nan
+region,Robot4,participation,10,9,1,0,9,34.0471,14.0065
+region,Robot5,participation,10,9,1,0,9,24.2280,13.2721

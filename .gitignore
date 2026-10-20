@@ -1,0 +1,39 @@
+# Local dependency installations
+node_modules/
+
+# Gradle caches and generated build state
+.gradle/
+build/
+bin/
+.jcm-deps.gradle
+
+# TypeScript compiler output. The three runtime modules below are retained
+# because the current generic AgentThing server imports them directly.
+dist/**
+!dist/WoT/
+dist/WoT/**
+!dist/WoT/agentThing.js
+!dist/WoT/agentConnector.js
+!dist/WoT/plan_translator.js
+types/
+
+# Runtime output and editor-local settings
+log/
+*.log
+.vscode/
+
+# Operating-system and temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*~
+
+# Motion logs are per-run measurements, not artifacts.
+performance_log/*.jsonl
+
+# Raw experiment samples: ~5 MB per robot per seed, regenerable from the seed.
+generated/experiments/*/samples/
+
+# videos folder since too large
+videos/

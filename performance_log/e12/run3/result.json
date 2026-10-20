@@ -1,0 +1,375 @@
+{
+  "run": 3,
+  "status": "ok",
+  "reason": null,
+  "issues": [],
+  "started_at": "2026-09-20T23:58:56.453Z",
+  "elapsed_ms": 165802,
+  "durations_ms": {
+    "neighbour_discovery": 283.6164260059595,
+    "interaction_space": 3828.019846998155,
+    "task_sites": 3862.1567630022764,
+    "initial_edge_pricing": 7040.264489002526,
+    "route_discovery": 3363.1776290014386
+  },
+  "route": {
+    "outcome": "success",
+    "origin": "robot1_agent",
+    "cost_m": 4.049873754856792,
+    "path": [
+      "robot1",
+      "robot2",
+      "robot4",
+      "robot5"
+    ],
+    "options_reported": 2,
+    "options": "[total(4.049873754856792,robot2_agent,robot2,[robot2,robot4,robot5]),total(4.236558260676997,robot2_agent,robot2,[robot2,robot3,robot5])]"
+  },
+  "legs": [
+    {
+      "agent": "robot1_agent",
+      "neighbour": "robot2",
+      "mode": "pickup",
+      "distance_m": 0.6767385133318435,
+      "candidate": "candidate_26"
+    },
+    {
+      "agent": "robot2_agent",
+      "neighbour": "robot1",
+      "mode": "pose",
+      "distance_m": 0.5179844344010258,
+      "candidate": "candidate_26"
+    },
+    {
+      "agent": "robot3_agent",
+      "neighbour": "robot2",
+      "mode": "pose",
+      "distance_m": 1.1297948882186217,
+      "candidate": "candidate_24"
+    },
+    {
+      "agent": "robot5_agent",
+      "neighbour": "robot3",
+      "mode": "pose",
+      "distance_m": 1.9120404247255052,
+      "candidate": "candidate_55"
+    },
+    {
+      "agent": "robot4_agent",
+      "neighbour": "robot2",
+      "mode": "pose",
+      "distance_m": 0.9036805628245925,
+      "candidate": "candidate_59"
+    },
+    {
+      "agent": "robot5_agent",
+      "neighbour": "robot4",
+      "mode": "pose",
+      "distance_m": 1.9514702442993308,
+      "candidate": "candidate_31"
+    }
+  ],
+  "refused_edges": [
+    {
+      "agent": "robot1_agent",
+      "neighbour": "robot4",
+      "mode": "pickup",
+      "reason": "voxel_intersection_empty"
+    },
+    {
+      "agent": "robot1_agent",
+      "neighbour": "robot3",
+      "mode": "pickup",
+      "reason": "interaction_space_below_minimum"
+    },
+    {
+      "agent": "robot3_agent",
+      "neighbour": "robot1",
+      "mode": "pose",
+      "reason": "interaction_space_below_minimum"
+    },
+    {
+      "agent": "robot5_agent",
+      "neighbour": "robot2",
+      "mode": "pose",
+      "reason": "interaction_space_below_minimum"
+    },
+    {
+      "agent": "robot4_agent",
+      "neighbour": "robot1",
+      "mode": "pose",
+      "reason": "voxel_intersection_empty"
+    }
+  ],
+  "refused_candidates": [
+    {
+      "agent": "robot4_agent",
+      "candidate": "candidate_31",
+      "receiver": "robot5"
+    }
+  ],
+  "selected_candidates": [
+    {
+      "agent": "robot1_agent",
+      "receiver": "robot2",
+      "candidate": "candidate_26",
+      "score": 0.8154100904116866,
+      "usable": 48,
+      "mono_ms": 42206278.962801
+    },
+    {
+      "agent": "robot2_agent",
+      "receiver": "robot4",
+      "candidate": "candidate_59",
+      "score": 0.8758028598166603,
+      "usable": 60,
+      "mono_ms": 42227059.612019
+    },
+    {
+      "agent": "robot4_agent",
+      "receiver": "robot5",
+      "candidate": "candidate_31",
+      "score": 0.8553078384593902,
+      "usable": 60,
+      "mono_ms": 42238479.634765
+    },
+    {
+      "agent": "robot4_agent",
+      "receiver": "robot5",
+      "candidate": "candidate_38",
+      "score": 0.8258467003837209,
+      "usable": 59,
+      "mono_ms": 42245932.892245
+    }
+  ],
+  "handovers": [
+    {
+      "run": 3,
+      "hop": 1,
+      "abandoned": false,
+      "refused_candidate": null,
+      "session": "handover_1789948763901_3",
+      "giver": "robot1",
+      "receiver": "robot2",
+      "giver_agent": "robot1_agent",
+      "start_ms": 27540,
+      "start_mono": 42206372.062492,
+      "end_mono": 42218157.482946,
+      "windows": {
+        "handover_plan": [
+          42206270.123333,
+          42206371.544152
+        ],
+        "giver_approach": [
+          42206372.256459,
+          42210979.03933
+        ],
+        "receiver_approach": [
+          42211038.207223,
+          42216511.732905
+        ],
+        "wait_receiver": [
+          42210980.168004,
+          42216512.504775
+        ],
+        "transfer": [
+          42216512.694955,
+          42216698.197836
+        ],
+        "receiver_retreat_motion": [
+          42216799.289284,
+          42218157.194626
+        ],
+        "receiver_retreat": [
+          42216734.222422,
+          42218158.198183
+        ],
+        "giver_home": [
+          42218158.796413,
+          42225808.230238
+        ]
+      },
+      "duration_ms": 11785.420454002917,
+      "giver_observed_ms": 11786.398056000471,
+      "handover_plan_ms": 101.42081899940968,
+      "giver_approach_ms": 4606.782871000469,
+      "receiver_approach_ms": 5473.525682002306,
+      "wait_receiver_ms": 5532.336771003902,
+      "transfer_ms": 185.5028809979558,
+      "receiver_retreat_motion_ms": 1357.9053420051932,
+      "receiver_retreat_ms": 1423.9757610037923,
+      "giver_home_ms": 7649.433825001121
+    },
+    {
+      "run": 3,
+      "hop": 2,
+      "abandoned": false,
+      "refused_candidate": null,
+      "session": "handover_1789948784681_3",
+      "giver": "robot2",
+      "receiver": "robot4",
+      "giver_agent": "robot2_agent",
+      "start_ms": 48319,
+      "start_mono": 42227151.873145,
+      "end_mono": 42235711.332282,
+      "windows": {
+        "handover_plan": [
+          42227048.573214,
+          42227151.558755
+        ],
+        "giver_approach": [
+          42227152.017417,
+          42229917.170041
+        ],
+        "receiver_approach": [
+          42229970.112529,
+          42234551.036938
+        ],
+        "wait_receiver": [
+          42229917.682982,
+          42234551.839393
+        ],
+        "transfer": [
+          42234552.126206,
+          42234723.322815
+        ],
+        "receiver_retreat_motion": [
+          42234815.781736,
+          42235710.983888
+        ],
+        "receiver_retreat": [
+          42234754.982564,
+          42235712.050523
+        ],
+        "giver_home": [
+          42235712.552938,
+          42244241.993567
+        ]
+      },
+      "duration_ms": 8559.459137000144,
+      "giver_observed_ms": 8560.390340998769,
+      "handover_plan_ms": 102.98554100096226,
+      "giver_approach_ms": 2765.152624003589,
+      "receiver_approach_ms": 4580.924408994615,
+      "wait_receiver_ms": 4634.156410999596,
+      "transfer_ms": 171.1966089978814,
+      "receiver_retreat_motion_ms": 895.2021519988775,
+      "receiver_retreat_ms": 957.0679589956999,
+      "giver_home_ms": 8529.440628997982
+    },
+    {
+      "run": 3,
+      "hop": null,
+      "abandoned": true,
+      "refused_candidate": "candidate_31",
+      "session": "handover_1789948796101_3",
+      "giver": "robot4",
+      "receiver": "robot5",
+      "giver_agent": "robot4_agent",
+      "start_ms": 59755,
+      "start_mono": 42238587.767483,
+      "end_mono": null,
+      "windows": {
+        "handover_plan": [
+          42238468.779139,
+          42238587.242184
+        ],
+        "giver_approach": null,
+        "receiver_approach": null,
+        "wait_receiver": null,
+        "transfer": null,
+        "receiver_retreat_motion": null,
+        "receiver_retreat": null,
+        "giver_home": null
+      },
+      "duration_ms": null,
+      "giver_observed_ms": null,
+      "handover_plan_ms": 118.46304500102997,
+      "giver_approach_ms": 0,
+      "receiver_approach_ms": null,
+      "wait_receiver_ms": null,
+      "transfer_ms": null,
+      "receiver_retreat_motion_ms": null,
+      "receiver_retreat_ms": null,
+      "giver_home_ms": null
+    },
+    {
+      "run": 3,
+      "hop": 3,
+      "abandoned": false,
+      "refused_candidate": null,
+      "session": "handover_1789948803555_4",
+      "giver": "robot4",
+      "receiver": "robot5",
+      "giver_agent": "robot4_agent",
+      "start_ms": 67192,
+      "start_mono": 42246024.093189,
+      "end_mono": 42257218.645491,
+      "windows": {
+        "handover_plan": [
+          42245917.826132,
+          42246023.713981
+        ],
+        "giver_approach": [
+          42246024.213098,
+          42250610.298712
+        ],
+        "receiver_approach": [
+          42250665.386908,
+          42255962.062816
+        ],
+        "wait_receiver": [
+          42250610.874454,
+          42255962.70509
+        ],
+        "transfer": [
+          42255962.890308,
+          42256144.969969
+        ],
+        "receiver_retreat_motion": [
+          42256255.746156,
+          42257218.351991
+        ],
+        "receiver_retreat": [
+          42256181.867016,
+          42257219.181662
+        ],
+        "giver_home": [
+          42257219.684068,
+          42263944.063514
+        ]
+      },
+      "duration_ms": 11194.552301995456,
+      "giver_observed_ms": 11195.284117996693,
+      "handover_plan_ms": 105.88784900307655,
+      "giver_approach_ms": 4586.085614003241,
+      "receiver_approach_ms": 5296.675907999277,
+      "wait_receiver_ms": 5351.830636002123,
+      "transfer_ms": 182.0796609967947,
+      "receiver_retreat_motion_ms": 962.6058349981904,
+      "receiver_retreat_ms": 1037.31464599818,
+      "giver_home_ms": 6724.379445999861
+    }
+  ],
+  "transport": {
+    "delivery_requested_ms": 20857,
+    "delivery_ms": 67598.02388700098,
+    "source_pickup_ms": 6429.847393997014,
+    "placement_ms": 8837.619465999305,
+    "handover_total_ms": 31539.431892998517,
+    "unpriced_ms": 36058.59199400246,
+    "sink": "robot5",
+    "goal": "v_Robot5_grip_support_b",
+    "start_mono": 42199689.54701,
+    "placed_mono": 42267287.570897,
+    "pickup_window": [
+      42199710.690369,
+      42206140.537763
+    ],
+    "placement_window": [
+      42258450.266477,
+      42267287.885943
+    ]
+  },
+  "messages_total": 70
+}

@@ -1,0 +1,44 @@
+{
+  "delivery": {
+    "exclusiveN": 9,
+    "regionN": 9,
+    "speedup": 1.1226409294891868,
+    "reductionPercent": 10.924323732343314
+  },
+  "task": {
+    "exclusiveN": 9,
+    "regionN": 9,
+    "speedup": 1.1101632258431455,
+    "reductionPercent": 9.923155737705043
+  },
+  "Robot1": {
+    "exclusiveN": 9,
+    "regionN": 9,
+    "speedup": 0.9591199643228725,
+    "reductionPercent": -4.262244265344673
+  },
+  "Robot2": {
+    "exclusiveN": 9,
+    "regionN": 9,
+    "speedup": 1.0484789183419416,
+    "reductionPercent": 4.623738016459679
+  },
+  "Robot3": {
+    "exclusiveN": 0,
+    "regionN": 0,
+    "speedup": null,
+    "reductionPercent": null
+  },
+  "Robot4": {
+    "exclusiveN": 9,
+    "regionN": 9,
+    "speedup": 1.0829567462879146,
+    "reductionPercent": 7.660208643814081
+  },
+  "Robot5": {
+    "exclusiveN": 9,
+    "regionN": 9,
+    "speedup": 1.1101632258431455,
+    "reductionPercent": 9.923155737705043
+  }
+}

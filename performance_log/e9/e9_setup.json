@@ -1,0 +1,35 @@
+{
+  "cell": 5,
+  "descriptor": "generated/robots/Robot1_Robot2_Robot3_Robot4_Robot5.shared.json",
+  "clouds": "deployed (generated/robots/RobotN/info), placed by the five-robot descriptor",
+  "heightBand": [
+    0.15,
+    0.45
+  ],
+  "weights": {
+    "centrality": 0.32,
+    "density": 0.2,
+    "giverSupport": 0.14,
+    "receiverSupport": 0.14,
+    "posture": 0.2
+  },
+  "densityRadiusFactor": 2.5,
+  "strategies": [
+    "weighted",
+    "centrality",
+    "density",
+    "random",
+    "bbox"
+  ],
+  "pool": "the unscreened height band of the interaction space; the deployed row uses rank()'s screened central core",
+  "feasibility": "both TCP targets within the workspace bounds and the admission tolerance of a reachable sample, and posture margin at or above m_min -- the screen of rank(), evaluated rather than applied",
+  "edgeCostOrigin": "the loaded task site of the cell, in the giver's local frame (mode pickup of Section edge_costs)",
+  "draws": 200,
+  "seed": 42,
+  "minimumSharedVoxels": 20,
+  "evaluatedPairs": 5,
+  "directions": 10,
+  "skipped": [],
+  "executedHandovers": "performance_log/e9/e9_handovers.jsonl",
+  "finishedAt": "2026-09-20T21:42:44.586Z"
+}

@@ -1,0 +1,11 @@
+mode,repetition,success,robot,participated,beginS,homeS,durationS,deliveryS,taskS
+exclusive,1,1,Robot1,1,0.0867935,26.3586,26.2718,74.1866,77.6637
+exclusive,1,1,Robot2,1,12.4866,48.3013,35.8148,74.1866,77.6637
+exclusive,1,1,Robot3,0,nan,nan,nan,74.1866,77.6637
+exclusive,1,1,Robot4,1,33.1867,68.0050,34.8183,74.1866,77.6637
+exclusive,1,1,Robot5,1,54.3865,77.6637,23.2772,74.1866,77.6637
+region,1,1,Robot1,1,0.0507151,27.6761,27.6254,66.6506,71.0274
+region,1,1,Robot2,1,12.7507,46.2387,33.4880,66.6506,71.0274
+region,1,1,Robot3,0,nan,nan,nan,66.6506,71.0274
+region,1,1,Robot4,1,30.9505,64.9922,34.0417,66.6506,71.0274
+region,1,1,Robot5,1,49.5505,71.0274,21.4770,66.6506,71.0274

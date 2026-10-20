@@ -1,0 +1,643 @@
+{
+  "title": "coppeliasim_virtualrobot_Robot1",
+  "id": "urn:dev:ops:womat-generated-virtual-Robot1",
+  "description": "Generated lower-level CoppeliaSim Thing for Robot1.",
+  "links": [
+    {
+      "href": "/home/maxchrs/Desktop/MA/WoMAT/generated/robots/Robot1/info/Robot1_shape.stl",
+      "type": "model/stl",
+      "rel": "workspace"
+    },
+    {
+      "href": "/home/maxchrs/Desktop/MA/WoMAT/generated/robots/Robot1/info/Robot1_data_point.csv",
+      "type": "text/csv",
+      "rel": "dataset-points"
+    },
+    {
+      "href": "/home/maxchrs/Desktop/MA/WoMAT/generated/robots/Robot1/scene/Robot1_workspace.ttt",
+      "type": "application/octet-stream",
+      "rel": "coppeliasim scene"
+    }
+  ],
+  "@context": [
+    "https://www.w3.org/2019/wot/td/v1",
+    {
+      "@language": "en"
+    }
+  ],
+  "@type": "Thing",
+  "security": "nosec_sc",
+  "securityDefinitions": {
+    "nosec_sc": {
+      "scheme": "nosec"
+    }
+  },
+  "properties": {
+    "getJointposition": {
+      "title": "get position of each joint",
+      "description": "maxItems, minItems, minimum, maximum are decided by specific virtual robot",
+      "type": "object",
+      "properties": {
+        "joint1": {
+          "type": "number",
+          "unit": "deg",
+          "minimum": -361.00001001791,
+          "maximum": 361.00001001791
+        },
+        "joint2": {
+          "type": "number",
+          "unit": "deg",
+          "minimum": -361.00001001791,
+          "maximum": 361.00001001791
+        },
+        "joint3": {
+          "type": "number",
+          "unit": "deg",
+          "minimum": -361.00001001791,
+          "maximum": 361.00001001791
+        },
+        "joint4": {
+          "type": "number",
+          "unit": "deg",
+          "minimum": -361.00001001791,
+          "maximum": 361.00001001791
+        },
+        "joint5": {
+          "type": "number",
+          "unit": "deg",
+          "minimum": -361.00001001791,
+          "maximum": 361.00001001791
+        },
+        "joint6": {
+          "type": "number",
+          "unit": "deg",
+          "minimum": -361.00001001791,
+          "maximum": 361.00001001791
+        }
+      },
+      "readOnly": true,
+      "observable": true,
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/properties/getJointposition",
+          "contentType": "application/json",
+          "op": [
+            "readproperty"
+          ],
+          "htv:methodName": "GET"
+        }
+      ]
+    },
+    "getCartesianposition": {
+      "title": "get cartesian position of robotic end-effector",
+      "description": "minimum,maximum is decided by specific robot",
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number",
+          "unit": "meter"
+        },
+        "y": {
+          "type": "number",
+          "unit": "meter"
+        },
+        "z": {
+          "type": "number",
+          "unit": "meter"
+        }
+      },
+      "observable": true,
+      "readOnly": true,
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/properties/getCartesianposition",
+          "contentType": "application/json",
+          "op": [
+            "readproperty"
+          ],
+          "htv:methodName": "GET"
+        }
+      ]
+    },
+    "getGripperState": {
+      "type": "object",
+      "description": "Current generated virtual gripper state.",
+      "properties": {
+        "closed": {
+          "type": "boolean"
+        },
+        "holding": {
+          "type": "boolean"
+        },
+        "object": {
+          "type": "string"
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/properties/getGripperState",
+          "htv:methodName": "GET"
+        }
+      ]
+    },
+    "getCollisionObstacles": {
+      "type": "array",
+      "description": "Scene objects currently treated as collision obstacles. The configured pick object is excluded.",
+      "items": {
+        "type": "string"
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/properties/getCollisionObstacles",
+          "htv:methodName": "GET"
+        }
+      ]
+    },
+    "getCubeOwnership": {
+      "type": "object",
+      "description": "Shared runtime ownership of the configured cube.",
+      "properties": {
+        "object": {
+          "type": "string"
+        },
+        "owner": {
+          "type": "string"
+        },
+        "transferActive": {
+          "type": "boolean"
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/properties/getCubeOwnership",
+          "htv:methodName": "GET"
+        }
+      ]
+    },
+    "getBasePose": {
+      "type": "object",
+      "description": "Live world pose of this robot's base in the loaded scene, with the placement the runtime was configured with.",
+      "properties": {
+        "robot": {
+          "type": "string"
+        },
+        "position": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "orientation": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "configuredOffset": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "configuredOrientation": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/properties/getBasePose",
+          "htv:methodName": "GET"
+        }
+      ]
+    }
+  },
+  "actions": {
+    "moveTojointPosition": {
+      "title": "let robot move according to joint position",
+      "description": "maxItems,minItems,minimum,maximum are decided by sprecific virtual robot",
+      "input": {
+        "type": "object",
+        "properties": {
+          "joint1": {
+            "type": "number",
+            "unit": "deg",
+            "minimum": -361.00001001791,
+            "maximum": 361.00001001791
+          },
+          "joint2": {
+            "type": "number",
+            "unit": "deg",
+            "minimum": -361.00001001791,
+            "maximum": 361.00001001791
+          },
+          "joint3": {
+            "type": "number",
+            "unit": "deg",
+            "minimum": -361.00001001791,
+            "maximum": 361.00001001791
+          },
+          "joint4": {
+            "type": "number",
+            "unit": "deg",
+            "minimum": -361.00001001791,
+            "maximum": 361.00001001791
+          },
+          "joint5": {
+            "type": "number",
+            "unit": "deg",
+            "minimum": -361.00001001791,
+            "maximum": 361.00001001791
+          },
+          "joint6": {
+            "type": "number",
+            "unit": "deg",
+            "minimum": -361.00001001791,
+            "maximum": 361.00001001791
+          }
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/actions/moveTojointPosition",
+          "contentType": "application/json",
+          "op": [
+            "invokeaction"
+          ],
+          "htv:methodName": "PUT"
+        }
+      ],
+      "output": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "state": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "finalError": {
+            "type": "number"
+          },
+          "tolerance": {
+            "type": "number"
+          },
+          "planner": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "moveTocartesianPosition": {
+      "title": "make robot move according to cartesian position",
+      "description": "minimum,maximum are decided by sprecific virtual robot",
+      "input": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number",
+            "minimum": -1.4058976422581093,
+            "maximum": 1.4429810948948545,
+            "unit": "meter"
+          },
+          "y": {
+            "type": "number",
+            "minimum": -1.4177378957435731,
+            "maximum": 1.4287956175596708,
+            "unit": "meter"
+          },
+          "z": {
+            "type": "number",
+            "minimum": -1.318917823213,
+            "maximum": 1.5832782488811,
+            "unit": "meter"
+          }
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/actions/moveTocartesianPosition",
+          "contentType": "application/json",
+          "op": [
+            "invokeaction"
+          ],
+          "htv:methodName": "PUT"
+        }
+      ],
+      "output": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "state": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "finalError": {
+            "type": "number"
+          },
+          "tolerance": {
+            "type": "number"
+          },
+          "planner": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "refreshInteractionVisual": {
+      "description": "Redraw a pairwise interaction-space point cloud in the loaded scene from its exported CSV.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "pairKey": {
+            "type": "string"
+          },
+          "csv": {
+            "type": "string"
+          },
+          "voxelSize": {
+            "type": "number"
+          },
+          "color": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "required": [
+          "pairKey",
+          "csv",
+          "voxelSize"
+        ]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "object": {
+            "type": "string"
+          },
+          "pointCount": {
+            "type": "number"
+          }
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/actions/refreshInteractionVisual",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "closeGripper": {
+      "description": "Close the generated virtual gripper and attach the configured cube when it is near the robot tip.",
+      "output": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "state": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "distance": {
+            "type": "number"
+          }
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/actions/closeGripper",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "openGripper": {
+      "description": "Open the generated virtual gripper and release the currently attached object.",
+      "output": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "state": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/actions/openGripper",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "transferCube": {
+      "description": "Transfer the held shared cube to another robot without pose validation.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string"
+          },
+          "targetRobot": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "session",
+          "targetRobot"
+        ]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "state": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "sourceRobot": {
+            "type": "string"
+          },
+          "targetRobot": {
+            "type": "string"
+          },
+          "validation": {
+            "type": "string"
+          },
+          "placement": {
+            "type": "string"
+          },
+          "retreatCollisionMode": {
+            "type": "string"
+          }
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/actions/transferCube",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "beginHandoverSession": {
+      "description": "Register a physical handover session selected by the interaction-space owner agent.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string"
+          },
+          "targetRobot": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "session",
+          "targetRobot"
+        ]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "session": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "sourceRobot": {
+            "type": "string"
+          },
+          "targetRobot": {
+            "type": "string"
+          }
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/actions/beginHandoverSession",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "setHandoverApproach": {
+      "description": "Enable or disable receiver approach mode for an agent-created handover session.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "session",
+          "enabled"
+        ]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "state": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "ignoredGripper": {
+            "type": "string"
+          },
+          "planId": {
+            "type": "string"
+          }
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/actions/setHandoverApproach",
+          "htv:methodName": "POST"
+        }
+      ]
+    },
+    "setPickupApproach": {
+      "description": "Enable or disable BDI-controlled pickup approach mode. Only the shared cube support is ignored; walls and robots remain collision obstacles.",
+      "input": {
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "enabled"
+        ]
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "state": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "ignoredSupport": {
+            "type": "string"
+          }
+        }
+      },
+      "forms": [
+        {
+          "href": "http://localhost:8110/coppeliasim_virtualrobot_robot1/actions/setPickupApproach",
+          "htv:methodName": "POST"
+        }
+      ]
+    }
+  }
+}
