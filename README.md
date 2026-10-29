@@ -397,17 +397,7 @@ external/RobWoT/            URDF assets
 | Testing the interaction-space agent plans | [docs/interaction_space_agent_testing.md](docs/interaction_space_agent_testing.md) |
 | Fitting a different gripper | [docs/fitting_a_different_gripper.md](docs/fitting_a_different_gripper.md) |
 | Per-agent safety cores (process isolation) | [docs/agentic_per_agent_cores_plan.md](docs/agentic_per_agent_cores_plan.md) |
-| Phases 1–6 report | [docs/womat_robwot_phase_1_6_report.md](docs/womat_robwot_phase_1_6_report.md) |
 
-**Experiments**
-
-| Experiment | Guide |
-| --- | --- |
-| E10 — exclusive vs. region arbitration | [docs/e10_arbitration.md](docs/e10_arbitration.md) |
-| E11 — scaling of route discovery | [docs/e11_scaling.md](docs/e11_scaling.md) |
-| E12 — principal five-robot delivery | [docs/e12_principal.md](docs/e12_principal.md) |
-| E13 — rerouting around a failed arm | [docs/e13_rerouting.md](docs/e13_rerouting.md) |
-| E15 — Dobot cell | [docs/e15_dobot_cell.md](docs/e15_dobot_cell.md) |
 
 ---
 
