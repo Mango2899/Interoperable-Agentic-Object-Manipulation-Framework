@@ -1,4 +1,4 @@
-# WoMAT — Web of Multi-Agent Things for robot cells
+# Interoperable Object Manipulation Framework based on WoMAT and RobWoT
 
 WoMAT turns a robot description (URDF) into a complete, self-describing unit:
 a **BDI agent** (Jason/JaCaMo) that reasons, an **Agent Thing** that exposes the agent
@@ -35,18 +35,26 @@ Every robot is the same four-layer stack, generated from its URDF and a few para
 
 ```mermaid
 flowchart TB
-    A["<b>BDI agent</b> (Jason)<br/>src/agt/generated/robotN_agent.asl<br/>+ shared plan files: neighbor-, handover-, routePlans.asl"]
-    AT["<b>Agent Thing</b> (node-wot)<br/>Agent TD: src/td/generated/RobotN.agent.td.json<br/>npm run robot:agent — HTTP :8NN1, websocket :82N1"]
-    RT["<b>Robot Thing</b> (node-wot)<br/>Robot TD: generated/robots/RobotN/td/RobotN.lower.td.json<br/>npm run robot:serve — HTTP :8NN0"]
-    SC["<b>Movement / safety core</b><br/>src/generator/core (safety.js, motion.js, motionArbiter.js …)<br/>+ Lua driver src/generator/lua inside CoppeliaSim"]
-    SIM[("CoppeliaSim<br/>websocket remote API :23050")]
+    A2["Other robots' agents"]
+    A["BDI agent (Jason)"]
+    AT["Agent Thing + Agent TD"]
+    RT["Robot Thing + Robot TD"]
+    SC["Movement / safety core"]
+    SIM[("CoppeliaSim")]
 
-    A <-- "CArtAgO artifact wotCommunication<br/>(websocket)" --> AT
-    AT -- "WoT actions / properties<br/>(HTTP)" --> RT
+    A2 <-. "Jason messages" .-> A
+    A <-- "websocket" --> AT
+    AT -- "HTTP (WoT)" --> RT
     RT --> SC
-    SC --> SIM
-    A <-. "Jason .send / .broadcast<br/>(agent ↔ agent)" .-> A2["other robots' agents"]
+    SC -- "remote API" --> SIM
 ```
+
+How the layers connect:
+
+- **Agent ↔ other agents:** native Jason messages (`.send`, `.broadcast`).
+- **Agent ↔ Agent Thing:** the CArtAgO artifact `wotCommunication`, over a websocket (port `82N1`).
+- **Agent Thing → Robot Thing:** WoT actions and properties over HTTP (port `8NN0`).
+- **Safety core → CoppeliaSim:** websocket remote API on port `23050`; the Lua driver runs inside the simulator.
 
 | Layer | What it is | Responsibility |
 | --- | --- | --- |
@@ -374,7 +382,7 @@ src/
     lua/                    driver running inside CoppeliaSim
   td/generated/             Agent TDs
   WoT/generated/            generated Thing sources
-  eval/                     experiments E1–E13 (npm run eval:…)
+  eval/                     experiments E1–E13, see section 9 (npm run eval:…)
 generated/robots/           manifests, models, workspaces, Robot TDs, cells, interaction spaces
 docs/                       design notes and experiment guides
 external/RobWoT/            URDF assets
@@ -388,8 +396,8 @@ external/RobWoT/            URDF assets
 
 | Topic | Document |
 | --- | --- |
-| Distributed route consensus between the agents: formulas, protocol, properties | [Distributed_Route_Consensus_Robot_Agents.docx](Distributed_Route_Consensus_Robot_Agents.docx), [docs/bellman_consensus_routing_plan.md](docs/bellman_consensus_routing_plan.md) |
-| Automatic voxel size for intersecting workspaces | [Automatic_Voxel_Size_Estimation_Robot_Workspaces.docx](Automatic_Voxel_Size_Estimation_Robot_Workspaces.docx), [docs/voxel_grid_size_approximation.md](docs/voxel_grid_size_approximation.md) |
+| Distributed route consensus between the agents: formulas, protocol, properties | [docs/Distributed_Route_Consensus_Robot_Agents.docx](docs/Distributed_Route_Consensus_Robot_Agents.docx), [docs/bellman_consensus_routing_plan.md](docs/bellman_consensus_routing_plan.md) |
+| Automatic voxel size for intersecting workspaces | [docs/Automatic_Voxel_Size_Estimation_Robot_Workspaces.docx](docs/Automatic_Voxel_Size_Estimation_Robot_Workspaces.docx), [docs/voxel_grid_size_approximation.md](docs/voxel_grid_size_approximation.md) |
 | Choosing the handover point inside a shared space | [documents/interaction_region_center_approximation.md](documents/interaction_region_center_approximation.md) |
 | Safety pipeline and motion concept (admission, preflight, locking) | [docs/robot_safety_and_movement_concept.md](docs/robot_safety_and_movement_concept.md) |
 | Walls and the initial space lock | [docs/wall_placement_and_space_lock.md](docs/wall_placement_and_space_lock.md) |
@@ -398,6 +406,22 @@ external/RobWoT/            URDF assets
 | Fitting a different gripper | [docs/fitting_a_different_gripper.md](docs/fitting_a_different_gripper.md) |
 | Per-agent safety cores (process isolation) | [docs/agentic_per_agent_cores_plan.md](docs/agentic_per_agent_cores_plan.md) |
 
+**Experiments** (`src/eval`, run with `npm run eval:<name>`)
+
+| Experiment | What it measures |
+| --- | --- |
+| E1 — workspace convergence (`eval:e1:sample`, `eval:e1:analyze`) | How the sampled workspaces and their shared spaces stabilise as the number of samples grows (5k–100k, several seeds). |
+| E2 — collision cost (`eval:e2`) | Cost of one collision check in cells of growing size, with and without the bounding-box broad phase. |
+| E3 — safety pipeline (`eval:e3`) | What each safety stage contributes: random targets are commanded with workspace admission, preflight, fallback planner or watchdog switched off one at a time. |
+| E4 — motion smoothness (`eval:e4`) | Velocity, acceleration and jerk of executed approach and home motions under different timing laws. |
+| E5 — neighbour test accuracy (`eval:e5`) | Whether the reach-sphere test ever rejects a pair that really shares space (false negatives), and how many false positives it lets through. Offline. |
+| E6 — computation saved (`eval:e6`) | How many interaction-space computations the neighbour test avoids, and how many seconds that saves. |
+| E7/E8 — automatic voxel size (`eval:e7e8`) | Whether the estimated voxel size gives shared spaces of the intended size and resolution at low cost. |
+| E9 — handover point (`eval:e9`, `eval:e9:run`) | Compares the weighted rendezvous score with simpler selection rules on whether both arms can actually serve the chosen point. |
+| E10 — arbitration (`eval:e10`) | Delivery and per-robot durations of the same BDI delivery with exclusive (one arm at a time) versus region-based motion locking. |
+| E11 — route discovery scaling (`eval:e11`) | How long the agents take to agree on a route as the cell grows. |
+| E12 — principal experiment (`eval:e12`) | Ten complete five-robot deliveries from A to B: route discovery, every handover, pickup and placement, timed. |
+| E13 — rerouting (`eval:e13`) | What the cell does when a robot on the cheapest route is missing from the start or is killed after the route was agreed. |
 
 ---
 
