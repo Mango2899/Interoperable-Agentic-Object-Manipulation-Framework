@@ -1,6 +1,6 @@
 # Interoperable Object Manipulation Framework based on WoMAT and RobWoT
 
-WoMAT turns a robot description (URDF) into a complete, self-describing unit:
+This framework turns a robot description (URDF+ base coordinates) into a complete, self-describing unit:
 a **BDI agent** (Jason/JaCaMo) that reasons, an **Agent Thing** that exposes the agent
 over the Web of Things, a **Robot Thing** that exposes the simulated arm, and a
 **movement/safety core** that decides whether any commanded motion may run. Several
